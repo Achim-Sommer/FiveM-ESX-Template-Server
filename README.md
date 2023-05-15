@@ -5,8 +5,8 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 
 # Social-Media
 
-FiveM Forum: https://forum.achimsommer.com
-Website: https:/achimsommer.com
-
-Im Shop kannst du dir Zugang zum Support Ticketsystem kaufen und Scripts speziell angepasst auf den Template Server, um mehr aus den Server rauszuholen. Schau gerne mal vorbei.
-Shop: http://shop.achimsommer.com
+- FiveM Forum: https://forum.achimsommer.com
+- Website: https://achimsommer.com
+-----------------------------------------
+- Im Shop kannst du dir Zugang zum Support Ticketsystem kaufen und Scripts speziell angepasst auf den Template Server, um mehr aus den Server rauszuholen. Schau gerne mal vorbei.
+- Shop: http://shop.achimsommer.com6+
