@@ -3,8 +3,8 @@
 Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perfekten Start in die Welt von FiveM zu bieten. Hier ist ein angepasster FiveM ESX Legacy Server. 
 
 # FiveM Server mieten oder Lifetime kaufen!
-https://zap-hosting.com/ServerFiveM
-20% Rabatt Code: GermanGaming
+- https://zap-hosting.com/ServerFiveM
+- 20% Rabatt Code: GermanGaming
 
 # Social-Media
 
