@@ -1,5 +1,5 @@
 -- --------------------------------------------------------
-----Upgrade SQL von Template Server 4.0
+----Upgrade SQL von Template Server 4.0 -- Bei einem kompletten cleanen Instalation bitte legacy.sql nutzen
 -- --------------------------------------------------------
 
 --
