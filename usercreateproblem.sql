@@ -39,19 +39,6 @@ CREATE TABLE `users` (
 ALTER TABLE `users`
   ADD PRIMARY KEY (`identifier`),
   ADD UNIQUE KEY `id` (`id`);
-
---
--- Indexes for table `vehicle_categories`
---
-ALTER TABLE `vehicle_categories`
-  ADD PRIMARY KEY (`name`);
-
---
--- Indexes for table `whitelist`
---
-ALTER TABLE `whitelist`
-  ADD PRIMARY KEY (`identifier`);
-
 --
 -- AUTO_INCREMENT for table `users`
 --
