@@ -20,6 +20,7 @@ ALTER TABLE `users` ADD COLUMN `id` int(11) NOT NULL;
 ALTER TABLE `users` ADD COLUMN `disabled` TINYINT(1) NULL DEFAULT '0';
 ALTER TABLE `users` ADD COLUMN `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP;
 ALTER TABLE `users` ADD COLUMN `last_seen` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP;
+ALTER TABLE `users` ADD COLUMN `pincode` INT NULL;
 
 -- --------------------------------------------------------
 
@@ -91,3 +92,28 @@ CREATE TABLE `vehicle_sold` (
 
 	PRIMARY KEY (`plate`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`identifier`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `vehicle_categories`
+--
+ALTER TABLE `vehicle_categories`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `whitelist`
+--
+ALTER TABLE `whitelist`
+  ADD PRIMARY KEY (`identifier`);
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;

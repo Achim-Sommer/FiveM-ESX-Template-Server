@@ -1,5 +1,5 @@
 -- --------------------------------------------------------
-----Nur wenn beim erstellen vom User folgende Fehlermeldung in der Konsole kommt
+-- Nur wenn beim erstellen vom User folgende Fehlermeldung in der Konsole kommt
 -- Field 'id' doesn't have a default value [ script:oxmysql] INSERT INTO `users` SET `accounts` = ?, `identifier` = ?, `group` = ?, `firstname` = ?, `lastname` = ?, `dateofbirth` = ?, `sex` = ?, `height` = ?
 -- --------------------------------------------------------
 -- Lösch die User Tabelle und lade diese neu mit dieser SQL Datei
@@ -31,6 +31,8 @@ CREATE TABLE `users` (
   `phone_number` VARCHAR(20) DEFAULT NULL
 ) ENGINE=InnoDB;
 
+
+
 --
 -- Indexes for table `users`
 --
@@ -39,3 +41,20 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `id` (`id`);
 
 --
+-- Indexes for table `vehicle_categories`
+--
+ALTER TABLE `vehicle_categories`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `whitelist`
+--
+ALTER TABLE `whitelist`
+  ADD PRIMARY KEY (`identifier`);
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+

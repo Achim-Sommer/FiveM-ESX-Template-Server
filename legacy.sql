@@ -1079,7 +1079,8 @@ INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES
 ('whiskycoca', 'Whisky-Cola', 5, 0, 1),
 ('wood', 'Holz', 1, 0, 1),
 ('wool', 'Wolle', 1, 0, 1),
-('zetony', 'Spielchips', 0, 0, 1);
+('zetony', 'Spielchips', 0, 0, 1)
+;
 
 -- --------------------------------------------------------
 
