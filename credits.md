@@ -9,3 +9,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/CarlosVergikosk/B1G_NOTIFY 
 - https://github.com/Korioz/krz_personalmenu
 - https://github.com/BombayV/anims 
+- https://github.com/uniqscripts/id_playtimereward
