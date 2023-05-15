@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: url("fondo.png");
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.auto {
+  position: absolute;
+  bottom: 1vw;
+  right: 0vw;
+}
+.infoauto {
+  position: relative;
+}
+.velocimetro {
+  position: absolute;
+  right: 2vw;
+  transition: .5s;
+}
+.ldBar-label {
+  display: none;
+}
+.tipovelo {
+  position: absolute;
+  bottom: 6vw;
+  right: 6.7vw;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  align-content: center;
+  text-align: center;
+  font-size: 3.5vw;
+  width: 6.3vw;
+  font-weight: 700;
+  text-shadow: 0 0 6px #fff;
+}
+.kmh {
+  position: absolute;
+  bottom: 5.2vw;
+  right: 9.01vw;
+  color: rgba(255, 255, 255, 0.514);
+  font-family: "Montserrat", sans-serif;
+  align-content: center;
+  font-size: 0.8vw;
+  font-weight: 700;
+}
+.autoiconos {
+  position: absolute;
+  bottom: 3vw;
+  right: 7.7vw;
+  align-content: center;
+}
+.autoiconos img {
+  width: 1.2vw;
+  padding-right: 0.22vw;
+}
+.combustible {
+  position: absolute;
+  bottom: 0.61vw;
+  right: 8vw;
+  align-content: center;
+}
+.combustibletexto {
+  position: absolute;
+  bottom: 0.2vw;
+  right: 0.01vw;
+  color: rgba(255, 255, 255, 0.714);
+  font-family: "Montserrat", sans-serif;
+  align-content: center;
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+.combustible img {
+  width: 1.2vw;
+  position: absolute;
+  bottom: 0.3vw;
+  right: 2.51vw;
+}
+
+.supiz {
+  float: left;
+}
+
+.identifi {
+  font-size: 1.5vw;
+  font-weight: 800;
+  color: #00a2ff85;
+  align-content: center;
+  padding-right: 1vw;
+}
+
+.supde,
+.logo {
+  float: left;
+}
+
+.logo img {
+  max-height: 1.5vw;
+  padding-left: 1vw;
+}
+
+.fecha {
+  position: absolute;
+  top: 1vw;
+  right: 1.2vw;
+}
+.hora img {
+  width: 0.81vw;
+}
+.HoraActual {
+  font-weight: 700;
+  color: #fff;
+  padding-left: 0.21vw;
+  font-size: 0.91vw;
+}
+.dia {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.521);
+  font-weight: 600;
+  font-size: 0.71vw;
+  font-style: italic;
+}
+
+.infoplayer {
+  position: absolute;
+  top: 3.5vw;
+  right: 1.2vw;
+  text-align: right;
+}
+.trabajo {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.651);
+}
+.cargo {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 0.7vw;
+  text-transform: uppercase;
+  color: #979595be;
+}
+.dinero {
+  font-weight: 900;
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  color: #00a0ff;
+  text-shadow: 0 0 3px #00a0ff;
+}
+.bank {
+  font-weight: 900;
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  color: #ffffffbe;
+}
+.black {
+  font-weight: 900;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  color: #979595be;
+}
+
+@media only screen and (max-width: 1024px) {
+  .infoplayer {
+    top: 5.5vw;
+  }
+}
+@media only screen and (max-width: 1600) {
+  .infoplayer {
+    top: 4.5vw;
+  }
+}
+.chatvoz {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 2vw;
+  transition: .5s;
+}
+
+.alimento {
+  position: absolute;
+  bottom: 2vh;
+  left: 16vw;
+}
+
+.comida,
+.sed {
+  float: left;
+  position: relative;
+}
+.comida img,
+.sed img {
+  position: absolute;
+  left: 1.56vw;
+  bottom: 2vh;
+  width: 1.42vw;
+}
+
+.ldBar path.mainline {
+    stroke-linecap: round;
+    transition: 0.5s;
+}
+
+.ldBar.come path.mainline {
+  stroke-width: 10;
+  stroke: #61c968;
+  stroke-linecap: round;
+}
+.ldBar.come path.baseline {
+  stroke-width: 10;
+  stroke: #f1f2f373;
+  stroke-linecap: round;
+}
+.ldBar.toma path.mainline {
+  stroke-width: 10;
+  stroke: #09f;
+  stroke-linecap: round;
+}
+.ldBar.toma path.baseline {
+  stroke-width: 10;
+  stroke: #f1f2f373;
+  stroke-linecap: round;
+}
+
+.ldBar path.baseline {
+    stroke-width: 2.5;
+    stroke: #f1f2f373;
+    stroke-linecap: round;
+}
