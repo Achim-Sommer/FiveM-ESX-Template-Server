@@ -23,10 +23,7 @@ end)
 ESX = nil
 Loaded = false
 Citizen.CreateThread(function()	
-	while ESX == nil do
-		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-		Citizen.Wait(0)
-	end
+	ESX = exports['es_extended']:getSharedObject()
 	while ESX.GetPlayerData().job == nil do Wait(100) end
 	Loaded = true
 	ESX.TriggerServerCallback("Roda_FogHud:FirstCallBack", function(xPlayer, money, dirtymoney, bankmoney) 
