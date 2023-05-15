@@ -7,3 +7,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/charleshacks/chCasinoWall
 - https://github.com/rubbertoe98/DiamondBlackjack/tree/master/DiamondBlackjack 
 - https://github.com/CarlosVergikosk/B1G_NOTIFY 
+- https://github.com/Korioz/krz_personalmenu
