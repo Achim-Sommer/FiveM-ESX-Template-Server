@@ -1780,10 +1780,10 @@ ALTER TABLE `user_licenses`
 ) ENGINE=InnoDB;
 
 INSERT INTO `fine_types` (label, amount, category) VALUES
-	('Misuse of a horn', 30, 0),
-	('Illegally Crossing a continuous Line', 40, 0),
-	('Driving on the wrong side of the road', 250, 0),
-	('Illegal U-Turn', 250, 0),
+	('Missbräuchliche Verwendung einer Hupe', 30, 0),
+	('Illegales Überschreiten einer durchgehenden Linie', 40, 0),
+	('Fahren auf der falschen Seite der Straße', 250, 0),
+	('Unerlaubter U-Turn', 250, 0),
 	('Illegally Driving Off-road', 170, 0),
 	('Refusing a Lawful Command', 30, 0),
 	('Illegally Stopping a Vehicle', 150, 0),
@@ -1844,7 +1844,8 @@ INSERT INTO `addon_account` (name, label, shared) VALUES
 ;
 
 INSERT INTO `jobs` (name, label) VALUES
-	('banker','Banker')
+	('banker','Banker'),
+  ('police', 'LSPD')
 ;
 
 INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_female) VALUES
@@ -1852,7 +1853,12 @@ INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_
 	('banker',1,'banker','Banker',20,'{}','{}'),
 	('banker',2,'business_banker',"Investment banker",30,'{}','{}'),
 	('banker',3,'trader','Broker',40,'{}','{}'),
-	('banker',4,'boss','Boss',0,'{}','{}')
+	('banker',4,'boss','Boss',0,'{}','{}'),
+  ('police',0,'recruit','Recrue',20,'{}','{}'),
+	('police',1,'officer','Officier',40,'{}','{}'),
+	('police',2,'sergeant','Sergent',60,'{}','{}'),
+	('police',3,'lieutenant','Lieutenant',85,'{}','{}'),
+	('police',4,'boss','Commandant',100,'{}','{}')
 ;
 
 --
