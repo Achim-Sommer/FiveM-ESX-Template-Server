@@ -42,7 +42,6 @@ Citizen.CreateThread(function()
             value = tonumber(money)
         })
 		TriggerEvent('es:setMoneyDisplay', 0.0)
-		ESX.UI.HUD.SetDisplay(0.0)
 	end)
 end)
 
