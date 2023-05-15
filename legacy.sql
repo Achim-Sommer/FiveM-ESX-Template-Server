@@ -1840,12 +1840,14 @@ INSERT INTO `fine_types` (label, amount, category) VALUES
 
 INSERT INTO `addon_account` (name, label, shared) VALUES
 	('society_banker','Bank',1),
-	('bank_savings','Savings account',0)
+	('bank_savings','Savings account',0),
+  ('society_cardealer','Cardealer',1)
 ;
 
 INSERT INTO `jobs` (name, label) VALUES
 	('banker','Banker'),
-  ('police', 'LSPD')
+  ('police', 'LSPD'),
+  ('cardealer','Cardealer')
 ;
 
 INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_female) VALUES
@@ -1858,7 +1860,12 @@ INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_
 	('police',1,'officer','Officier',40,'{}','{}'),
 	('police',2,'sergeant','Sergent',60,'{}','{}'),
 	('police',3,'lieutenant','Lieutenant',85,'{}','{}'),
-	('police',4,'boss','Commandant',100,'{}','{}')
+	('police',4,'boss','Commandant',100,'{}','{}'),
+  ('cardealer',0,'recruit','Recruit',10,'{}','{}'),
+	('cardealer',1,'novice','Novice',25,'{}','{}'),
+	('cardealer',2,'experienced','Experienced',40,'{}','{}'),
+	('cardealer',3,'boss','Boss',0,'{}','{}')
+
 ;
 
 --

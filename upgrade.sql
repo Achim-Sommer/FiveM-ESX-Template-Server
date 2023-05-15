@@ -72,3 +72,22 @@ CREATE TABLE `vehicle_sold` (
 CREATE TABLE `whitelist` (
 	`identifier` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+--
+
+CREATE TABLE `cardealer_vehicles` (
+	`id` int NOT NULL AUTO_INCREMENT,
+	`vehicle` varchar(255) NOT NULL,
+	`price` int NOT NULL,
+
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `vehicle_sold` (
+	`client` VARCHAR(50) NOT NULL,
+	`model` VARCHAR(50) NOT NULL,
+	`plate` VARCHAR(50) NOT NULL,
+	`soldby` VARCHAR(50) NOT NULL,
+	`date` VARCHAR(50) NOT NULL,
+
+	PRIMARY KEY (`plate`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
