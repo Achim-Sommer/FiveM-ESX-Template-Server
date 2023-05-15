@@ -3,7 +3,7 @@
 Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perfekten Start in die Welt von FiveM zu bieten. Hier ist ein angepasster FiveM ESX Legacy Server. 
 
 
-# Sozial-Media
+# Social-Media
 
 FiveM Forum: https://forum.achimsommer.com
 Website: https:/achimsommer.com
