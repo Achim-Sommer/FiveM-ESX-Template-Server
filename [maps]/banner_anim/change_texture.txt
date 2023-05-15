@@ -1,0 +1,2 @@
+use openiv to edit ytd "lafa2k_animation.ytd" file.
+mods\update\x64\dlcpacks\lafa2k_animated\dlc.rpf\x64\levels\gta5\lafa2k_animated\props.rpf\

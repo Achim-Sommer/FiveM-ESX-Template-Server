@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Vegvesen Info</title>
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'>
+		<link rel="stylesheet" href="libraries/vuetify.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<v-app id="SH_Carlift">
+			<v-content>
+				<div id="SH_CarliftBase" v-show="showRemoteController">
+					<div id="controller">
+					  	<div class="controls">
+					    	<div class="header">Lift 1<div><br>
+					    	<ins class="button" @click="Up()"><span>Up</span></ins>
+					    	<ins class="button" @click="Down()"><span>Down</span></ins>
+					    	<div class="header">Lift 2<div><br>
+					    	<ins class="button" @click="Up2()"><span>Up</span></ins>
+					    	<ins class="button" @click="Down2()"><span>Down</span></ins>
+					  	</div>
+					  	<div class="display" @click="CloseRemote()">
+					    	Close
+					  	</div>
+					</div>
+				</div>
+			</v-content>
+		</v-app>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+		<script src="libraries/axios.min.js"></script>
+		<script src="libraries/vue.min.js"></script>
+		<script src="libraries/vuetify.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,175 @@
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+body {
+	padding-top: 5%;
+}
+
+hr {
+	border: 1px solid rgba(0, 122, 214, 0.1);
+}
+
+b {
+	color: #FFF;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tr {
+}
+
+td {
+	font-size: 14px;
+	padding: 7px;
+	color: #FFF;
+}
+
+#SH_Carlift {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: transparent !important;
+}
+
+/*---------------------------------------------------------------------------
+-- Property
+---------------------------------------------------------------------------*/
+#SH_CarliftBase {
+	position: absolute;
+  width: 30%;
+  left: 90%;
+	top: 70%;
+	transform: translate(-50%, -50%);
+  background-color: transparent !important;
+}
+
+.card__title {
+	background-color: rgba(20, 20, 20, 1);
+	color: #007ad6;
+	border-bottom: 1px solid rgba(0, 122, 214, 0.2);
+	text-align: center;
+}
+
+.card__text {
+	background-color: rgba(15, 15, 15, 0.9);
+	color: #007ad6;
+	border-bottom: 1px solid rgba(0, 122, 214, 0.2);
+}
+
+.card__actions {
+	background-color: rgba(15, 15, 15, 0.9);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: rgba(81, 81, 81, 100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(61, 61, 61, 255);
+}
+
+/* Remote controller */
+
+#controller 
+{
+  margin: 60px auto;
+  width: 250px;
+  height: 350px;
+  background: #000;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#131313), color-stop(0%,#111111), color-stop(0%,#1c1c1c), color-stop(8%,#666666), color-stop(50%,#a59393), color-stop(92%,#595959), color-stop(100%,#000000), color-stop(100%,#4c4c4c));
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #222;
+  padding: 30px;
+  font-family: sans-serif;
+  color: #eee;
+}
+
+.controls {
+  position:relative;
+}
+
+.display
+{
+  clear: both;
+  width: 100%;
+  height: 40px;
+  padding: 10px 0;
+  background: #222;
+  box-shadow: inset 2px 0 11px #000;
+  border-radius: 5px 5px 0;
+  text-align:center;
+  color: #48D1CC;
+  font-size: 12px;
+  text-shadow: 0 0 5px #FFFACD;
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 18px; 
+}
+
+.button
+{
+  float: left;
+  margin: 10px 25px 20px;
+  background: #303131;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #000;
+  text-align: center;
+  position: relative;
+  box-shadow:0 0 5px #000, inset 0 0 20px #000;
+}
+
+.button:hover 
+{
+  box-shadow:0 0 1px #000, inset 0 0 9px #000;
+}
+
+ins > span 
+{
+  position: absolute;
+  font-size: 9px;
+  left: 0; top:-20px;
+  color: #888;
+  width: 34px;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header 
+{
+  font-size: 12px;
+  color: #333;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.green {
+  background: green!important; 
+}
+
+.blue 
+{
+  background: blue!important;
+}
