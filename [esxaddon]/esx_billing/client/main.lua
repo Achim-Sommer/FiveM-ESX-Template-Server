@@ -36,3 +36,6 @@ RegisterKeyMapping('showbills', TranslateCap('keymap_showbills'), 'keyboard', 'F
 
 AddEventHandler('esx:onPlayerDeath', function() isDead = true end)
 AddEventHandler('esx:onPlayerSpawn', function(spawn) isDead = false end)
+
+RegisterNetEvent("esx_billing:showBilling") 
+AddEventHandler("esx_billing:showBilling", function() ShowBillsMenu() end)
