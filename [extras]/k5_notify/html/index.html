@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="settings.js"></script>
+    <script src="index.js"></script>
+    <script src="notifications.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>K5 Notify</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="notifications" class="notif-container"></div>
+    </div>
+    <div class="settings-container">
+      <div id="notificationSettings" class="notif-settings-container">
+        <div id="horizontalButton" class="settings-horizontal">
+          <i class="fa-solid fa-circle-arrow-left"></i>
+        </div>
+        <div class="dummyNotification n1">
+          <div class="dummytitle"></div>
+          <div class="dummytitle" style="width: 280px"></div>
+        </div>
+        <div class="dummyNotification n2">
+          <div class="dummytitle"></div>
+          <div class="dummytitle" style="width: 280px"></div>
+        </div>
+        <div class="dummyNotification n3">
+          <div class="dummytitle"></div>
+          <div class="dummytitle" style="width: 280px"></div>
+        </div>
+      </div>
+      <button id="saveSettings" class="savebutton">save</button>
+      <button id="audioButton" class="audioButton"></button>
+    </div>
+  </body>
+</html>

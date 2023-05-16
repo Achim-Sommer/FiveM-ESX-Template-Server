@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notif-container{
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 30px;
+  height: 400px;
+  overflow: visible;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+
+.notification{
+  width: calc(100% - 20px);
+  position: relative;
+  display: flex;
+  z-index: 999;
+  padding: 10px;
+  background: white;
+  margin-bottom: 10px;
+  transition: .2s margin-left;
+}
+
+.notif-body{
+  min-height: 70px;
+}
+
+.notif-image{
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+}
+
+.notif-image img{
+  width: 70px;
+  height: 70px;
+}
+
+.notif-title{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 10px
+}
+
+.notif-title i{
+  margin-right: 10px;
+}
+
+.notif-message{
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.settings-container{
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(24, 24, 24, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none
+}
+
+.notif-settings-container{
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 26px;
+  height: 400px;
+  position: fixed;
+  border-radius: 10px;
+  border: 3px dashed #fff;
+  overflow:visible;
+}
+
+.notif-settings-container:active{
+  cursor: grabbing
+}
+
+.settings-vertical{
+  cursor: pointer;
+  color: #FFF;
+  font-size: 30px;
+  position: absolute;
+  left: calc(50% - 15px);
+  z-index: 999;
+  transition: .2s transform;
+}
+
+.settings-horizontal{
+  cursor: pointer;
+  color: #FFF;
+  font-size: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  z-index: 999;
+  transition: .2s transform;
+}
+
+.savebutton{
+  cursor: pointer;
+  position: fixed;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 7px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  bottom: 140px;
+  transition: .2s transform;
+}
+
+.savebutton:hover{
+  transform: scale(1.1);
+}
+
+.savebutton:active{
+  transform: scale(1.0);
+}
+
+.audioButton{
+  position: fixed;
+  bottom: 220px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s transform;
+}
+
+.audioButton:hover{
+  transform: scale(1.1);
+}
+
+.audioButton:active{
+  transform: scale(1.0);
+}
+
+.dummyNotification{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 20px);
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  height: 70px;
+  transition: .2s margin;
+}
+
+.dummytitle{
+  width: 230px;
+  position: relative;
+  display: flex;
+  background: rgb(64, 64, 64);
+  border-radius: 9px;
+  margin-bottom: 10px;
+  height: 16px;
+  transition: .2s margin;
+}
+
+.dummyNotification.n1{
+  width: calc(100% - 20px);
+  opacity: 1;
+}
+
+.dummyNotification.n2{
+  width: calc(100% - 40px);
+  opacity: 0.5;
+}
+
+.dummyNotification.n3{
+  width: calc(100% - 60px);
+  opacity: 0.2;
+}
+
