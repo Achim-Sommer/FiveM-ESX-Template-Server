@@ -1,5 +1,10 @@
 ## Hier findest du Links zu allen genutzten Sachen
 Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeiten
+- https://shop.achimsommer.com/package/5097370
+- https://shop.achimsommer.com/package/5113761
+- https://shop.achimsommer.com/package/5118373
+- https://shop.achimsommer.com/package/5156431
+- https://shop.achimsommer.com/package/5153446
 - https://github.com/esx-framework
 - https://github.com/overextended/oxmysql
 - https://forum.cfx.re/t/the-diamond-casino-enterable-mlo/832067 
@@ -10,3 +15,6 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/Korioz/krz_personalmenu
 - https://github.com/BombayV/anims 
 - https://github.com/uniqscripts/id_playtimereward
+- https://github.com/project-error/npwd
+- https://github.com/project-error/screenshot-basic
+- https://github.com/AvarianKnight/pma-voice 
