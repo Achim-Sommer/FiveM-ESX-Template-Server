@@ -6,7 +6,7 @@
   },
   "frameworkIntegration": {
     "enabled": true,
-    "resource": "your-resource",
+    "resource": "es_extended",
     "syncInitialBankBalance": true
   },
   "database": {
