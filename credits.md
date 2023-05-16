@@ -24,3 +24,5 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/kac5a 
 - https://forum.achimsommer.com/thread/1159-roulette-tische-im-casino-mlo-entfernt-erkl%C3%A4rung-download-mr-brown-casino/?postID=4284#post4284 
 - https://github.com/jwritz/s1lent_keybinds/tree/v0.1.1
+- https://github.com/jonassvensson4/jsfour-idcard 
+- https://github.com/Djamuras/EngineToggle 
