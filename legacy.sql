@@ -1902,3 +1902,11 @@ CREATE TABLE IF NOT EXISTS `epc_bolos` ( `id` int(11) NOT NULL UNIQUE auto_incre
 ALTER TABLE users
 ADD (`doges` int(11) NOT NULL DEFAULT '50',
 `winnings` longtext COLLATE utf8mb4_bin NULL);
+
+ALTER TABLE `users` 
+ADD COLUMN `hour` int(11) DEFAULT 0;
+
+INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES
+	('simcard', 'Simcard', 1, 0, 1),
+	('simcard_wish', 'Simcard', 1, 0, 1)
+;
