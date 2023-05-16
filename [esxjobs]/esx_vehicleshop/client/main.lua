@@ -830,3 +830,24 @@ CreateThread(function()
 end)
 
 if ESX.PlayerLoaded then PlayerManagement() end
+
+-- LUCKYWHEEL
+RegisterNetEvent("luckywheel:winCar")
+AddEventHandler("luckywheel:winCar", function() 
+
+    ESX.Game.SpawnVehicle("t20", { x = 933.29,y = -2.82, z = 78.76 }, 144.6, function (vehicle)
+        TaskWarpPedIntoVehicle(playerPed, vehicle, -1)
+
+        local newPlate     = GeneratePlate()
+        local vehicleProps = ESX.Game.GetVehicleProperties(vehicle)
+        vehicleProps.plate = newPlate
+        SetVehicleNumberPlateText(vehicle, newPlate)
+
+        TriggerServerEvent('esx_vehicleshop:setVehicleOwned', vehicleProps)
+
+        ESX.ShowNotification("Du hast das Auto gewonnen!") --translate this into your language 
+    end)
+
+    FreezeEntityPosition(playerPed, false)
+    SetEntityVisible(playerPed, true)
+end)
