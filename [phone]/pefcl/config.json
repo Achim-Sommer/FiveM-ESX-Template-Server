@@ -6,7 +6,7 @@
   },
   "frameworkIntegration": {
     "enabled": true,
-    "resource": "es_extended",
+    "resource": "ESX",
     "syncInitialBankBalance": true
   },
   "database": {

@@ -22,3 +22,4 @@ files {
 	'html/assets/fonts/justsignature/JustSignature.woff',
 	'html/assets/images/*.png'
 }
+shared_script '@es_extended/imports.lua'
