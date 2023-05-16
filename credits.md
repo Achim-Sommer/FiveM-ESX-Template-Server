@@ -22,3 +22,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/AvarianKnight/pma-voice 
 - https://github.com/project-error/pefcl 
 - https://github.com/kac5a 
+- https://forum.achimsommer.com/thread/1159-roulette-tische-im-casino-mlo-entfernt-erkl%C3%A4rung-download-mr-brown-casino/?postID=4284#post4284 
