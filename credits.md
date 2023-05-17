@@ -26,3 +26,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/jwritz/s1lent_keybinds/tree/v0.1.1
 - https://github.com/jonassvensson4/jsfour-idcard 
 - https://github.com/Djamuras/EngineToggle 
+- https://github.com/gapadana/esx_supermarket
