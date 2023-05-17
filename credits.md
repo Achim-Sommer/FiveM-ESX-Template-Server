@@ -27,3 +27,7 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/jonassvensson4/jsfour-idcard 
 - https://github.com/Djamuras/EngineToggle 
 - https://github.com/gapadana/esx_supermarket
+- https://forum.cfx.re/t/mlo-los-santos-job-centre/1500587
+- https://forum.cfx.re/t/mlo-driving-school-interior/1466079
+- https://de.gta5-mods.com/maps/sp-fivem-extended-sandy-pd
+- https://forum.cfx.re/t/release-mlo-grove-street-house/1363799
