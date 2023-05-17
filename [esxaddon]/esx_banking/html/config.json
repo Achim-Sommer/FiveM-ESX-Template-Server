@@ -1,0 +1,884 @@
+{
+  "lang": "DE",
+  "__comment": "On DYNAMIC_FORM_DATA  do not change 'componentName',  'elementID'!",
+  "EN": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "Close",
+        "bankTitle": "Fleeca Bank",
+        "mainExitButtonText": "Log out"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "Approve",
+        "inputPlaceholder": "Enter 4 digit...",
+        "title": "PIN CODE SETUP",
+        "description": "Here you can set or change the PIN code.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "Approve",
+        "inputPlaceholder": "Amount",
+        "title": "WITHDRAW",
+        "description": "Here you can withdraw your money from the bank.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "Approval",
+        "inputPlaceholder": "Amount",
+        "title": "DEPOSIT",
+        "description": "Here, you can deposit your money to the bank.",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "Transfer",
+        "inputPlaceholder": "Amount",
+        "inputPlaceholder2": "Player ID",
+        "title": "TRANSFER",
+        "description": "Here you can transfer your money to someone else."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "TRANSACTION HISTORY",
+        "description": "Here you can see your transaction history.",
+        "moreHistoryText": "Show more history",
+        "moreGraphText": "Show more graph"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "Enter PIN",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "Close"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "Fleeca Bank",
+        "closeButtonText": "Log out"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "Balance",
+      "your_money_desc": "Here you can see your current balance and cash.",
+      "your_money_cash_label": "Your cash",
+      "your_money_bank_label": "Your bank balance",
+      "withdraw": "WITHDRAW",
+      "deposit": "DEPOSIT",
+      "transfer": "TRANSFER",
+      "transferReceive": "RECEIVED TRANSFER",
+      "moneyFormat": "$__replaceData__",
+      "graphTitle": "Your balance",
+      "moreGraphTitle": "Big Graph",
+      "moreHistoryTitle": "Show more history",
+      "inputErrorTitle": "Data is incorrect",
+      "inputErrorMessage": "It cannot be empty or a value less than 1!",
+      "showPincodeErrorTitle": "PIN incorrect",
+      "showPincodeErrorMessage": "The pin must have at least 4 characters!",
+      "tableLang": {
+        "typeLabel": "Transaction type",
+        "transactionLabel": "Transaction Label",
+        "balanceLabel": "Balance",
+        "amountLabel": "Amount",
+        "timeLabel": "Time",
+        "searchInputPlaceholder": "Search ...",
+        "_comment": "tableFullLanguage options: English, Hungarian, Italian, Spanish, French, you can find here all lang: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "English"
+      }
+    }
+  },
+  "DE": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "Schließen",
+        "bankTitle": "Fleeca Bank",
+        "mainExitButtonText": "Abmelden"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "Bestätigen",
+        "inputPlaceholder": "4 Ziffern eingeben...",
+        "title": "PIN CODE EINRICHTEN",
+        "description": "Hier kannst du den PIN-Code einstellen oder ändern.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "Bestätigen",
+        "inputPlaceholder": "Betrag",
+        "title": "AUSZAHLEN",
+        "description": "Hier kannst du dein Geld bei der Bank abheben.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "Bestätigen",
+        "inputPlaceholder": "Betrag",
+        "title": "EINZAHLUNG",
+        "description": "Hier kannst du dein Geld bei der Bank einzahlen.",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "Überweisung",
+        "inputPlaceholder": "Betrag",
+        "inputPlaceholder2": "Empfänger ID",
+        "title": "ÜBERWEISUNG",
+        "description": "Hier kannst du dein Geld an jemand anderen überweisen."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "TRANSAKTIONSVERLAUF",
+        "description": "Hier kannst du deinen Transaktionsverlauf einsehen.",
+        "moreHistoryText": "Mehr zeigen",
+        "moreGraphText": "Mehr vom Graph anzeigen"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "PIN eingeben",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "Close"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "Fleeca Bank",
+        "closeButtonText": "Abmelden"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "Kontostand",
+      "your_money_desc": "Hier kannst du deinen aktuellen Kontostand und dein Bargeld sehen.",
+      "your_money_cash_label": "Dein Bargeld",
+      "your_money_bank_label": "Bankguthaben",
+      "withdraw": "AUSZAHLEN",
+      "deposit": "EINZAHLEN",
+      "transfer": "ÜBERWEISEN",
+      "transferReceive": "RECEIVED TRANSFER",
+      "moneyFormat": "$__replaceData__",
+      "graphTitle": "Dein guthaben",
+      "moreGraphTitle": "Großer Zeig mehr",
+      "inputErrorTitle": "Daten sind falsch",
+      "inputErrorMessage": "Es darf nicht leer sein oder einen Wert kleiner als 1 haben!",
+      "showPincodeErrorTitle": "PIN falsch",
+      "showPincodeErrorMessage": "Der Pin muss mindestens 4 Zeichen haben!",
+      "tableLang": {
+        "typeLabel": "Überweisungstyp",
+        "transactionLabel": "Transaktionslabel",
+        "balanceLabel": "Guthaben",
+        "amountLabel": "Betrag",
+        "timeLabel": "Zeit",
+        "searchInputPlaceholder": "Suchen ...",
+        "_comment": "tableFullLanguage options: English, German, Hungarian, Italian, Spanish, French, you can find here all lang: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "German"
+      }
+    }
+  },
+  "HU": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "Bezárás",
+        "bankTitle": "OTP BANK FELÜLET",
+        "mainExitButtonText": "Kijelentkezés"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "Jóváhagyás",
+        "inputPlaceholder": "Írj be 4 számot...",
+        "title": "PIN KÓD BEÁLLÍTÁS",
+        "description": "Itt tudod beállítani vagy cserélni pinkódodat.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "Jóváhagyás",
+        "inputPlaceholder": "Összeg",
+        "title": "PÉNZ KIVÉTEL",
+        "description": "Itt tudsz pénzt kivenni a számládról.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "Jóváhagyás",
+        "inputPlaceholder": "Összeg",
+        "title": "PÉNZ BETÉTEL",
+        "description": "Itt tudsz pénzt be tenni a számládra.",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "Utalás",
+        "inputPlaceholder": "Összeg",
+        "inputPlaceholder2": "Játékos azonosító",
+        "title": "UTALÁS",
+        "description": "Itt tudsz pénzt utalni egy adott játékosnak."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "SZÁMLA TÖRTÉNET",
+        "description": "Itt látod a számla történeted.",
+        "moreHistoryText": "Több számla történet mutatása",
+        "moreGraphText": "Nagyított diagram mutatása"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "Írd be a PIN kódod",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "Bezárás"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "OTP BANK",
+        "closeButtonText": "Kijelentkezés"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "Egyenleged",
+      "your_money_desc": "Itt láthatod a jelenlegi egyenleged és készpénzed.",
+      "your_money_cash_label": "Készpénz",
+      "your_money_bank_label": "Banki egyenleged",
+      "withdraw": "KIVÉTEL",
+      "deposit": "BETÉTEL",
+      "transfer": "UTALÁS",
+      "transferReceive": "KAPOTT UTALÁS",
+      "moneyFormat": "__replaceData__ Ft",
+      "graphTitle": "Egyenleged",
+      "moreGraphTitle": "Nagyított grafikon",
+      "moreHistoryTitle": "Teljes számla történet",
+      "inputErrorTitle": "Adat hibás",
+      "inputErrorMessage": "Nem lehet üres vagy érték kisebb mint 1!",
+      "showPincodeErrorTitle": "PIN hibás",
+      "showPincodeErrorMessage": "Legalább 4 karakternek kell lennie a pinnek!",
+      "tableLang": {
+        "typeLabel": "Tranzakció típus",
+        "transactionLabel": "Tranzakció leírása",
+        "balanceLabel": "Egyenleged",
+        "amountLabel": "Összeg",
+        "timeLabel": "Idő",
+        "searchInputPlaceholder": "Kereső ...",
+        "_comment": "tableFullLanguage options: English, Hungarian, Italian, Spanish, French, you can find here all lang: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "Hungarian"
+      }
+    }
+  },
+  "IT": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "Close",
+        "bankTitle": "Fleeca Bank",
+        "mainExitButtonText": "Disconnettersi"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "conferma",
+        "inputPlaceholder": "4 cifre...",
+        "title": "IMPOSTAZIONE CODICE PIN",
+        "description": "Qui puoi impostare o modificare il codice PIN.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "conferma",
+        "inputPlaceholder": "Quantità",
+        "title": "RITIRARE",
+        "description": "Qui puoi prelevare i tuoi soldi dalla banca.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "conferma",
+        "inputPlaceholder": "Quantità",
+        "title": "DEPOSITARE",
+        "description": "Qui puoi depositare i tuoi soldi in banca.",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "trasferisci",
+        "inputPlaceholder": "Quantità",
+        "inputPlaceholder2": "Giocatore ID",
+        "title": "TRASFERIMENTO",
+        "description": "Qui puoi trasferire i tuoi soldi a qualcun altro."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "CRONOLOGIA DELLE TRANSAZIONI",
+        "description": "Qui puoi vedere la cronologia delle tue operazioni.",
+        "moreHistoryText": "Mostra più cronologia",
+        "moreGraphText": "Mostra tutto il grafico"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "Enter PIN",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "Close"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "Fleeca Bank",
+        "closeButtonText": "Disconnettersi"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "saldo",
+      "your_money_desc": "qui puoi vedere il saldo attuale e contanti.",
+      "your_money_cash_label": "i tuoi soldi",
+      "your_money_bank_label": "il tuo saldo bancario",
+      "withdraw": "RITIRARE",
+      "deposit": "DEPOSITARE",
+      "transfer": "TRASFERIMENTO",
+      "transferReceive": "TRASFERIMENTO RICEVUTO",
+      "moneyFormat": "$__replaceData__",
+      "graphTitle": "Il tuo bilancio",
+      "moreGraphTitle": "grafico",
+      "moreHistoryTitle": "Mostra la cronologia",
+      "inputErrorTitle": "I dati non sono corretti",
+      "inputErrorMessage": "Non può essere vuoto o un valore inferiore a 1!",
+      "showPincodeErrorTitle": "PIN errato",
+      "showPincodeErrorMessage": "Il pin deve contenere almeno 4 caratteri!",
+      "tableLang": {
+        "typeLabel": "Tipo di transazione",
+        "transactionLabel": "Transaction Label",
+        "balanceLabel": "bilancio",
+        "amountLabel": "quantità",
+        "timeLabel": "tempo",
+        "searchInputPlaceholder": "Cerca ...",
+        "_comment": "tabella Opzioni complete della lingua: inglese, ungherese, italiana, spagnolo, francese, puoi trovare qui tutte le lingue: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "Italian"
+      }
+    }
+  },
+  "ES": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "Cerrar",
+        "bankTitle": "Banco Fleeca",
+        "mainExitButtonText": "Cerrar sesión"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "Aprobar",
+        "inputPlaceholder": "Introduzca 4 dígitos...",
+        "title": "CONFIGURACIÓN DEL PIN",
+        "description": "Aquí puede establecer o cambiar el código PIN.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "Aprobar",
+        "inputPlaceholder": "Importe",
+        "title": "RETIRAR",
+        "description": "Aquí puede retirar su dinero del banco.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "Aprobación",
+        "inputPlaceholder": "Importe",
+        "title": "DEPOSITO",
+        "description": "Aquí puede ingresar su dinero en el banco.",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "Transfererir",
+        "inputPlaceholder": "Importe",
+        "inputPlaceholder2": "ID del jugador",
+        "title": "TRANSFERENCIA",
+        "description": "Aquí puedes transferir tu dinero a otra persona."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "HISTORIAL DE TRANSACCIONES",
+        "description": "Aquí puede ver su historial de transacciones.",
+        "moreHistoryText": "Mostrar más historial",
+        "moreGraphText": "Mostrar el gráfico"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "Introducir PIN",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "Close"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "Banco Fleeca",
+        "closeButtonText": "Cerrar sesión"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "Saldo",
+      "your_money_desc": "Aquí puedes ver tu saldo actual y tu efectivo.",
+      "your_money_cash_label": "Su dinero en mano",
+      "your_money_bank_label": "Su saldo bancario",
+      "withdraw": "RETIRAR",
+      "deposit": "DEPÓSITO",
+      "transfer": "TRANSFERENCIA",
+      "transferReceive": "TRANSFERENCIA RECIBIDA",
+      "moneyFormat": "$__replaceData__",
+      "graphTitle": "Su saldo",
+      "moreGraphTitle": "Gráfico grande",
+      "moreHistoryTitle": "Mostrar más historial",
+      "inputErrorTitle": "Data is incorrect",
+      "inputErrorMessage": "No puede estar vacío ni tener un valor inferior a 1.",
+      "showPincodeErrorTitle": "PIN incorrecto",
+      "showPincodeErrorMessage": "El pin debe tener al menos 4 caracteres.",
+      "tableLang": {
+        "typeLabel": "Tipo de transacción",
+        "transactionLabel": "Transaction Label",
+        "balanceLabel": "Saldo",
+        "amountLabel": "Importe",
+        "timeLabel": "Tiempo",
+        "searchInputPlaceholder": "Buscar...",
+        "_comment": "tableFullLanguage options: English, Hungarian, Italiano, Spanish, French, you can find here all lang: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "Spanish"
+      }
+    }
+  },
+  "FR": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "Fermer",
+        "bankTitle": "Banque Fleeca",
+        "mainExitButtonText": "Déconnexion"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "Valider",
+        "inputPlaceholder": "Entrez 4 chiffres...",
+        "title": "CONFIGURATION DU PIN",
+        "description": "Ici vous pouvez définir ou changer votre code PIN.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "Valider",
+        "inputPlaceholder": "Montant",
+        "title": "RETIRER",
+        "description": "Ici vous pouvez retirer votre argent de la banque.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "Valider",
+        "inputPlaceholder": "Montant",
+        "title": "DÉPOSER",
+        "description": "Ici, vous pouvez déposer votre argent à la banque.",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "Transférer",
+        "inputPlaceholder": "Montant",
+        "inputPlaceholder2": "ID du joueur",
+        "title": "TRANSFERT",
+        "description": "Ici, vous pouvez transférer votre argent à quelqu'un d'autre."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "HISTORIQUE DES TRANSACTIONS",
+        "description": "Ici, vous pouvez voir votre historique de transactions.",
+        "moreHistoryText": "Afficher plus d'historique",
+        "moreGraphText": "Afficher plus de graphique"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "Entrer le code PIN",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "Fermer"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "Banque Fleeca",
+        "closeButtonText": "Se déconnecter"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "Solde",
+      "your_money_desc": "Ici, vous pouvez voir votre solde actuel et votre argent en espèces.",
+      "your_money_cash_label": "Votre argent en espèces",
+      "your_money_bank_label": "Votre solde bancaire",
+      "withdraw": "RETIRER",
+      "deposit": "DÉPOSER",
+      "transfer": "TRANSFERT",
+      "transferReceive": "TRANSFERT REÇU",
+      "moneyFormat": "$__replaceData__",
+      "graphTitle": "Votre solde",
+      "moreGraphTitle": "Grand graphique",
+      "moreHistoryTitle": "Afficher plus",
+      "inputErrorTitle": "Les données sont incorrectes",
+      "inputErrorMessage": "Il ne peut pas être vide ou avoir une valeur inférieure à 1",
+      "showPincodeErrorTitle": "Code PIN incorrect",
+      "showPincodeErrorMessage": "Le code PIN doit avoir au moins 4 caractères!",
+      "tableLang": {
+        "typeLabel": "Type de transaction",
+        "transactionLabel": "Transaction Label",
+        "balanceLabel": "Solde",
+        "amountLabel": "Montant",
+        "timeLabel": "Temps",
+        "searchInputPlaceholder": "Rechercher ...",
+        "_comment": "Langue complète: Anglais, Hongrois, Italien, Espagnole Français, vous pouvez trouver ici toutes les langues: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "French"
+      }
+    }
+  },
+  "NL": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "Sluit",
+        "bankTitle": "Fleeca Bank",
+        "mainExitButtonText": "Log uit"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "Goedkeuren",
+        "inputPlaceholder": "Voer 4 cijfers in...",
+        "title": "PINCODE INSTELLEN",
+        "description": "Hier kun je je pincode instellen of wijzigen.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "Opnemen",
+        "inputPlaceholder": "Bedrag",
+        "title": "OPNEMEN",
+        "description": "Hier kun je geld opnemen van je bank account.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "Storten",
+        "inputPlaceholder": "Bedrag",
+        "title": "STORTEN",
+        "description": "Hier kun je geld storten op je bank account.",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "Overschrijven",
+        "inputPlaceholder": "Bedrag",
+        "inputPlaceholder2": "Speler ID",
+        "title": "OVERSCHRIJVEN",
+        "description": "Hier kun je geld overschrijven naar iemand anders zijn bank account."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "TRANSACTIE GESCHIEDENIS",
+        "description": "Hier kun je alle transacties zien die op je bank account zijn vericht.",
+        "moreHistoryText": "Laat meer geschiedenis zien",
+        "moreGraphText": "Laat meer van de grafiek zien"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "Voer pincode in",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "Sluit"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "Fleeca Bank",
+        "closeButtonText": "Log uit"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "Saldo",
+      "your_money_desc": "Hier kun je je saldo en je cash zien.",
+      "your_money_cash_label": "Jouw cash",
+      "your_money_bank_label": "Jouw bank saldo",
+      "withdraw": "OPNEMEN",
+      "deposit": "STORTEN",
+      "transfer": "OVERSCHRIJVEN",
+      "transferReceive": "ONTVANGEN ONVERSCHRIJVING",
+      "moneyFormat": "€__replaceData__",
+      "graphTitle": "Jouw saldo",
+      "moreGraphTitle": "Grote grafiek",
+      "moreHistoryTitle": "Laat meer geschiedenis zien",
+      "inputErrorTitle": "Data is niet correct",
+      "inputErrorMessage": "Deze input kan niet leeg zijn of een waarde minder dan 1 !",
+      "showPincodeErrorTitle": "PIN onjuist",
+      "showPincodeErrorMessage": "Je pincode moet tenminste 4 karakters hebben!",
+      "tableLang": {
+        "typeLabel": "Transactie type",
+        "transactionLabel": "Transaction Label",
+        "balanceLabel": "Saldo",
+        "amountLabel": "Bedrag",
+        "timeLabel": "Tijd",
+        "searchInputPlaceholder": "Zoeken ...",
+        "_comment": "tableFullLanguage options: English, Hungarian, Italian, Spanish, French, you can find here all lang: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "Nederlands"
+      }
+    }
+  },
+  "zh-CN": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "关闭 ❌",
+        "bankTitle": "花园银行",
+        "mainExitButtonText": "注销"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "验证密码",
+        "inputPlaceholder": "请输入4位数字的密码...",
+        "title": "修改PIN密码",
+        "description": "在这里您可以编辑/更改您的密码.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "确认",
+        "inputPlaceholder": "金额数量",
+        "title": "提现",
+        "description": "在这里您可以从银行取款.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "确认",
+        "inputPlaceholder": "金额数量",
+        "title": "存款",
+        "description": "在这里您可以将钱存入银行.",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "转账",
+        "inputPlaceholder": "金额数量",
+        "inputPlaceholder2": "玩家服务器ID",
+        "title": "转账",
+        "description": "在这里您可以将钱转账给他人."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "交易记录",
+        "description": "在这里您可以查看您的交易记录.",
+        "moreHistoryText": "显示更多记录",
+        "moreGraphText": "显示更多图表"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "输入 PIN 密码",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "关闭 ❌"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "花园银行-ATM",
+        "closeButtonText": "注销"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "我的信息",
+      "your_money_desc": "在这里您可以看到您当前的余额和现金.",
+      "your_money_cash_label": "您的现金",
+      "your_money_bank_label": "您的银行余额",
+      "withdraw": "提现",
+      "deposit": "存款",
+      "transfer": "转账",
+      "transferReceive": "已收到转账",
+      "moneyFormat": "$__replaceData__",
+      "graphTitle": "您的余额",
+      "moreGraphTitle": "详情页",
+      "moreHistoryTitle": "详情页",
+      "inputErrorTitle": "数据不正确",
+      "inputErrorMessage": "无法为空空或值小于 1",
+      "showPincodeErrorTitle": "输入的 PIN 密码不正确",
+      "showPincodeErrorMessage": "PIN 码必须至少有 4 个字符!",
+      "tableLang": {
+        "typeLabel": "交易类型",
+        "transactionLabel": "Transaction Label",
+        "balanceLabel": "我的信息",
+        "amountLabel": "数量",
+        "timeLabel": "时间",
+        "searchInputPlaceholder": "研究 ...",
+        "_comment": "Langue complète: Anglais, Hongrois, Italien, Espagnole Français, vous pouvez trouver ici toutes les langues: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "Chinese"
+      }
+    }
+  },
+  "SR": {
+    "DYNAMIC_FORM_DATA": [
+      {
+        "componentName": "moreGraph",
+        "elementID": "#wrapper",
+        "title": "",
+        "closeButtonText": "Zatvori",
+        "bankTitle": "Fleeca Banka",
+        "mainExitButtonText": "Log out"
+      },
+      {
+        "elementID": "#cpincode",
+        "name": "cpincode",
+        "buttonText": "Potvrdi",
+        "inputPlaceholder": "Unesi 4 cifre...",
+        "title": "PIN KOD",
+        "description": "Ovde možete postaviti ili izmeniti PIN kod.",
+        "type": "password"
+      },
+      {
+        "elementID": "#withdraw",
+        "name": "withdraw",
+        "buttonText": "Potvrdi",
+        "inputPlaceholder": "Iznos",
+        "title": "PODIGNI",
+        "description": "Ovde možete podići novac sa vašeg računa.",
+        "type": "number"
+      },
+      {
+        "elementID": "#deposit",
+        "name": "deposit",
+        "buttonText": "Potvrdi",
+        "inputPlaceholder": "Iznos",
+        "title": "UPLATA",
+        "description": "Ovde možete uplatiti novac na vaš račun",
+        "type": "number"
+      },
+      {
+        "elementID": "#transfer",
+        "name": "transfer",
+        "buttonText": "Transfer",
+        "inputPlaceholder": "Iznos",
+        "inputPlaceholder2": "ID Osobe",
+        "title": "TRANSFER",
+        "description": "Ovde možete poslati novac nekome."
+      },
+      {
+        "componentName": "trans",
+        "elementID": "#third-column",
+        "title": "ISTORIJA TRANSAKCIJA",
+        "description": "Ovde možete videti istoriju transakcija.",
+        "moreHistoryText": "Prikaži više",
+        "moreGraphText": "Prikaži više grafikona"
+      },
+      {
+        "componentName": "pincodePanel",
+        "elementID": "#wrapper",
+        "title": "Unesite PIN",
+        "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+        "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+        "closeButtonText": "Zatvori"
+      },
+      {
+        "componentName": "atmComponent",
+        "elementID": "#wrapper",
+        "title": "Fleeca Banka",
+        "closeButtonText": "Log out"
+      }
+    ],
+    "LAUNGAGE": {
+      "your_money_title": "Balans",
+      "your_money_desc": "Ovde možete videti iznos novca na vašem računu i kod vas",
+      "your_money_cash_label": "Vaš novac",
+      "your_money_bank_label": "Vaš novac na računu",
+      "withdraw": "PODIGNI",
+      "deposit": "UPLATI",
+      "transfer": "TRANSFER",
+      "transferReceive": "PRIMLJEN TRANSFER",
+      "moneyFormat": "$__replaceData__",
+      "graphTitle": "Vaš balansa",
+      "moreGraphTitle": "Veliki Grafikon",
+      "moreHistoryTitle": "Prikaži više",
+      "inputErrorTitle": "Podaci su nevažeći",
+      "inputErrorMessage": "Ne može biti prazno ili iznos manji od 1!",
+      "showPincodeErrorTitle": "PIN netačan",
+      "showPincodeErrorMessage": "PIN mora imati 4 karaktera!",
+      "tableLang": {
+        "typeLabel": "Tip transakcije",
+        "balanceLabel": "Balans",
+        "amountLabel": "Iznos",
+        "timeLabel": "Vreme",
+        "searchInputPlaceholder": "Pretraži ...",
+        "_comment": "tableFullLanguage options: English, Hungarian, Italian, Spanish, French, Serbian, you can find here all lang: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+        "tableFullLanguage": "Serbian"
+      }
+    }
+  }
+}
