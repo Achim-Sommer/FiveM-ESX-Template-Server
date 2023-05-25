@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/user/677681b3-49a8-4ab2-a967-cffb857c9d96/project/80e53313-0c53-4d3c-8616-80b7084fc399.svg)](https://wakatime.com/badge/user/677681b3-49a8-4ab2-a967-cffb857c9d96/project/80e53313-0c53-4d3c-8616-80b7084fc399)
 # Template Server ESX Legacy by ACHIM!
 
 Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perfekten Start in die Welt von FiveM zu bieten. Hier ist ein angepasster FiveM ESX Legacy Server. 
