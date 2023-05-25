@@ -2,7 +2,7 @@ Config                 = {}
 Config.DrawDistance    = 10.0
 Config.MaxErrors       = 5
 Config.SpeedMultiplier = 3.6
-Config.Locale = GetConvar('esx:locale', 'en')
+Config.Locale = GetConvar('esx:locale', 'de')
 
 Config.Prices = {
 	dmv         = 500,
@@ -26,7 +26,7 @@ Config.SpeedLimits = {
 Config.Zones = {
 
 	DMVSchool = {
-		Pos   = {x = 239.471, y = -1380.960, z = 32.741},
+		Pos   = {x = 215.9, y = -1398.58, z = 29.6},
 		Size  = {x = 1.5, y = 1.5, z = 1.0},
 		Color = {r = 204, g = 204, b = 0},
 		Type  = 1
