@@ -1,0 +1,121 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+	<div class="full-screen">
+		<div class="question-container">
+			<!-- header -->
+			<div class="header">
+				<h1>Fahrschule</h1>
+			</div>
+			<!-- home -->
+			<div class="body home">
+				<div class="content">
+					<!-- ICI BREVE PRESENTATION -->
+					<center>
+						<img src="dmv.png" class="logo">
+						<br>
+						<p class="bold-text">Willkommen zur Fahrschule!
+					</center>
+					<br>
+					<center>Alle Bürger von Los Santos müssen diesen Test bestehen um Fahren zu können!
+						<br>Nehme dir zeit, und beantworte keine Fragen Zufällig.
+						<br>
+						<br> Theorie Test
+						<br> - Der Theorie Test kostet 200€, das Geld wird dir wenn du den Test nicht bestehst rückerstattet!
+						<br> - Habe keine angst, die Fahrschule akzeptiert Kreditkarten jedoch gehe nicht zu weit in das Minus.
+						<br> - Wenn du den Test nicht bestehst, kannst du diesen nicht sofort wiederholen! Du musst den Test an einem 
+						anderem Datum wiederholen.
+						<br>
+						<br> Auto Führerschein
+						<br> - Der Autoführerschein kostet 500€ und wird nicht zurückerstattet genau wie bei dem Theorie Test.
+						<br> - Stelle sicher du bleibst aufmerksam, wenn du am Fahren bist und baue keine Unfälle!</p>
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnQuestion">Start</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Fortschritt</h2>
+					<progress class="progression" value="0" max="10">
+				</div>
+			</div>
+			<!-- Question-->
+			<div class="body questionnaire-container">
+				<div class="content">
+					<h2 id="questionNumero"></h2>
+					<p id="question"></p>
+					<form class="form" id="question-form">
+						<div>
+							<input type="radio" name="question" id="answerA" value="A">
+							<label class="answerA"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerB" value="B">
+							<label class="answerB"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerC" value="C">
+							<label class="answerC"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerD" value="D">
+							<label class="answerD"></label>
+						</div>
+						<button type="submit" id="submit" class="submit">Nächste Frage</button>
+					</form>
+				</div>
+				<div class="barre-progression">
+					<h2>Fortschritt</h2>
+					<progress class="progression" value="0" max="10">
+				</div>
+			</div>
+			<!-- Results -->
+			<div class="body resultGood">
+				<div class="content">
+					<center>
+						<p class="bold-text">Gute Arbeit!</p>
+						<br>
+						<br>Du hast den Test bestanden!
+						<br>
+						<br>Du kannst dieses Fenster nun schließen, und deine Prüfungen beginnen!
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnClose">schließen</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Fortschritt</h2>
+					<progress class="progression" value="10" max="10">
+				</div>
+			</div>
+			<div class="body resultBad">
+				<div class="content">
+					<center>
+						<p class="bold-text">Nicht bestanden</p>
+						<br>
+						<br> Du warst nicht bereit für den Test...
+						<br> Versuche es Später erneut!
+						<br>
+						<br>
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnKick">schließen</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Fortschritt</h2>
+					<progress class="progression" value="10" max="10">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="questions.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+
+</body>

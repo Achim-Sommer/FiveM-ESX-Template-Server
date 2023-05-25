@@ -1,0 +1,119 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+	<div class="full-screen">
+		<div class="question-container">
+			<!-- header -->
+			<div class="header">
+				<h1>Škola Vožnje</h1>
+			</div>
+			<!-- home -->
+			<div class="body home">
+				<div class="content">
+					<!-- ICI BREVE PRESENTATION -->
+					<center>
+						<img src="dmv.png" class="logo">
+						<br>
+						<p class="bold-text">Dobrodošli u Auto Školu
+					</center>
+					<br>
+					<center>Svi građani moraju proći testove pre nego što mogu da voze.
+						<br>Odvojite vremena i odgovorite zdravorazumski na pitanja, nemojte odgovarati nasumično.
+						<br>
+						<br> Test Teorije
+						<br> - Test teorije košta 200$ i novac vam neće biti vraćen ako padnete.
+						<br> - Auto Škola prihvata i plaćanja kreditnim karticama.
+						<br> - Ako padnete test, ne možete odmah polagati ponovo, morate sačekati da prođe neko vreme.
+						<br>
+						<br> Test Vožnje
+						<br> - Test vožnje košta 500$ i novac vam takođe neće biti vraćen ako padnete.
+						<br> - Ostanite fokusirani tokom vožnje!</p>
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnQuestion">Započni</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Napredak</h2>
+					<progress class="progression" value="0" max="10">
+				</div>
+			</div>
+			<!-- Question-->
+			<div class="body questionnaire-container">
+				<div class="content">
+					<h2 id="questionNumero"></h2>
+					<p id="question"></p>
+					<form class="form" id="question-form">
+						<div>
+							<input type="radio" name="question" id="answerA" value="A">
+							<label class="answerA"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerB" value="B">
+							<label class="answerB"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerC" value="C">
+							<label class="answerC"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerD" value="D">
+							<label class="answerD"></label>
+						</div>
+						<button type="submit" id="submit" class="submit">Sledeće Pitanje</button>
+					</form>
+				</div>
+				<div class="barre-progression">
+					<h2>Napredak</h2>
+					<progress class="progression" value="0" max="10">
+				</div>
+			</div>
+			<!-- Results -->
+			<div class="body resultGood">
+				<div class="content">
+					<center>
+						<p class="bold-text">Čestitamo!</p>
+						<br>
+						<br>Uradili ste dobro test.
+						<br>
+						<br>Možete zatvoriti ovaj prozor i preći na polaganje vožnje.
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnClose">Zatvori</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Napredak</h2>
+					<progress class="progression" value="10" max="10">
+				</div>
+			</div>
+			<div class="body resultBad">
+				<div class="content">
+					<center>
+						<p class="bold-text">Vi ste pali!</p>
+						<br>
+						<br>Niste bili spremni za test, pokušajte ponovo kasnije...
+						<br>
+						<br>
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnKick">Zatvori</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Napredak</h2>
+					<progress class="progression" value="10" max="10">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="questions.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+
+</body>
