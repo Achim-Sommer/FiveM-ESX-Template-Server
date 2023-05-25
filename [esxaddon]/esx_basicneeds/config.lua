@@ -1,6 +1,6 @@
 Config = {}
-Config.Locale = GetConvar('esx:locale', 'en')
-Config.Visible = true
+Config.Locale = GetConvar('esx:locale', 'de')
+Config.Visible = false
 
 Config.Items = {
 	["bread"] = {
