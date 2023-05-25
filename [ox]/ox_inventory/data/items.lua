@@ -6403,4 +6403,28 @@ return {
 		stack = true,
 		close = true,
 	},
+	
+	['metal'] = {
+		label = 'Metal',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = nil
+	},
+	
+	['rope'] = {
+		label = 'Seil',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = nil
+	},
+	
+	['shovel'] = {
+		label = 'Schaufel',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = nil
+	},
 }
