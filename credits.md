@@ -35,3 +35,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/overextended/ox_target
 - https://github.com/overextended/ox_lib 
 - https://github.com/xDreamLand/dr-scratching 
+- https://github.com/PickleModifications/pickle_prisons 
