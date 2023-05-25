@@ -4,9 +4,6 @@ client_scripts {
     'client.lua'
 }
 
-files {
-	'casino_timecyc.xml'
-}
 
 data_file 'TIMECYCLEMOD_FILE' 'casino_timecyc.xml'
 
