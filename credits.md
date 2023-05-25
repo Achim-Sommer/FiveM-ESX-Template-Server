@@ -31,3 +31,6 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://forum.cfx.re/t/mlo-driving-school-interior/1466079
 - https://de.gta5-mods.com/maps/sp-fivem-extended-sandy-pd
 - https://forum.cfx.re/t/release-mlo-grove-street-house/1363799
+- https://github.com/overextended/ox_inventory 
+- https://github.com/overextended/ox_target
+- https://github.com/overextended/ox_lib 
