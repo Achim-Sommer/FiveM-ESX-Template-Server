@@ -414,6 +414,6 @@ ALTER TABLE `users` ADD COLUMN `pincode` INT NULL;
 
 INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 	('metal', 'Metal', 1),
-	('rope', 'Rope', 1),
-	('shovel', 'Shovel', 1)
+	('rope', 'Seil', 1),
+	('shovel', 'Schaufel', 1)
 ;
