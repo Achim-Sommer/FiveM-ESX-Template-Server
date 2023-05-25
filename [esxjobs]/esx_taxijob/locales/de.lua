@@ -1,4 +1,4 @@
-Locales['en'] = {
+Locales['de'] = {
   -- cloakroom
   ['cloakroom_menu'] = 'Kleidungsmenu',
   ['cloakroom_prompt'] = 'Drücke ~INPUT_CONTEXT~ um das ~y~Kleidungsmenü~s~ zu öffnen.',
@@ -42,7 +42,7 @@ Locales['en'] = {
   ['quantity'] = 'Anzahl',
   ['quantity_invalid'] = 'Ungültige Anzahl!!',
   ['inventory'] = 'Inventar',
-  ['taxi_client'] = 'Taxi Client',
+  ['taxi_client'] = 'Taxi Kunde',
   ['have_withdrawn'] = 'Du zahlst aus ~y~x%s~s~ ~b~%s~s~€',
   ['have_deposited'] = 'Du zahlst ein ~y~x%s~s~ ~b~%s~s~€',
   ['player_cannot_hold'] = 'Du hast ~r~nicht~s~ genügend ~y~freien platz~s~ in deinem Inventar!',
