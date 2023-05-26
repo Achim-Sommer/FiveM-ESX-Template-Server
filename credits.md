@@ -8,6 +8,19 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://shop.achimsommer.com/package/5240886
 - https://www.msk-scripts.de/package/5301831
 - https://github.com/esx-framework
+- https://github.com/esx-framework/esx_mechanicjob
+- https://github.com/esx-framework/esx_dmvschool
+- https://github.com/esx-framework/esx_basicneeds
+- https://github.com/esx-framework/esx_banking
+- https://github.com/esx-framework/esx_vehicleshop
+- https://github.com/esx-framework/esx_taxijob
+- https://github.com/esx-framework/esx_society
+- https://github.com/esx-framework/esx_ambulancejob
+- https://github.com/esx-framework/esx_optionalneeds
+- https://github.com/esx-framework/esx_policejob
+- https://github.com/esx-framework/esx_addonaccount
+- https://github.com/esx-framework/esx_billing
+- https://github.com/esx-framework/esx_garage
 - https://github.com/overextended/oxmysql
 - https://forum.cfx.re/t/the-diamond-casino-enterable-mlo/832067 
 - https://www.youtube.com/watch?v=zadmfcqsuYo
@@ -36,3 +49,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/overextended/ox_lib 
 - https://github.com/xDreamLand/dr-scratching 
 - https://github.com/PickleModifications/pickle_prisons 
+- https://github.com/renzuzu/renzu_tuners 
