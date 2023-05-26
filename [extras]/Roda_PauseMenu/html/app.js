@@ -22,7 +22,7 @@ window.addEventListener('message', function(event) {
       break;
 
       case 'updatePlayers': 
-          $('.footer h2').text(`Connected Players ${v.total}/${v.max}`)
+          $('.footer h2').text(`Verbundene Spieler ${v.total}/${v.max}`)
       break;
   }
 })
@@ -64,11 +64,11 @@ $(function(){
     })
 
     $('#discordinv').click(function(){
-        window.invokeNative('openUrl', 'https://discord.gg/veDufrHnAn')
+        window.invokeNative('openUrl', 'https://forum.achimsommer.com')
     })
 
     $('#tebexshop').click(function(){
-      window.invokeNative('openUrl', 'https://roda.tebex.io/')
+      window.invokeNative('openUrl', 'https://shop.achimsommer.com')
     })
 })
 
