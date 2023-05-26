@@ -6159,7 +6159,7 @@ return {
 		close = true,
 		client = {
 		
-			event = 'dr-scratching:nuiOpenCard'
+			event = 'dr-scratching:isActiveCooldown'
 	
 		}
 	},
