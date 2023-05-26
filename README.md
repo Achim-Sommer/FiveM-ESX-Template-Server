@@ -4,6 +4,8 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 
 # Entwicklungszeit aktuell:
 [![wakatime](https://wakatime.com/badge/user/677681b3-49a8-4ab2-a967-cffb857c9d96/project/80e53313-0c53-4d3c-8616-80b7084fc399.svg)](https://wakatime.com/badge/user/677681b3-49a8-4ab2-a967-cffb857c9d96/project/80e53313-0c53-4d3c-8616-80b7084fc399)
+
+Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bugs melden. Viele geplante Funktionen fehlen noch, kommen aber nach und nach rein.
 -----------------------------------------
 # FiveM Server mieten oder Lifetime kaufen!
 - https://zap-hosting.com/ServerFiveM
