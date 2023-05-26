@@ -3,7 +3,7 @@ Config = {
 	versionCheck = true,
 
 	-- Enable support for ox_target
-	ox_target = true,
+	ox_target = false,
 
 	/*
 	* Show or hide gas stations blips
