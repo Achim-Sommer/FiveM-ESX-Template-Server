@@ -6157,6 +6157,11 @@ return {
 		weight = 1,
 		stack = true,
 		close = true,
+		client = {
+		
+			event = 'dr-scratching:nuiOpenCard'
+	
+		}
 	},
 
 	["secure_card"] = {

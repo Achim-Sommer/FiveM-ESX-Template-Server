@@ -8,9 +8,8 @@ CreateThread(function()
   end 
 end)
 
-ox_inventory.RegisterUsableItem('scratch_ticket', function(source)
-  local xPlayer = ox_inventory.GetPlayerFromId(source)
-  print(('%s hat gerade ein Rubbellos benutzt.'):format(xPlayer.getName()))
+ESX.RegisterUsableItem('scratch_ticket', function(source)
+  DebugPrint(('%s just used a scratching ticket.'):format(GetPlayerName(source)))
   TriggerClientEvent("dr-scratching:isActiveCooldown", source)
 end)
 
