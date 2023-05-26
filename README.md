@@ -10,9 +10,9 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 - 20% Rabatt Code: GermanGaming
 
 # Zusatzinhalte:
-- Support:
-- Support & kleines Addon Pack:
-- Support & großes Addon Pack: 
+- Support: https://shop.achimsommer.com
+- Support & kleines Addon Pack: https://shop.achimsommer.com
+- Support & großes Addon Pack: https://shop.achimsommer.com
 
 # Social-Media
 
