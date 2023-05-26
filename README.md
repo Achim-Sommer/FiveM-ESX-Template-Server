@@ -9,6 +9,11 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 - https://zap-hosting.com/ServerFiveM
 - 20% Rabatt Code: GermanGaming
 
+# Zusatzinhalte:
+- Support:
+- Support & kleines Addon Pack:
+- Support & großes Addon Pack: 
+
 # Social-Media
 
 - FiveM Forum: https://forum.achimsommer.com
