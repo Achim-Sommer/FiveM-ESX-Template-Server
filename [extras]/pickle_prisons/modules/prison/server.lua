@@ -116,6 +116,14 @@ function UnjailPlayer(source, breakout)
     TriggerClientEvent("pickle_prisons:unjailPlayer", source, data)
 end
 
+function UpdatePrisonTime(source, time)
+    local identifier = GetIdentifier(source)
+    MySQL.Async.execute("UPDATE pickle_prisons SET time=@time WHERE identifier=@identifier", {
+        ["@identifier"] = identifier,
+        ["@time"] = time,
+    })
+end
+
 RegisterCallback("pickle_prisons:canBreakout", function(source, cb, index)
     if Breakouts[index] then return cb(false) end
     local required = Config.Breakout.required
@@ -197,52 +205,6 @@ RegisterNetEvent("pickle_prisons:breakout", function()
     ShowNotification(source, _L("breakout_self"))
 end)
 
-AddEventHandler("playerDropped", function()
-    local source = source
-    local identifier = GetIdentifier(source)
-    MySQL.Async.execute("UPDATE pickle_prisons SET time=@time WHERE identifier=@identifier", {
-        ["@identifier"] = identifier,
-        ["@time"] = Prisoners[source].time,
-    })
-end)
-
-CreateThread(function()
-    Wait(1000)
-    while true do
-        for source,v in pairs(Prisoners) do 
-            Prisoners[source].time = Prisoners[source].time - 1
-            if Prisoners[source].time <= 0 then 
-                UnjailPlayer(source)
-            else 
-                SetPlayerMetadata(source, "injail", Prisoners[source].time)
-            end
-        end
-        Wait(60000)
-    end
-end)
-
-RegisterCommand("jailstatus", function(source, args, raw)
-    local target = tonumber(args[1]) or source
-    local prisoner = Prisoners[target]
-    if not prisoner then 
-        return ShowNotification(source, _L("not_prison", target))
-    else
-        local prison = Config.Prisons[prisoner.index]
-        return ShowNotification(source, _L("in_prison", target, prisoner.time,  prison.label))
-    end
-end)
-
-RegisterCommand("jail", function(source, args, raw)
-    local target = tonumber(args[1])
-    local time = tonumber(args[2])
-    JailEvent(source, target, time, args[3])
-end)
-
-RegisterCommand("unjail", function(source, args, raw)
-    local target = tonumber(args[1])
-    UnjailEvent(source, target)
-end)
-
 RegisterNetEvent("pickle_prisons:jailPlayer", function(target, time, index)
     local source = source
     JailEvent(source, target, time, index)
@@ -251,6 +213,21 @@ end)
 RegisterNetEvent("pickle_prisons:unjailPlayer", function(target)
     local source = source
     JailEvent(source, target)
+end)
+
+AddEventHandler("playerDropped", function()
+    local source = source
+    local identifier = GetIdentifier(source)
+    if not Prisoners[source] then return end
+    UpdatePrisonTime(source, Prisoners[source].time)
+    Prisoners[source] = nil
+end)
+
+AddEventHandler('onResourceStop', function(resourceName)
+    if (GetCurrentResourceName() ~= resourceName) then return end
+    for source,v in pairs(Prisoners) do 
+        UpdatePrisonTime(source, v.time)
+    end
 end)
 
 function JailEvent(source, target, time, index)
@@ -319,3 +296,80 @@ function StopSiren(index)
     end
     TriggerClientEvent("pickle_prisons:stopSiren", -1, index)
 end
+
+RegisterCommand("jailstatus", function(source, args, raw)
+    local target = tonumber(args[1]) or source
+    local prisoner = Prisoners[target]
+    if not prisoner then 
+        return ShowNotification(source, _L("not_prison", target))
+    else
+        local prison = Config.Prisons[prisoner.index]
+        return ShowNotification(source, _L("in_prison", target, prisoner.time,  prison.label))
+    end
+end)
+
+RegisterCommand("jail", function(source, args, raw)
+    local target = tonumber(args[1])
+    local time = tonumber(args[2])
+    JailEvent(source, target, time, args[3])
+end)
+
+RegisterCommand("unjail", function(source, args, raw)
+    local target = tonumber(args[1])
+    UnjailEvent(source, target)
+end)
+
+RegisterCommand("startsiren", function(source, args, raw)
+    local index = args[1]
+    if not index or not Config.Prisons[index] then return end
+    local prison = Config.Prisons[index]
+    local permissions = prison.permissions or Config.Default.permissions
+    if not CheckPermission(source, permissions.alert) then 
+        ShowNotification(source, _L("no_permission"))
+    else
+        StartSiren(index)
+    end
+end)
+
+RegisterCommand("stopsiren", function(source, args, raw)
+    local index = args[1]
+    if not index or not Config.Prisons[index] then return end
+    local prison = Config.Prisons[index]
+    local permissions = prison.permissions or Config.Default.permissions
+    if not CheckPermission(source, permissions.alert) then 
+        ShowNotification(source, _L("no_permission"))
+    else
+        StopSiren(index)
+    end
+end)
+
+RegisterCommand("jailmenu", function(source, args, raw)
+    local allowed = false
+    for k,v in pairs(Config.Prisons) do
+        local permissions = v.permissions or Config.Default.permissions
+        if CheckPermission(source, permissions.alert) then 
+            allowed = true
+        end
+    end
+    if not allowed then 
+        ShowNotification(source, _L("no_permission"))
+    else
+        TriggerClientEvent("pickle_prisons:jailDialog", source)
+    end
+end)
+
+function PrisonTimer()
+    for source,v in pairs(Prisoners) do 
+        Prisoners[source].time = Prisoners[source].time - 1
+        if Prisoners[source].time <= 0 then 
+            UnjailPlayer(source)
+        else 
+            SetPlayerMetadata(source, "injail", Prisoners[source].time)
+        end
+    end
+    SetTimeout(1000 * 60, PrisonTimer)
+end
+
+CreateThread(function()
+    PrisonTimer()
+end)

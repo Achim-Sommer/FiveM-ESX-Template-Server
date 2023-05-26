@@ -1,7 +1,7 @@
 fx_version "cerulean"
 game "gta5"
 author "Pickle Mods"
-version "v1.0.0"
+version "v1.1.2"
 
 ui_page "nui/index.html"
 
@@ -15,7 +15,6 @@ shared_scripts {
 	"config.lua",
 	"locales/locale.lua",
     "locales/translations/*.lua",
-	"modules/**/shared.lua",
     "core/shared.lua"
 }
 

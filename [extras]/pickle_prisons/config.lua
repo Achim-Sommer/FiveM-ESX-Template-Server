@@ -2,7 +2,7 @@ Config = {}
 
 Config.Debug = true
 
-Config.Language = "de" -- Language to use.
+Config.Language = "en" -- Language to use.
 
 Config.RenderDistance = 20.0 -- Model Display Radius.
 
@@ -23,7 +23,9 @@ Config.NavigationDisplay = true -- This will only be used if enabled, this is us
 
 Config.ServeTimeOffline = false -- When set to true, players can serve their time offline, lowering the time by how long they were gone.
 
-Config.XPEnabled = false -- When set to true, this will enable Pickle's XP compatibility, and enable xp rewards.
+Config.EnableSneakout = false -- When set to true, anytime the player is outside the prison without being part of a breakout, they are freed instead of being brought back.
+
+Config.XPEnabled = true -- When set to true, this will enable Pickle's XP compatibility, and enable xp rewards.
 
 Config.XPCategories = { -- Registered XP Types for Pickle's XP.
     ["strength"] = {
@@ -102,7 +104,7 @@ Config.Activities = {
         label = "Workout", -- Will have Start / Stop in front of interaction.
         sections = { -- Sections for this activity.
             ["lift"] = {
-                label = "Gewichte heben",
+                label = "Lift Weights",
                 rewards = { -- Rewards for completing the section.
                     {type = "xp", name = "strength", amount = 1000},
                 },
@@ -208,7 +210,7 @@ Config.Activities = {
         label = "Cleaning Prison", -- Will have Start / Stop in front of interaction.
         sections = { -- Sections for this activity.
             ["sweep"] = {
-                label = "Boden fegen",
+                label = "Sweep Floor",
                 rewards = { -- Rewards for completing the section.
                     {type = "cash", amount = 50},
                 },
@@ -231,10 +233,10 @@ Config.Activities = {
         }
     },
     ["kitchen"] = {
-        label = "Küchenjob", -- Will have Start / Stop in front of interaction.
+        label = "Kitchen Job", -- Will have Start / Stop in front of interaction.
         sections = { -- Sections for this activity.
             ["stock"] = {
-                label = "Zutaten sammeln",
+                label = "Collect Ingredients",
                 rewards = nil, -- Rewards for completing the section.
                 process = function(data) -- Section function. 
                     local ped = PlayerPedId()
@@ -248,7 +250,7 @@ Config.Activities = {
                 end
             },
             ["cook"] = {
-                label = "Essen kochen",
+                label = "Cook Food",
                 rewards = nil, -- Rewards for completing the section.
                 process = function(data) -- Section function. 
                     local ped = PlayerPedId()
@@ -269,7 +271,7 @@ Config.Activities = {
                 end
             },
             ["toppings"] = {
-                label = "Toppings hinzufügen",
+                label = "Add Toppings",
                 rewards = nil, -- Rewards for completing the section.
                 process = function(data) -- Section function. 
                     local ped = PlayerPedId()
@@ -283,7 +285,7 @@ Config.Activities = {
                 end
             },
             ["delivery"] = {
-                label = "Essen liefern",
+                label = "Deliver Food",
                 rewards = {-- Rewards for completing the section.
                     {type = "cash", amount = 200},
                     {type = "xp", name = "cooking", amount = 1000},  

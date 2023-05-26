@@ -19,4 +19,10 @@ Language["en"] = {
     not_prison = "There is no prisoner with the ID #%s.",
     in_prison = "Prisoner #%s is serving %s minute(s) at %s.",
     no_permission = "You do not have permission to do this.",
+    cant_sneakout = "You cannot sneak out of the prison, you must start a breakout.",
+    jail_dialog_title = "Jail Dialog",
+    jail_dialog_player = "%s (ID: %s)",
+    jail_dialog_prisoner = "Prisoner",
+    jail_dialog_prison = "Prison Location",
+    jail_dialog_sentence = "Sentence Length",
 }

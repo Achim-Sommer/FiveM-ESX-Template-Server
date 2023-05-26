@@ -10,6 +10,19 @@ function ServerCallback(name, cb, ...)
     ESX.TriggerServerCallback(name, cb,  ...)
 end
 
+function GetPlayersInArea(coords, radius)
+    local coords = coords or GetEntityCoords(PlayerPedId())
+    local radius = radius or 3.0
+    local list = ESX.Game.GetPlayersInArea(coords, radius)
+    local players = {}
+    for _, player in pairs(list) do 
+        if player ~= PlayerId() then
+            players[#players + 1] = player
+        end
+    end
+    return players
+end
+
 RegisterNetEvent(GetCurrentResourceName()..":showNotification", function(text)
     ShowNotification(text)
 end)
@@ -19,11 +32,17 @@ AddEventHandler('esx:playerLoaded',function(xPlayer, isNew, skin)
     TriggerServerEvent("pickle_prisons:initializePlayer")
 end)
 
+local alreadySpawned = false
+
 RegisterNetEvent('esx:onPlayerDeath', function()
     CheckBreakout = false
 end)
 
 RegisterNetEvent('esx:onPlayerSpawn', function()
+    if not alreadySpawned then -- Prevents TP to hospital on-load.
+        alreadySpawned = true
+        return
+    end
     TeleportHospital()
     CheckBreakout = true
 end)
