@@ -53,7 +53,7 @@ return {
 	},
 
 	['bandage'] = {
-		label = 'Bandage',
+		label = 'Verband',
 		weight = 115,
 		client = {
 			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
@@ -171,7 +171,7 @@ return {
 	},
 
 	['water'] = {
-		label = 'Water',
+		label = 'Wasser',
 		weight = 500,
 		client = {
 			status = { thirst = 200000 },
@@ -179,7 +179,7 @@ return {
 			prop = { model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5) },
 			usetime = 2500,
 			cancel = true,
-			notification = 'You drank some refreshing water'
+			notification = 'Du hast Wasser getrunken'
 		}
 	},
 

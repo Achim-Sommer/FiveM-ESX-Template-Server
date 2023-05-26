@@ -49,7 +49,7 @@ return {
 		},
 
 		['WEAPON_BAT'] = {
-			label = 'Bat',
+			label = 'Baseballschläger',
 			weight = 1134,
 			durability = 0.1,
 		},
@@ -229,7 +229,7 @@ return {
 		},
 
 		['WEAPON_FLASHLIGHT'] = {
-			label = 'Flashlight',
+			label = 'Taschenlampe',
 			weight = 125,
 			durability = 0.1,
 		},
@@ -330,7 +330,7 @@ return {
 		},
 
 		['WEAPON_KNIFE'] = {
-			label = 'Knife',
+			label = 'Messer',
 			weight = 300,
 			durability = 0.1,
 		},
@@ -431,7 +431,7 @@ return {
 		},
 
 		['WEAPON_NIGHTSTICK'] = {
-			label = 'Nightstick',
+			label = 'Schlagstock',
 			weight = 1000,
 			durability = 0.1,
 		},
