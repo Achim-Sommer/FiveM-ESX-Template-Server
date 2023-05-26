@@ -1,5 +1,6 @@
 local players = {}
 local totalSumChance = 0
+local ox_inventory = exports.ox_inventory
 
 CreateThread(function()
   for _,priceInfo in pairs(Config.Prices) do
@@ -7,10 +8,12 @@ CreateThread(function()
   end 
 end)
 
-ESX.RegisterUsableItem('scratch_ticket', function(source)
-  DebugPrint(('%s just used a scratching ticket.'):format(GetPlayerName(source)))
+ox_inventory.RegisterUsableItem('scratch_ticket', function(source)
+  local xPlayer = ox_inventory.GetPlayerFromId(source)
+  print(('%s hat gerade ein Rubbellos benutzt.'):format(xPlayer.getName()))
   TriggerClientEvent("dr-scratching:isActiveCooldown", source)
 end)
+
 
 RegisterNetEvent("dr-scratching:handler", function(returncooldown, cooldown)
   local _source <const> = source

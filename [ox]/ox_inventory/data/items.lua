@@ -6158,7 +6158,8 @@ return {
 		stack = true,
 		close = true,
 		client = {
-			export = 'dr-scratching:nuiOpenCard'
+		
+			export = 'dr-scratching:isActiveCooldown'
 		}
 	},
 
