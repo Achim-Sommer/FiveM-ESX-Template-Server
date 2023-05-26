@@ -16,7 +16,7 @@ return {
 		blip = {
 			id = 59, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'burger', price = 10 },
+			{ name = 'bread', price = 10 },
 			{ name = 'water', price = 10 },
 			{ name = 'twix', price = 10 },
 			{ name = 'doritos', price = 10 },
@@ -54,7 +54,7 @@ return {
 		blip = {
 			id = 93, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'burger', price = 10 },
+			{ name = 'bread', price = 10 },
 			{ name = 'water', price = 10 },
 			{ name = 'twix', price = 10 },
 			{ name = 'doritos', price = 10 },
