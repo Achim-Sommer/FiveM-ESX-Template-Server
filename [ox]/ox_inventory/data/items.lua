@@ -6157,6 +6157,9 @@ return {
 		weight = 1,
 		stack = true,
 		close = true,
+		client = {
+			export = 'dr-scratching:nuiOpenCard'
+		}
 	},
 
 	["secure_card"] = {
