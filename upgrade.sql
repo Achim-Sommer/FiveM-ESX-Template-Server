@@ -431,6 +431,31 @@ ALTER TABLE `owned_vehicles` ADD `pound` VARCHAR(60) NULL AFTER `parking`;
 
 DROP TABLE `vehicles`
 
+DROP TABLE `vehicle_categories`
+
+
+CREATE TABLE `vehicle_categories` (
+	`name` varchar(60) NOT NULL,
+	`label` varchar(60) NOT NULL,
+
+	PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+INSERT INTO `vehicle_categories` (name, label) VALUES
+	('compacts','Compacts'),
+	('coupes','Coupes'),
+	('sedans','Sedans'),
+	('sports','Sports'),
+	('sportsclassics','Sports Classics'),
+	('super','Super'),
+	('muscle','Muscle'),
+	('offroad','Off Road'),
+	('suvs','SUVs'),
+	('vans','Vans'),
+	('motorcycles','Motos')
+;
+
 CREATE TABLE `vehicles` (
 	`name` varchar(60) NOT NULL,
 	`model` varchar(60) NOT NULL,
