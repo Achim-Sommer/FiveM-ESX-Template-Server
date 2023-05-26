@@ -683,3 +683,11 @@ INSERT INTO `vehicles` (name, model, price, category) VALUES
 	('Sentinel3', 'sentinel3', 650000, 'sports'),
 	('Hustler', 'hustler', 625000, 'muscle')
 ;
+
+CREATE TABLE `cardealer_vehicles` (
+	`id` int NOT NULL AUTO_INCREMENT,
+	`vehicle` varchar(255) NOT NULL,
+	`price` int NOT NULL,
+
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
