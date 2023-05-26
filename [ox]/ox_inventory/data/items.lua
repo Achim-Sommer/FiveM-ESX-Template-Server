@@ -7810,4 +7810,206 @@ return {
 	weight = 20,
 	stack = true,
 },
+['cheetos'] = {
+	label = 'Cheetos',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'Du hast leckere Cheetos gegessen'
+	},
+},
+
+['dcaramel'] = {
+	label = 'Dcaramel',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+	},
+},
+
+['diam_bar'] = {
+	label = 'Diambar',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious diambar'
+	},
+},
+
+['doritos'] = {
+	label = 'Doritos',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious doritos'
+	},
+},
+
+['mccoys'] = {
+	label = 'Mccoys',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious mccoys'
+	},
+},
+
+['milkybar'] = {
+	label = 'Milkybar',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious milkybar'
+	},
+},
+
+['milkybuttons'] = {
+	label = 'Milkybuttons',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious milkybuttons'
+	},
+},
+
+['milkyway'] = {
+	label = 'Milkyway',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious milkyway'
+	},
+},
+
+['minieggs'] = {
+	label = 'Minieggs',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious minieggs'
+	},
+},
+
+['quarter_pounder'] = {
+	label = 'Quarterpounder',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious quarterpounder'
+	},
+},
+
+['quavers'] = {
+	label = 'Quavers',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious quavers'
+	},
+},
+
+['ripple'] = {
+	label = 'Ripple',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious ripple'
+	},
+},
+
+['sensations'] = {
+	label = 'Sensations',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious sensations'
+	},
+},
+
+['squares'] = {
+	label = 'Squares',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious squares'
+	},
+},
+
+['twix'] = {
+	label = 'Twix',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious twix'
+	},
+},
+
+['twirl'] = {
+	label = 'Twirl',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious twirl'
+	},
+},
+
+['yorkie'] = {
+	label = 'Yorkie',
+	weight = 220,
+	client = {
+		status = { hunger = 200000 },
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'You ate a delicious yorkie'
+	},
+},
 }
