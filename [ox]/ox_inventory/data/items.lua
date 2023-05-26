@@ -6157,10 +6157,6 @@ return {
 		weight = 1,
 		stack = true,
 		close = true,
-		client = {
-		
-			export = 'dr-scratching:isActiveCooldown'
-		}
 	},
 
 	["secure_card"] = {
