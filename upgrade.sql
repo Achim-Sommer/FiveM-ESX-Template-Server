@@ -425,3 +425,6 @@ CREATE TABLE IF NOT EXISTS `pickle_prisons` (
   `inventory` longtext NOT NULL,
   `sentence_date` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+ALTER TABLE `owned_vehicles` ADD `parking` VARCHAR(60) NULL AFTER `stored`;
+ALTER TABLE `owned_vehicles` ADD `pound` VARCHAR(60) NULL AFTER `parking`;
