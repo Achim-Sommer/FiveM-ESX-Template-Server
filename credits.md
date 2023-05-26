@@ -51,3 +51,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/PickleModifications/pickle_prisons 
 - https://github.com/renzuzu/renzu_tuners 
 - https://github.com/McKleans-Scripts/mk-items 
+- https://github.com/Lennya94/fooditems 
