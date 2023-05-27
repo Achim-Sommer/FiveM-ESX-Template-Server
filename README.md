@@ -12,8 +12,8 @@ Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bu
 - 20% Rabatt Code: GermanGaming
 
 # Zusatzinhalte:
-- Support: https://shop.achimsommer.com
-- Support & kleines Addon Pack: https://shop.achimsommer.com
+- Support: https://shop.achimsommer.com/package/5708271
+- Support & kleines Addon Pack: [https://shop.achimsommer.com](https://shop.achimsommer.com/package/5708276)
 - Support & großes Addon Pack: https://shop.achimsommer.com
 
 # Social-Media
