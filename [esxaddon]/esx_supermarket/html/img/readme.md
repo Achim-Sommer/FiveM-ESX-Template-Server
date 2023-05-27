@@ -1,1 +1,0 @@
-Hier findest du ein paar Beispielbilder für die Items
