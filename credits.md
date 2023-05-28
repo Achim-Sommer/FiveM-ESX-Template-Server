@@ -1,4 +1,5 @@
 ## Hier findest du Links zu allen genutzten Sachen
+Hier ist eine Liste mit Links zu allen genutzten Ressourcen!
 Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeiten
 - https://shop.achimsommer.com/package/5097370
 - https://shop.achimsommer.com/package/5113761
