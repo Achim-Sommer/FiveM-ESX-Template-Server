@@ -2151,5 +2151,5 @@ CREATE TABLE IF NOT EXISTS `pickle_prisons` (
 DROP TABLE `user_parkings`;
 
 INSERT INTO items (name, label, weight) VALUES 
-    ('hose', 'Hose', 5)
+    ('hose', 'Schlauch', 5)
 ;
