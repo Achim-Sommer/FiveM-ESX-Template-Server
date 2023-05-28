@@ -8017,4 +8017,11 @@ return {
 		notification = 'You ate a delicious yorkie'
 	},
 },
+
+["hose"] = {
+	label = "Schlauch",
+	weight = 1,
+	stack = true,
+	close = true,
+},
 }

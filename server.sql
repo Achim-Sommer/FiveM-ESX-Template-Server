@@ -2147,3 +2147,9 @@ CREATE TABLE IF NOT EXISTS `pickle_prisons` (
   `inventory` longtext NOT NULL,
   `sentence_date` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+DROP TABLE `user_parkings`;
+
+INSERT INTO items (name, label, weight) VALUES 
+    ('hose', 'Hose', 5)
+;
