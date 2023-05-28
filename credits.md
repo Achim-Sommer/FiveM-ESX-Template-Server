@@ -54,3 +54,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/Lennya94/fooditems 
 - https://github.com/overextended/ox_fuel 
 - https://github.com/RodericAguilar/Roda_PauseMenu 
+- https://github.com/HyonScript/hyon_stealfuel 
