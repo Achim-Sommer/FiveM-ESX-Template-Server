@@ -17,7 +17,8 @@ Config.categories = {
 		{description='Haustier Menü', key='Entf'},
         },
 		commands={
-            {description='Funkgerät', command='/radio', arguments=''},
+            {description='Deine Spielzeit', command='/mytime', arguments=''},
+            {description='Top List nach Spielzeit', command='/timelist', arguments=''},
         },
     },
     {
