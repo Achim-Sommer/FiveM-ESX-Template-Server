@@ -20,12 +20,11 @@ Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bu
 
 - FiveM Forum: https://forum.achimsommer.com
 - Website: https://achimsommer.com
------------------------------------------
-- Im Shop kannst du dir Zugang zum Support Ticketsystem kaufen und Scripts speziell angepasst auf den Template Server, um mehr aus den Server rauszuholen. Schau gerne mal vorbei.
-- Shop: http://shop.achimsommer.com
+
 
 # Projekt unterstüzen:
 - Mitgliedschaft: https://www.youtube.com/@achimsommer/join
 - PayPal: sommerachim@hotmail.de
 - Shop: https://shop.achimsommer.com
-- 
+
+# Instalation:
