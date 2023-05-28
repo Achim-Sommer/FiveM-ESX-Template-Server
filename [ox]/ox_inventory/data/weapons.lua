@@ -437,7 +437,7 @@ return {
 		},
 
 		['WEAPON_PETROLCAN'] = {
-			label = 'Gas Can',
+			label = 'Benzinkanister',
 			weight = 12000,
 		},
 
