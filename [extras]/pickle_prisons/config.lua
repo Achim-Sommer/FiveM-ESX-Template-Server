@@ -2,7 +2,7 @@ Config = {}
 
 Config.Debug = true
 
-Config.Language = "en" -- Language to use.
+Config.Language = "de" -- Language to use.
 
 Config.RenderDistance = 20.0 -- Model Display Radius.
 
@@ -23,9 +23,9 @@ Config.NavigationDisplay = true -- This will only be used if enabled, this is us
 
 Config.ServeTimeOffline = false -- When set to true, players can serve their time offline, lowering the time by how long they were gone.
 
-Config.EnableSneakout = false -- When set to true, anytime the player is outside the prison without being part of a breakout, they are freed instead of being brought back.
+Config.EnableSneakout = true -- When set to true, anytime the player is outside the prison without being part of a breakout, they are freed instead of being brought back.
 
-Config.XPEnabled = true -- When set to true, this will enable Pickle's XP compatibility, and enable xp rewards.
+Config.XPEnabled = false -- When set to true, this will enable Pickle's XP compatibility, and enable xp rewards.
 
 Config.XPCategories = { -- Registered XP Types for Pickle's XP.
     ["strength"] = {

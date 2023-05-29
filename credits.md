@@ -57,3 +57,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/HyonScript/hyon_stealfuel 
 - https://github.com/uniqscripts/uniq-playtime 
 - https://github.com/0xDEMXN/dx_hud 
+- https://de.gta5-mods.com/maps/prison-3-mlo-interiors-bolingbroke-penitentiary-fivem-ragemp 
