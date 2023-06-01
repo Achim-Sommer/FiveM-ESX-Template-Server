@@ -7,7 +7,7 @@ game 'gta5'
 
 author 'Bob_74'
 description 'Load and customize your map'
-version '2.0.15'
+version '2.1.1'
 
 lua54 "yes"
 
@@ -122,4 +122,9 @@ client_scripts {
     , "dlc_security/office2.lua"
     , "dlc_security/office3.lua"
     , "dlc_security/office4.lua"
+
+    -- DLC The Criminal Enterprises (Requires forced build 2699 or higher)
+    , "gta_mpsum2/simeonfix.lua"
+    , "gta_mpsum2/vehicle_warehouse.lua"
+    , "gta_mpsum2/warehouse.lua"
 }
