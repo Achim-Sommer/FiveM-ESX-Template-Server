@@ -22,6 +22,8 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/esx-framework/esx_billing
 - https://github.com/esx-framework/esx_garage
 - https://github.com/esx-framework/esx_property 
+- https://github.com/esx-framework/esx_boat 
+- https://github.com/esx-framework/esx_jobs
 - https://github.com/overextended/oxmysql
 - https://forum.cfx.re/t/the-diamond-casino-enterable-mlo/832067 
 - https://www.youtube.com/watch?v=zadmfcqsuYo
@@ -62,3 +64,5 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://gta5mod.net/gta-5-mods/maps/bolingbroke-penitentiary-3-mlo-interiors-x/
 - https://github.com/boostless/fuksus-shops 
 - https://github.com/boostless/fuksus-identity 
+- https://github.com/Bob74/bob74_ipl 
+
