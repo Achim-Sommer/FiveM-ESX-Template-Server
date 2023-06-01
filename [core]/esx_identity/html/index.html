@@ -18,12 +18,12 @@
             <div :class="{'border-bRed': override.firstname, 'border-transparent': !override.firstname}" 
                 class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col border transition-colors ease-out">
                 <label for="firstname" class="text-bGray text-base font-normal">Vorname</label>
-                <input autocomplete="off" x-model="firstname" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="firstname" name="firstname" type="text" minlength="3" maxlength="8" pattern="[a-zA-Z]*" placeholder="Enter character Name"/>
+                <input autocomplete="off" x-model="firstname" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="firstname" name="firstname" type="text" minlength="3" maxlength="8" pattern="[a-zA-Z]*" placeholder="Vorname eingeben"/>
             </div>
             <div :class="{'border-bRed': override.lastname, 'border-transparent': !override.lastname}" 
                 class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col border transition-colors ease-out">
                 <label for="lastname" class="text-bGray text-base font-normal">Nachname</label>
-                <input autocomplete="off" x-model="lastname" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="lastname" name="lastname" type="text" minlength="3" maxlength="10" pattern="[a-zA-Z]*" placeholder="Enter character Last Name"/>
+                <input autocomplete="off" x-model="lastname" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="lastname" name="lastname" type="text" minlength="3" maxlength="10" pattern="[a-zA-Z]*" placeholder="Nachname eingeben"/>
             </div>
             <div class="flex flex-1 gap-[1.5vh]">
                 <div :class="{'border-bRed': override.dob, 'border-transparent': !override.dob}" 
@@ -47,7 +47,7 @@
             <div class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col gap-[0.8vh]">
                 <label for="height" class="text-bGray text-base font-normal">Größe</label>
                 <div class="flex flex-1 gap-[1vh] items-center">
-                    <input x-model="height" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="height" name="height" type="range" min="120" max="220" pattern="[a-zA-Z]*" placeholder="Enter character Last Name"/>
+                    <input x-model="height" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="height" name="height" type="range" min="120" max="220" pattern="[a-zA-Z]*" placeholder="Nachname eingeben"/>
                     <span class="text-white/60 font-normal flex w-[9vh] text-right"><span class="text-xl font-medium text-white" x-text="height"></span>cm</span>
                 </div>  
             </div>
