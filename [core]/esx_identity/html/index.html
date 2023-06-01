@@ -11,24 +11,24 @@
 <body x-data="main()" x-init="listen()" x-show='show' class="w-screen h-screen bg-[url('/src/img.png')] bg-center bg-cover text-white font-sans flex flex-col items-start justify-center pl-[17.8vh]">
     <div class="h-fit w-[36.5vh] flex flex-col gap-[3.3vh]">
         <header>
-            <h1 class="text-left text-4xl font-semibold text-white leading-[4.1vh]">CREATE YOUR IDENTITY</h1>
-            <p class="text-lg text-white/50 font-normal mt-[1.5vh]">Fill in the information and continue creating your character</p>
+            <h1 class="text-left text-4xl font-semibold text-white leading-[4.1vh]">ERSCHAFFE DEINE IDENTITÄT</h1>
+            <p class="text-lg text-white/50 font-normal mt-[1.5vh]">Fülle die Informationen aus und fahre mit der Erstellung deines Charakters fort</p>
         </header>
         <section class="flex flex-col w-full font-light gap-[1.45vh]">
             <div :class="{'border-bRed': override.firstname, 'border-transparent': !override.firstname}" 
                 class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col border transition-colors ease-out">
-                <label for="firstname" class="text-bGray text-base font-normal">First Name</label>
+                <label for="firstname" class="text-bGray text-base font-normal">Vorname</label>
                 <input autocomplete="off" x-model="firstname" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="firstname" name="firstname" type="text" minlength="3" maxlength="8" pattern="[a-zA-Z]*" placeholder="Enter character Name"/>
             </div>
             <div :class="{'border-bRed': override.lastname, 'border-transparent': !override.lastname}" 
                 class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col border transition-colors ease-out">
-                <label for="lastname" class="text-bGray text-base font-normal">Last Name</label>
+                <label for="lastname" class="text-bGray text-base font-normal">Nachname</label>
                 <input autocomplete="off" x-model="lastname" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="lastname" name="lastname" type="text" minlength="3" maxlength="10" pattern="[a-zA-Z]*" placeholder="Enter character Last Name"/>
             </div>
             <div class="flex flex-1 gap-[1.5vh]">
                 <div :class="{'border-bRed': override.dob, 'border-transparent': !override.dob}" 
                     class="w-full bg-black/80 rounded-lg px-[1.8vh] py-[0.9vh] border transition-colors ease-out">
-                    <label for="dob" class="text-bGray text-base font-normal">Birthday</label>
+                    <label for="dob" class="text-bGray text-base font-normal">Geburtstag</label>
                     <input max="2010-01-01" min="1900-01-01" x-model="dateofbirth" class="bg-transparent w-[13.5vh] focus:outline-none text-xl font-medium placeholder-white/40"  id="dob" name="dob" type="date"/>
                 </div>
                 <div :class="{'border-bRed': override.sex, 'border-transparent': !override.sex,}" class="w-full bg-black/80 rounded-lg px-[0.9vh] py-[0.9vh] flex gap-[0.9vh] border transition-colors ease-out">
@@ -45,14 +45,14 @@
                 </div>
             </div>
             <div class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col gap-[0.8vh]">
-                <label for="height" class="text-bGray text-base font-normal">Height</label>
+                <label for="height" class="text-bGray text-base font-normal">Größe</label>
                 <div class="flex flex-1 gap-[1vh] items-center">
                     <input x-model="height" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="height" name="height" type="range" min="120" max="220" pattern="[a-zA-Z]*" placeholder="Enter character Last Name"/>
                     <span class="text-white/60 font-normal flex w-[9vh] text-right"><span class="text-xl font-medium text-white" x-text="height"></span>cm</span>
                 </div>  
             </div>
             <button @click="register()" class="bg-white rounded-lg font-medium text-base text-black px-[1.8vh] py-[1.6vh] transition-colors ease-out hover:bg-bPurple hover:text-white">
-                Create Identity
+                Identität erstellen
             </button>
         </section>
     </div>
