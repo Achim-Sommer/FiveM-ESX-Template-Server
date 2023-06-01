@@ -80,17 +80,16 @@ return {
 	},
 
 	['cola'] = {
-		label = 'eCola',
+		label = 'Cola',
 		weight = 350,
 		client = {
-			status = { thirst = 200000 },
+			status = { thirst = 300000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_ecola_can`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
-			notification = 'You quenched your thirst with cola'
+			notification = 'Du hast deinen Durst mit Cola gestillt'
 		}
 	},
-
 	['parachute'] = {
 		label = 'Parachute',
 		weight = 8000,
@@ -159,14 +158,14 @@ return {
 	},
 
 	['mustard'] = {
-		label = 'Mustard',
+		label = 'Senf',
 		weight = 500,
 		client = {
 			status = { hunger = 25000, thirst = 25000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_food_mustard`, pos = vec3(0.01, 0.0, -0.07), rot = vec3(1.0, 1.0, -1.5) },
 			usetime = 2500,
-			notification = 'You.. drank mustard'
+			notification = 'Du... hast Senf getrunken'
 		}
 	},
 
@@ -180,6 +179,19 @@ return {
 			usetime = 2500,
 			cancel = true,
 			notification = 'Du hast Wasser getrunken'
+		}
+	},
+
+	['coffee'] = {
+		label = 'Kaffe',
+		weight = 350,
+		client = {
+			status = { thirst = 100000 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_food_coffee`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5) },
+			usetime = 2500,
+			cancel = true,
+			notification = 'Du hast einen Kaffee getrunken'
 		}
 	},
 

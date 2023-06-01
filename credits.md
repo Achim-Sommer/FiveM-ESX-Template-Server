@@ -59,3 +59,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/0xDEMXN/dx_hud 
 - https://de.gta5-mods.com/maps/prison-3-mlo-interiors-bolingbroke-penitentiary-fivem-ragemp 
 - https://gta5mod.net/gta-5-mods/maps/bolingbroke-penitentiary-3-mlo-interiors-x/
+- https://github.com/boostless/fuksus-shops 
