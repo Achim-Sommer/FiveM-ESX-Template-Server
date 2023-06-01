@@ -26,7 +26,7 @@ Config.MaxWeight            	= 50   -- the max inventory weight without backpack
 Config.PaycheckInterval         = 7 * 60000 -- how often to recieve pay checks in milliseconds
 Config.EnableDebug              = false -- Use Debug options?
 Config.EnableDefaultInventory   = true -- Display the default Inventory ( F2 )
-Config.EnableWantedLevel    	= false -- Use Normal GTA wanted Level?
+Config.EnableWantedLevel    	= true -- Use Normal GTA wanted Level?
 Config.EnablePVP                = true -- Allow Player to player combat
 
 Config.Multichar                = GetResourceState("esx_multicharacter") ~= "missing"
