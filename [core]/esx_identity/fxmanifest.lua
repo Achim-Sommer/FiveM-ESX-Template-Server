@@ -27,9 +27,7 @@ client_scripts {
 ui_page 'html/index.html'
 
 files {
-	'html/index.html',
-	'html/js/script.js',
-	'html/css/style.css',
+	'html/**'
 }
 
 dependency 'es_extended'

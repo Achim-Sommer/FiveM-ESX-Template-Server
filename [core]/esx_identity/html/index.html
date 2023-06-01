@@ -1,119 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="nui://game/ui/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="css/style.css" rel="stylesheet" />
-
-    <title>ESX Identity</title>
-  </head>
-
-  <body onkeydown="TriggeredKey(this)">
-    <div class="dialog">
-      <div class="title"><b>IDENTITÄT</b></div>
-      <form id="register" name="register" action="#">
-        <div
-          style="
-            color: rgb(46, 187, 205);
-            font-size: 12px;
-            font-family: 'Gill Sans', sans-serif;
-          "
-        >
-          Vorname
-        </div>
-        <input
-          id="firstname"
-          type="text"
-          class=""
-          name="firstname"
-          placeholder="Vorname"
-          minlength="3"
-          maxlength="8"
-          pattern="[a-zA-Z]*"
-        /><br />
-        <div
-          style="
-            color: rgb(46, 187, 205);
-            font-size: 12px;
-            font-family: 'Gill Sans', sans-serif;
-          "
-        >
-          Nachname
-        </div>
-        <input
-          id="lastname"
-          type="text"
-          class=""
-          name="lastname"
-          placeholder="Nachname"
-          minlength="3"
-          maxlength="10"
-          pattern="[a-zA-Z]*"
-        /><br />
-        <div
-          style="
-            color: rgb(46, 187, 205);
-            font-size: 12px;
-            font-family: 'Gill Sans', sans-serif;
-          "
-        >
-          Geburtstag (MM/DD/YYYY)
-        </div>
-        <input
-          id="dateofbirth"
-          type="date"
-          name="dateofbirth"
-          class=""
-          min="1900-01-01"
-          max="2010-01-01"
-          onfocus="(this.type='date')"
-        /><br />
-        <div
-          style="
-            color: rgb(46, 187, 205);
-            font-size: 12px;
-            font-family: 'Gill Sans', sans-serif;
-          "
-        >
-          Größe
-        </div>
-        <input
-          id="height"
-          type="number"
-          class=""
-          name="height"
-          min="120"
-          max="220"
-          placeholder="Größe (cm)"
-        /><br />
-        <center>
-          <div class="radio-toolbar">
-            <input type="radio" id="radiom" name="sex" value="m" checked />
-            <label for="radiom">Männlich</label>
-
-            <input type="radio" id="radiof" name="sex" value="f" />
-            <label for="radiof">Weiblich</label>
-          </div>
-        </center>
-        <button id="submit" type="submit">
-          <font size="4px">Erstellen</font>
-        </button>
-      </form>
-      <center>
-        <font size="1px" color="green"
-          >Wenn die Schaltfläche "Senden" nicht funktioniert, vergewissere dich bitte, dass du die
-          die Felder richtig ausgefüllt hast.</font
-        >
-      </center>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="output.css" rel="stylesheet">
+    <title>fuksus-identity</title>
+</head>
+<body x-data="main()" x-init="listen()" x-show='show' class="w-screen h-screen bg-[url('/src/img.png')] bg-center bg-cover text-white font-sans flex flex-col items-start justify-center pl-[17.8vh]">
+    <div class="h-fit w-[36.5vh] flex flex-col gap-[3.3vh]">
+        <header>
+            <h1 class="text-left text-4xl font-semibold text-white leading-[4.1vh]">CREATE YOUR IDENTITY</h1>
+            <p class="text-lg text-white/50 font-normal mt-[1.5vh]">Fill in the information and continue creating your character</p>
+        </header>
+        <section class="flex flex-col w-full font-light gap-[1.45vh]">
+            <div :class="{'border-bRed': override.firstname, 'border-transparent': !override.firstname}" 
+                class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col border transition-colors ease-out">
+                <label for="firstname" class="text-bGray text-base font-normal">First Name</label>
+                <input autocomplete="off" x-model="firstname" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="firstname" name="firstname" type="text" minlength="3" maxlength="8" pattern="[a-zA-Z]*" placeholder="Enter character Name"/>
+            </div>
+            <div :class="{'border-bRed': override.lastname, 'border-transparent': !override.lastname}" 
+                class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col border transition-colors ease-out">
+                <label for="lastname" class="text-bGray text-base font-normal">Last Name</label>
+                <input autocomplete="off" x-model="lastname" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="lastname" name="lastname" type="text" minlength="3" maxlength="10" pattern="[a-zA-Z]*" placeholder="Enter character Last Name"/>
+            </div>
+            <div class="flex flex-1 gap-[1.5vh]">
+                <div :class="{'border-bRed': override.dob, 'border-transparent': !override.dob}" 
+                    class="w-full bg-black/80 rounded-lg px-[1.8vh] py-[0.9vh] border transition-colors ease-out">
+                    <label for="dob" class="text-bGray text-base font-normal">Birthday</label>
+                    <input max="2010-01-01" min="1900-01-01" x-model="dateofbirth" class="bg-transparent w-[13.5vh] focus:outline-none text-xl font-medium placeholder-white/40"  id="dob" name="dob" type="date"/>
+                </div>
+                <div :class="{'border-bRed': override.sex, 'border-transparent': !override.sex,}" class="w-full bg-black/80 rounded-lg px-[0.9vh] py-[0.9vh] flex gap-[0.9vh] border transition-colors ease-out">
+                    <div @click="sex = 'm'" :class="{'bg-bPurple': sex == 'm'}" class="w-[6.96vh] h-[6.96vh] border border-white/5 rounded-lg cursor-pointer transition-colors ease-out hover:bg-bPurple flex items-center justify-center">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.3073 5.41235L14.5074 2.21043H10.3568V0.399902H17.5989V7.64202H15.7884V3.49048L12.5865 6.6924C13.631 8.06163 14.1162 9.77663 13.9438 11.4901C13.7714 13.2037 12.9542 14.7876 11.6579 15.9213C10.3615 17.055 8.6827 17.6537 6.9615 17.5961C5.24029 17.5385 3.60528 16.8291 2.38752 15.6113C1.16977 14.3935 0.46028 12.7585 0.402722 11.0373C0.345165 9.31612 0.943839 7.63736 2.07752 6.34097C3.2112 5.04459 4.79517 4.22746 6.50868 4.05504C8.2222 3.88262 9.9372 4.36781 11.3064 5.41235H11.3073ZM7.18838 15.7894C8.50888 15.7894 9.7753 15.2648 10.709 14.3311C11.6428 13.3974 12.1673 12.1309 12.1673 10.8104C12.1673 9.48995 11.6428 8.22353 10.709 7.28979C9.7753 6.35606 8.50888 5.83149 7.18838 5.83149C5.86788 5.83149 4.60146 6.35606 3.66773 7.28979C2.73399 8.22353 2.20943 9.48995 2.20943 10.8104C2.20943 12.1309 2.73399 13.3974 3.66773 14.3311C4.60146 15.2648 5.86788 15.7894 7.18838 15.7894Z" fill="white"/>
+                        </svg>                            
+                    </div>
+                    <div @click="sex = 'f'" :class="{'bg-bPurple': sex == 'f'}" class="w-[6.96vh] h-[6.96vh] border border-white/5 rounded-lg cursor-pointer transition-colors ease-out hover:bg-bPurple flex items-center justify-center">
+                        <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.54574 13.725C4.86549 13.4986 3.33444 12.6465 2.2622 11.3411C1.18996 10.0356 0.656553 8.3742 0.76984 6.69282C0.883127 5.01143 1.63466 3.43554 2.87245 2.28382C4.11025 1.1321 5.74194 0.490502 7.43756 0.488773C9.13525 0.487146 10.77 1.12716 12.0105 2.27906C13.251 3.43096 14.0043 5.00855 14.1177 6.69199C14.2311 8.37543 13.6962 10.0388 12.6213 11.3447C11.5465 12.6507 10.0121 13.5016 8.32938 13.725V15.5561H12.7885V17.3287H8.32938V20.874H6.54574V17.3287H2.08665V15.5561H6.54574V13.725ZM7.43756 12.0108C8.73845 12.0108 9.98606 11.4972 10.9059 10.5831C11.8258 9.66887 12.3426 8.42897 12.3426 7.13611C12.3426 5.84326 11.8258 4.60336 10.9059 3.68917C9.98606 2.77498 8.73845 2.2614 7.43756 2.2614C6.13667 2.2614 4.88907 2.77498 3.9692 3.68917C3.04933 4.60336 2.53256 5.84326 2.53256 7.13611C2.53256 8.42897 3.04933 9.66887 3.9692 10.5831C4.88907 11.4972 6.13667 12.0108 7.43756 12.0108Z" fill="white"/>
+                        </svg>      
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black/80 px-[1.8vh] py-[1.6vh] rounded-lg flex flex-col gap-[0.8vh]">
+                <label for="height" class="text-bGray text-base font-normal">Height</label>
+                <div class="flex flex-1 gap-[1vh] items-center">
+                    <input x-model="height" class="bg-transparent text-xl focus:outline-none font-medium placeholder-white/40" id="height" name="height" type="range" min="120" max="220" pattern="[a-zA-Z]*" placeholder="Enter character Last Name"/>
+                    <span class="text-white/60 font-normal flex w-[9vh] text-right"><span class="text-xl font-medium text-white" x-text="height"></span>cm</span>
+                </div>  
+            </div>
+            <button @click="register()" class="bg-white rounded-lg font-medium text-base text-black px-[1.8vh] py-[1.6vh] transition-colors ease-out hover:bg-bPurple hover:text-white">
+                Create Identity
+            </button>
+        </section>
     </div>
-    <script>
-      function TriggeredKey(e) {
-        var keycode;
-        if (window.event) keycode = window.event.keyCode;
-        if (window.event.keyCode == 13 || window.event.keyCode == 27)
-          return false;
-      }
-    </script>
-    <script src="js/script.js"></script>
-  </body>
+</body>
+<script src="app.js" type="text/javascript"></script>
+<style>
+    input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 100%;
+      -webkit-appearance: none;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 2px;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 1.76vh;
+      -webkit-appearance: none;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 1.76vh;
+      -webkit-appearance: none;
+      height: 1.76vh;
+      cursor: ew-resize;
+      background: white;
+      box-shadow: -1000px 0 0 1000px #6536EA;
+    }
+
+}
+</style>
 </html>

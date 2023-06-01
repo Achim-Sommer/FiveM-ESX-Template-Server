@@ -375,19 +375,19 @@ else
 		local xPlayer = ESX.GetPlayerFromId(source)
 		if not checkNameFormat(data.firstname) then
 	            	TriggerClientEvent('esx:showNotification',source,TranslateCap('invalid_firstname_format'), "error")
-            		return cb(false)
+            		return cb(false, 'firstname')
         	end
         	if not checkNameFormat(data.lastname) then
             		TriggerClientEvent('esx:showNotification',source,TranslateCap('invalid_lastname_format'), "error")
-            		return cb(false)
+            		return cb(false, 'lastname')
         	end
         	if not checkSexFormat(data.sex) then
             		TriggerClientEvent('esx:showNotification',source,TranslateCap('invalid_sex_format'), "error")
-            		return cb(false)
+            		return cb(false, 'sex')
         	end
         	if not checkDOBFormat(data.dateofbirth) then
             		TriggerClientEvent('esx:showNotification',source,TranslateCap('invalid_dob_format'), "error")
-            		return cb(false)
+            		return cb(false, 'dob')
         	end
         	if not checkHeightFormat(data.height) then
             		TriggerClientEvent('esx:showNotification',source,TranslateCap('invalid_height_format'), "error")

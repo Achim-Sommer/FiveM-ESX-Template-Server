@@ -56,8 +56,9 @@ if not Config.UseDeferrals then
             return
         end
 
-        ESX.TriggerServerCallback('esx_identity:registerIdentity', function(callback)
+        ESX.TriggerServerCallback('esx_identity:registerIdentity', function(callback, text)
             if not callback then
+                cb(text)
                 return
             end
 
