@@ -2154,12 +2154,29 @@ INSERT INTO items (name, label, weight) VALUES
     ('hose', 'Schlauch', 5)
 ;
 
+CREATE TABLE `k5_documents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `data` longtext,
+  `ownerId` varchar(50),
+  `isCopy` tinyint,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `k5_document_templates` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `data` longtext,
+  `job` varchar(50),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
 CREATE TABLE IF NOT EXISTS `ox_doorlock` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `data` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
+
 
 INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 	(1, 'mrpd locker rooms', '{"maxDistance":2,"heading":90,"coords":{"x":450.1041259765625,"y":-985.7384033203125,"z":30.83930206298828},"groups":{"police":0},"state":1,"model":1557126584,"hideUi":false}'),

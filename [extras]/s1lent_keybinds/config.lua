@@ -19,6 +19,7 @@ Config.categories = {
 		commands={
             {description='Deine Spielzeit', command='/mytime', arguments=''},
             {description='Top List nach Spielzeit', command='/timelist', arguments=''},
+            {description='Dokumente ausstelen/ansehen', command='/dokument', arguments=''},
         },
     },
     {
