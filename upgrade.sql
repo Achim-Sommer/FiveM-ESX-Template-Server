@@ -720,3 +720,5 @@ CREATE TABLE `cardealer_vehicles` (
 INSERT INTO items (name, label, weight) VALUES 
     ('hose', 'Schlauch', 5)
 ;
+
+DROP TABLE `user_parkings`;
