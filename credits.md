@@ -66,4 +66,5 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/boostless/fuksus-identity 
 - https://github.com/Bob74/bob74_ipl 
 - https://github.com/overextended/ox_doorlock 
+- https://github.com/kac5a/k5_documents
 
