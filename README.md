@@ -20,6 +20,7 @@ Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bu
 
 - FiveM Forum: https://forum.achimsommer.com
 - Website: https://achimsommer.com
+- Discord: https://discord.gg/mZWNwyvmP2 (Kein Support / Support Only = https://shop.achimsommer.com/package/5708271 )
 
 
 # Projekt unterstüzen:
