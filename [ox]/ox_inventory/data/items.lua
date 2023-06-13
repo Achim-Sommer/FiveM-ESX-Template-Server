@@ -8036,4 +8036,45 @@ return {
 	stack = true,
 	close = true,
 },
+['tuna'] = {
+	label = 'Thunfisch',
+	weight = 650,
+	stack = true,
+	close = false,
+},
+
+['salmon'] = {
+	label = 'Lachs',
+	weight = 350,
+	stack = true,
+	close = false,
+},
+
+['trout'] = {
+	label = 'Forelle',
+	weight = 250,
+	stack = true,
+	close = false,
+},
+
+['anchovy'] = {
+	label = 'Sardellenfisch',
+	weight = 50,
+	stack = true,
+	close = false,
+},
+
+['fishbait'] = {
+	label = 'Fischköder',
+	weight = 50,
+	stack = true,
+	close = false,
+},
+
+['fishingrod'] = {
+	label = 'Angelrute',
+	weight = 800,
+	stack = true,
+	close = true,
+},
 }

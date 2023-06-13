@@ -102,9 +102,12 @@ Config.shops = {
             { type = 'tool', name = 'hose', description = 'Kann man immer gebrauchen', price = 10 },
             { type = 'tool', name = 'WEAPON_WRENCH', description = 'Kann nützlich werden', price = 200 },
             { type = 'tool', name = 'WEAPON_PETROLCAN', description = 'Falls der Tank leer geht', price = 150 },
+            { type = 'angel', name = 'fishingrod', description = 'Wie wäre es mit Angeln?', price = 250 },
+            { type = 'angel', name = 'fishbait', description = 'Ohne Köder wird es schwer einen Fisch zu fangen!', price = 50 },
         },
         filters = {
-            tool = 'Tools'
+            tool = 'Tools',
+            angel = 'Angelausrüstung'
         },
         locations = {
 			vec3(2748.0, 3473.0, 55.67),
