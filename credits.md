@@ -24,6 +24,7 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/esx-framework/esx_property 
 - https://github.com/esx-framework/esx_boat 
 - https://github.com/esx-framework/esx_jobs
+- https://github.com/esx-framework/esx_joblisting 
 - https://github.com/overextended/oxmysql
 - https://forum.cfx.re/t/the-diamond-casino-enterable-mlo/832067 
 - https://www.youtube.com/watch?v=zadmfcqsuYo
