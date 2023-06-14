@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#stage {
+  margin: 0 auto;
+  width: 1000px;
+  margin-top: 3%;
+  padding: 0 0 40px;
+  background: transparent;
+}
+
+.lever {
+  position: absolute;
+  float: left;
+  top: 100px;
+  margin-left: 318px;
+}
+
+.ownedCoins {
+  position: absolute;
+  float: left;
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  top: 535px;
+  left: 20%; right: 20%;
+}
+
+#ownedCoins {
+  font-size: 27px;
+  color: white;
+  font-weight: 300;
+}
+
+.ownedBet {
+  position: absolute;
+  float: left;
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  top: 570px;
+  left: 20%; right: 20%;
+}
+
+#win {
+  font-size: 24px;
+}
+
+.win {
+  font-size: 26px;
+  text-shadow: 1px 1px 1px black;
+  color: #FFD700;
+}
+
+#ownedBet {
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+}
+
+#rotate {
+  margin: 0 auto 0;
+  width: 630px;
+  height: 265px;
+  padding-top: 153px;
+  transform-style: preserve-3d;
+  border: 3px solid rgba(152, 196, 224, .8);
+  /* Ensure that we're in 3D space */
+  transform-style: preserve-3d;
+}
+
+.comenzi {
+  background: rgba(10, 10, 10, .8);
+  width: 490px;
+  height: 80px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border: 3px solid rgba(152, 196, 224, .8);
+  border-radius: 0 0 20px 20px;
+}
+
+.ring {
+  margin: 0 auto;
+  height: 112px;
+  width: 126px;
+  float: left;
+  transform-style: preserve-3d;
+
+}
+.slot {
+  position: absolute;
+  width: 126px;
+  height: 112px;
+  box-sizing: border-box;
+  opacity: 0.95;
+  color: rgba(0,0,0,0.9);
+  background: #011627;
+  border: solid 2px #000;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.backface-on {
+  -webkit-backface-visibility: visible;
+     -moz-backface-visibility: visible;
+          backface-visibility: visible;
+}
+
+.slot p {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 112px;
+  margin: 0;
+  text-align: center;
+}
+
+.bets {
+  position: relative;
+  transform: translate(0, -50%);
+  left: 50px;
+  top: -10px;
+  display: flex;
+  text-shadow: 1px 1px 1px black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonBet {
+  padding: 1.5%;
+  margin: 3px;
+  border: 1px solid rgb(152, 196, 224);
+  border-radius: 5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 1)
+}
+
+.buttonBet:hover {
+  border: 1px solid #0e718b;
+  color: rgb(152, 196, 224);
+}
+
+.betUp:hover {
+  background: #F37071;
+}
+
+.betUp {
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  left: 36%;
+  top: 48%;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #F15152;
+  transition: .2s all;
+}
+
+.AllIn:hover {
+  background: #2F404E;
+}
+
+.AllIn {
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  left: 42%;
+  top: 48%;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #011627;
+  transition: .2s all;
+}
+
+.go:hover {
+  background: #8EC68A;
+}
+
+.go {
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  left: 58%;
+  top: 49%;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #76BA70;
+  transition: .2s all;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+}
+
+.winner1 {
+  background: #f00;
+  border: 2px solid gold;
+  background-image: url("https://i.imgur.com/1bS67lm.gif");
+}
+.winner2 {
+  background: #f00;
+  border: 2px solid gold;
+  background-image: url("https://i.imgur.com/1bS67lm.gif");
+}
+
+.tilted {
+  transform: rotateY(45deg);
+}
+/*=====*/
+.spin-0     { transform: rotateX(-3719deg); }
+.spin-1     { transform: rotateX(-3749deg); }
+.spin-2     { transform: rotateX(-3779deg); }
+.spin-3     { transform: rotateX(-3809deg); }
+.spin-4     { transform: rotateX(-3839deg); }
+.spin-5     { transform: rotateX(-3869deg); }
+.spin-6     { transform: rotateX(-3899deg); }
+.spin-7     { transform: rotateX(-3929deg); }
+.spin-8     { transform: rotateX(-3959deg); }
+.spin-9     { transform: rotateX(-3989deg); }
+.spin-10    { transform: rotateX(-4019deg); }
+.spin-11    { transform: rotateX(-4049deg); }
+/*=====*/
+@keyframes back-spin {
+    /*0%    { transform: rotateX(0deg); }*/
+    100%  { transform: rotateX(30deg); }
+}
+@keyframes tiltin {
+    0%    { transform: rotateY(0deg);}
+    50%   { transform: rotateY(0deg);}
+    100%  { transform: rotateY(45deg);}
+}
+@keyframes tiltout {
+    0%    { transform: rotateY(45deg);}
+    100%  { transform: rotateY(0deg);}
+}
+
+@keyframes spin-0 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3719deg); }
+}
+@keyframes spin-1 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3749deg); }
+}
+@keyframes spin-2 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3779deg); }
+}
+@keyframes spin-3 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3809deg); }
+}
+@keyframes spin-4 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3839deg); }
+}
+@keyframes spin-5 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3869deg); }
+}
+@keyframes spin-6 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3899deg); }
+}
+@keyframes spin-7 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3929deg); }
+}
+@keyframes spin-8 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3959deg); }
+}
+@keyframes spin-9 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-3989deg); }
+}
+@keyframes spin-10 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-4019deg); }
+}
+@keyframes spin-11 {
+    0%    { transform: rotateX(30deg); }
+    100%  { transform: rotateX(-4049deg); }
+}
+
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+  color: #fff;
+  font-size: 18px;
+}
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
