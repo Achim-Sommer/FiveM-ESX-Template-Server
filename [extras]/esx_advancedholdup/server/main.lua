@@ -18,12 +18,12 @@ function CountPolice()
 end
 
 -- Add Command to Start Timer
-ESX.RegisterCommand('robstart', 'admin', function(xPlayer, args, showError)
+ESX.RegisterCommand('robberystart', 'admin', function(xPlayer, args, showError)
 	TriggerEvent('esx_advancedholdup:startTimer')
 end, false, {help = 'Start Robbery Timer'})
 
 -- Add Command to Reset Timer
-ESX.RegisterCommand('robreset', 'admin', function(xPlayer, args, showError)
+ESX.RegisterCommand('robberyreset', 'admin', function(xPlayer, args, showError)
 	TriggerEvent('esx_advancedholdup:resetTimer')
 end, false, {help = 'Reset Robbery Timer'})
 
