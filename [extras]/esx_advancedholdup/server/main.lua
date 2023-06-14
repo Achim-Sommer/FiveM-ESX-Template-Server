@@ -18,14 +18,14 @@ function CountPolice()
 end
 
 -- Add Command to Start Timer
-ESX.RegisterCommand('robberystart', 'admin', function(xPlayer, args, showError)
-	TriggerEvent('esx_advancedholdup:startTimer')
-end, false, {help = 'Start Robbery Timer'})
+--ESX.RegisterCommand('robberystart', 'admin', function(xPlayer, args, showError)
+--	TriggerEvent('esx_advancedholdup:startTimer')
+--end, false, {help = 'Start Robbery Timer'})
 
 -- Add Command to Reset Timer
-ESX.RegisterCommand('robberyreset', 'admin', function(xPlayer, args, showError)
-	TriggerEvent('esx_advancedholdup:resetTimer')
-end, false, {help = 'Reset Robbery Timer'})
+--ESX.RegisterCommand('robberyreset', 'admin', function(xPlayer, args, showError)
+--	TriggerEvent('esx_advancedholdup:resetTimer')
+--end, false, {help = 'Reset Robbery Timer'})
 
 -- See if there is an On Going Robbery & Cool Down has Ended
 ESX.RegisterServerCallback('esx_advancedholdup:checkRob', function(source, cb)
