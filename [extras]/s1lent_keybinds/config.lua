@@ -4,8 +4,8 @@ Config.categories = {
     {
         category='Allgemein',
         keys={
-            {description='Hauptmenü', key='F1'},
-            {description='Inventar', key='F2'},
+        {description='Hauptmenü', key='F1'},
+        {description='Inventar', key='F2'},
 		{description='Handy', key='F3'},
 		{description='PersonalMenü', key='F5'},
 		{description='Jobmenü', key='F6'},
