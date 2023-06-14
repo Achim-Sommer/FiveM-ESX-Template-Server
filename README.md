@@ -16,6 +16,9 @@ Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bu
 - Support & kleines Addon Pack: https://shop.achimsommer.com/package/5708276 
 - Support & großes Addon Pack: https://shop.achimsommer.com
 
+# Testserver:
+- Hier eine IP zu einem Test Server
+- XXX.XXX.XXX.XXX - coming soon
 # Social-Media
 
 - FiveM Forum: https://forum.achimsommer.com
@@ -29,3 +32,4 @@ Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bu
 - Shop: https://shop.achimsommer.com
 
 # Instalation:
+-coming soon
