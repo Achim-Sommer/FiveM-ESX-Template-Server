@@ -32,4 +32,4 @@ Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bu
 - Shop: https://shop.achimsommer.com
 
 # Instalation:
--coming soon
+- coming soon
