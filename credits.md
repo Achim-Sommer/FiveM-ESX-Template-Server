@@ -6,6 +6,7 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://shop.achimsommer.com/package/5156431
 - https://shop.achimsommer.com/package/5153446
 - https://shop.achimsommer.com/package/5240886
+- https://shop.achimsommer.com/package/5118396 
 - https://www.msk-scripts.de/package/5301831
 - https://github.com/esx-framework
 - https://github.com/esx-framework/esx_mechanicjob
