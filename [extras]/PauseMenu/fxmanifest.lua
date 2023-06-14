@@ -2,8 +2,8 @@ fx_version 'cerulean'
 
 game 'gta5'
 
-author 'Roderic#0614'
-description 'Example'
+author 'Zoygkos#5869'
+
 
 --Client Scripts-- 
 client_scripts {
@@ -15,11 +15,6 @@ server_scripts {
  'Server/*.lua'
 }
 
---Shared Scripts-- 
-shared_scripts {
-    '@es_extended/imports.lua',
-    'Config.lua'
-}
 
 --UI Part-- 
 ui_page {
