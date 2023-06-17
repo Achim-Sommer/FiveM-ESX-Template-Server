@@ -34,3 +34,4 @@ function CreateAddonAccount(name, owner, money)
 
 	return self
 end
+exports('CreateAddonAccount', CreateAddonAccount)
