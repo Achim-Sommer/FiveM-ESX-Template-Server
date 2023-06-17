@@ -21,6 +21,7 @@ end)
 exports('getSharedObject', function()
   return ESX
 end)
+exports('getCoreObject', function() return Core end) -- For msk_weaponammo
 
 if GetResourceState('ox_inventory') ~= 'missing' then
   Config.OxInventory = true
