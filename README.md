@@ -6,7 +6,8 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 # Entwicklungszeit aktuell:
 [![wakatime](https://wakatime.com/badge/user/677681b3-49a8-4ab2-a967-cffb857c9d96/project/80e53313-0c53-4d3c-8616-80b7084fc399.svg)](https://wakatime.com/badge/user/677681b3-49a8-4ab2-a967-cffb857c9d96/project/80e53313-0c53-4d3c-8616-80b7084fc399)
 
-Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bugs melden. Viele geplante Funktionen fehlen noch, kommen aber nach und nach rein.
+- Für den Server sind noch weitere Sachen geplant, gerne könnt ihr Vorschläge über den Discussions Tab machen.
+- Solltet ihr irgendwelche Bugs finden, nutzt bitte den Issues Tab und beschreibt den Bug so gut wie möglich. Wir werden dann schnellst möglich versuchen den Bug zu fixen.
 -----------------------------------------
 # FiveM Server mieten oder Lifetime kaufen!
 - https://zap-hosting.com/ServerFiveM
@@ -20,8 +21,8 @@ Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bu
 # Testserver:
 - Hier eine IP zu einem Test Server
 - XXX.XXX.XXX.XXX - coming soon
+  
 # Social-Media
-
 - FiveM Forum: https://forum.achimsommer.com
 - Website: https://achimsommer.com
 - Discord: https://discord.gg/mZWNwyvmP2 (Kein Support / Support Only = https://shop.achimsommer.com/package/5708271 )
@@ -32,5 +33,5 @@ Der Server ist bei weitem noch nicht fertig. Aktuell bitte Feedback geben und Bu
 - PayPal: sommerachim@hotmail.de
 - Shop: https://shop.achimsommer.com
 
-# Instalation:
+# Instalationanleitung:
 - coming soon
