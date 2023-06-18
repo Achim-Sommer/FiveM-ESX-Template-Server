@@ -1,5 +1,5 @@
 Config = {}
-Config.Locale = GetConvar('esx:locale', 'en')
+Config.Locale = GetConvar('esx:locale', 'de')
 
 Config.Accounts = {
 	bank = {
@@ -16,7 +16,7 @@ Config.Accounts = {
 	}
 }
 
-Config.StartingAccountMoney 	= {bank = 50000}
+Config.StartingAccountMoney 	= {bank = 80000}
 
 Config.DefaultSpawn 			= {x = -269.4, y = -955.3, z = 31.2, heading = 205.8}
 
