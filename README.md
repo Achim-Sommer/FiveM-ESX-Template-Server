@@ -34,6 +34,8 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 - PayPal: sommerachim@hotmail.de
 - Shop: https://shop.achimsommer.com
 
+-----------------------------------------
+
 # Instalationanleitung:
 ## Die Anleitung ist für einen neuen FiveM Server
 ### Wichtig! Hast du einen TxAdmin Server musst du bei der Einrichtung von TxAdmin, Popular Template auswählen und dann Defaul CFX
