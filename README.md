@@ -57,12 +57,17 @@ Füge folgende Dateien in deinen server-data Ordner ein:
 
 3.
 Trage deine MySql Datenbank Verbidung in die server.cfg
-siehe Zeile 16
+- siehe Zeile 16
 
 4.
 Trage deine SteamID64(hex) in die server.cfg um Admin zu werden:
-siehe Zeile 68
+- siehe Zeile 68
 
 
 5.
 Imporitere die server.sql aus dem [SQL] Ordner per phpmyadmin in deine Datenbank
+
+6.
+Hol dir das Support Paket oder das Support Paket mit Addon wenn du möchtest
+- https://shop.achimsommer.com/package/5708271
+- https://shop.achimsommer.com/package/5708276 
