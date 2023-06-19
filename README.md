@@ -35,4 +35,34 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 - Shop: https://shop.achimsommer.com
 
 # Instalationanleitung:
-- coming soon
+## Die Anleitung ist für einen neuen FiveM Server
+### Wichtig! Hast du einen TxAdmin Server musst du bei der Einrichtung von TxAdmin, Popular Template auswählen und dann Defaul CFX
+1.
+Füge folgende Ordner in deinen resources Ordner ein:
+[core]
+[esxaddon]
+[esxjobs]
+[maps]
+[extras]
+[ox]
+[phone]
+[templateserveraddon]
+
+2.
+Füge folgende Dateien in deinen server-data Ordner ein:
+inventory.cfg
+maps.cfg
+phone.cfg
+server.cfg
+
+3.
+Trage deine MySql Datenbank Verbidung in die server.cfg
+siehe Zeile 16
+
+4.
+Trage deine SteamID64(hex) in die server.cfg um Admin zu werden:
+siehe Zeile 68
+
+
+5.
+Imporitere die server.sql aus dem [SQL] Ordner per phpmyadmin in deine Datenbank
