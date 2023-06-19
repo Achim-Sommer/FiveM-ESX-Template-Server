@@ -37,7 +37,7 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 
 -----------------------------------------
 
-# Instalationanleitung:
+# Installationsanleitung:
 ## Die Anleitung ist für einen neuen FiveM Server
 ### Wichtig! Hast du einen TxAdmin Server musst du bei der Einrichtung von TxAdmin, Popular Template auswählen und dann Default CFX.
 
