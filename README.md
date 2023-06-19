@@ -39,7 +39,13 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 
 # Instalationanleitung:
 ## Die Anleitung ist für einen neuen FiveM Server
-### Wichtig! Hast du einen TxAdmin Server musst du bei der Einrichtung von TxAdmin, Popular Template auswählen und dann Default CFX
+### Wichtig! Hast du einen TxAdmin Server musst du bei der Einrichtung von TxAdmin, Popular Template auswählen und dann Default CFX.
+
+- Bei einem vServer oder Rootserver musst du erstmal einen Cleanen FiveM Server auf diesen installieren.
+- Bei einem vServer oder Rootserver brauchst du die FiveM Element Club Argentum Mitgliedschaft um OneSync zu nutzen.
+- Bei einem Gameserver von Zap-hosting brauchst du die FiveM Element Club Argentum Mitgleidschaft erst bei über 48 Slots.
+
+
 1.
 Füge folgende Ordner in deinen resources Ordner ein:
 - [core]
