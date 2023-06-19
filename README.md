@@ -63,11 +63,15 @@ Trage deine MySql Datenbank Verbidung in die server.cfg
 Trage deine SteamID64(hex) in die server.cfg um Admin zu werden:
 - siehe Zeile 68
 
-
 5.
-Imporitere die server.sql aus dem [SQL] Ordner per phpmyadmin in deine Datenbank
+Trage deinen steam_webApiKey in die server.cfg ein
+- siehe Zeile 74
+- https://forum.achimsommer.com/home/lexicon/entry/13-fivem-server-steam-api-key-fivem-steam-wird-nicht-erkann/
 
 6.
-Hol dir das Support Paket oder das Support Paket mit Addon wenn du möchtest
+Imporitere die server.sql aus dem [SQL] Ordner per phpmyadmin in deine Datenbank
+
+7.
+Hol dir das Support Paket oder das Support Paket mit Addon wenn du möchtest, um das Projekt zu unterstüzen.
 - https://shop.achimsommer.com/package/5708271
 - https://shop.achimsommer.com/package/5708276 
