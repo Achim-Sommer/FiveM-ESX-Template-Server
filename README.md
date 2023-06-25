@@ -74,6 +74,8 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 - Bei einem vServer oder Rootserver brauchst du die FiveM Element Club Argentum Mitgliedschaft um OneSync zu nutzen.
 - Bei einem Gameserver von Zap-hosting brauchst du die FiveM Element Club Argentum Mitgleidschaft erst bei über 48 Slots.
 
+- Für weitere Hilfe kannst du das Projekt unterstüzen und Zugriff zum Ticketsystem bekommen: https://shop.achimsommer.com/package/5708271 
+
 
 1.
 Füge folgende Ordner in deinen resources Ordner ein:
