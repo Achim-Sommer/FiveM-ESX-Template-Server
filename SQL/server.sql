@@ -1945,8 +1945,6 @@ CREATE TABLE IF NOT EXISTS `npwd_twitter_likes`
     CONSTRAINT `tweet` FOREIGN KEY (`tweet_id`) REFERENCES `npwd_twitter_tweets` (`id`) ON DELETE CASCADE
 );
 
-ALTER TABLE `users` ADD `zetony` LONGTEXT DEFAULT 0;
-
 CREATE TABLE IF NOT EXISTS `npwd_match_profiles`
 (
     `id`            int          NOT NULL AUTO_INCREMENT,
