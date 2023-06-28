@@ -5723,20 +5723,6 @@ return {
 		close = true,
 	},
 
-	["fishbait"] = {
-		label = "Fischköder",
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	["fishingrod"] = {
-		label = "Angelrute",
-		weight = 2,
-		stack = true,
-		close = true,
-	},
-
 	["fixkit"] = {
 		label = "Repair Kit",
 		weight = 3,
