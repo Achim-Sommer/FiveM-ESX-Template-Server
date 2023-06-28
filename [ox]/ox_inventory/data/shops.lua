@@ -49,12 +49,15 @@ return {
 		blip = {
 			id = 110, colour = 84, scale = 0.8
 		}, inventory = {
-			{ name = 'ammo-9', price = 5, },
+			{ name = 'ammo-9', price = 1, },
 			{ name = 'ammo-rifle', price = 5, },
+			{ name = 'ammo-sniper', price = 5, },
 			{ name = 'WEAPON_FLASHLIGHT', price = 200 },
 			{ name = 'WEAPON_NIGHTSTICK', price = 100 },
+			{ name = 'WEAPON_TEARGAS', price = 100 },
 			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'POL' }, license = 'weapon' },
 			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'POL' }, license = 'weapon', grade = 3 },
+			{ name = 'WEAPON_SNIPERRIFLE', price = 2000, metadata = { registered = true, serial = 'POL' }, license = 'weapon', grade = 3 },
 			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'POL'} }
 		}, locations = {
 			vec3(451.51, -979.44, 30.68)
@@ -87,9 +90,12 @@ return {
 		inventory = {
 			{ name = 'WEAPON_DAGGER', price = 5000, metadata = { registered = false	}, currency = 'black_money' },
 			{ name = 'WEAPON_CERAMICPISTOL', price = 50000, metadata = { registered = false }, currency = 'black_money' },
+			{ name = 'WEAPON_SNIPERRIFLE', price = 80000, metadata = { registered = false }, currency = 'black_money' },
+			{ name = 'WEAPON_SMG', price = 60000, metadata = { registered = false }, currency = 'black_money' },
 			{ name = 'at_suppressor_light', price = 50000, currency = 'black_money' },
 			{ name = 'ammo-rifle', price = 10, currency = 'black_money' },
-			{ name = 'ammo-9', price = 10, currency = 'black_money' },
+			{ name = 'ammo-sniper', price = 10, currency = 'black_money' },
+			{ name = 'ammo-9', price = 2, currency = 'black_money' },
 			{ name = 'ammo-rifle2', price = 10, currency = 'black_money' }
 		}, locations = {
 			vec3(309.09, -913.75, 56.46)
@@ -102,7 +108,10 @@ return {
 		name = 'Vending Machine',
 		inventory = {
 			{ name = 'water', price = 10 },
-			{ name = 'cola', price = 10 },
+			{ name = 'cola', price = 20 },
+			{ name = 'beer', price = 25 },
+			{ name = 'coffee', price = 10 },
+			{ name = 'twix', price = 10 },
 		},
 		model = {
 			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`
