@@ -1855,7 +1855,7 @@ INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_
 	('banker',1,'banker','Banker',20,'{}','{}'),
 	('banker',2,'business_banker',"Investment banker",30,'{}','{}'),
 	('banker',3,'trader','Broker',40,'{}','{}'),
-	('banker',4,'boss','Boss',0,'{}','{}'),
+	('banker',4,'boss','Boss',0,'{}','{}')
 ;
 
 
@@ -1944,8 +1944,6 @@ CREATE TABLE IF NOT EXISTS `npwd_twitter_likes`
     CONSTRAINT `profile` FOREIGN KEY (`profile_id`) REFERENCES `npwd_twitter_profiles` (`id`),
     CONSTRAINT `tweet` FOREIGN KEY (`tweet_id`) REFERENCES `npwd_twitter_tweets` (`id`) ON DELETE CASCADE
 );
-
-ALTER TABLE `users` ADD `zetony` LONGTEXT DEFAULT 0;
 
 CREATE TABLE IF NOT EXISTS `npwd_match_profiles`
 (
@@ -2148,8 +2146,6 @@ CREATE TABLE IF NOT EXISTS `pickle_prisons` (
   `sentence_date` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE `user_parkings`;
-
 INSERT INTO items (name, label, weight) VALUES 
     ('hose', 'Schlauch', 5)
 ;
@@ -2189,4 +2185,5 @@ INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 	(8, 'mrpd gate', '{"maxDistance":6,"heading":90,"coords":{"x":488.894775390625,"y":-1017.2102661132813,"z":27.14714050292968},"groups":{"police":0},"auto":true,"state":1,"model":-1603817716,"hideUi":false}'),
 	(9, 'mrpd cell 1', '{"maxDistance":2,"heading":270,"coords":{"x":461.8065185546875,"y":-993.7586059570313,"z":25.06442832946777},"lockSound":"metal-locker","groups":{"police":0},"state":1,"unlockSound":"metallic-creak","model":631614199,"hideUi":false}'),
 	(10, 'mrpd cells main', '{"maxDistance":2,"heading":360,"coords":{"x":463.92010498046877,"y":-992.6640625,"z":25.06442832946777},"lockSound":"metal-locker","groups":{"police":0},"state":1,"unlockSound":"metallic-creak","model":631614199,"hideUi":false}'),
-	(11, 'mrpd armoury', '{"maxDistance":2,"heading":270,"coords":{"x":453.08428955078127,"y":-982.5794677734375,"z":30.81926536560058},"autolock":5,"groups":{"police":0},"state":1,"model":749848321,"hideUi":false}');
+	(11, 'mrpd armoury', '{"maxDistance":2,"heading":270,"coords":{"x":453.08428955078127,"y":-982.5794677734375,"z":30.81926536560058},"autolock":5,"groups":{"police":0},"state":1,"model":749848321,"hideUi":false}')
+  ;
