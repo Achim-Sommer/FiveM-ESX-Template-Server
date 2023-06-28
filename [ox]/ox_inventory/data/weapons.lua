@@ -55,13 +55,13 @@ return {
 		},
 
 		['WEAPON_BATTLEAXE'] = {
-			label = 'Battle Axe',
+			label = 'Streitaxt',
 			weight = 6500,
 			durability = 0.1,
 		},
 
 		['WEAPON_BOTTLE'] = {
-			label = 'Bottle',
+			label = 'Falsche',
 			weight = 350,
 			durability = 0.1,
 		},
@@ -171,7 +171,7 @@ return {
 		},
 
 		['WEAPON_CROWBAR'] = {
-			label = 'Crowbar',
+			label = 'Brechstange',
 			weight = 2500,
 			durability = 0.1,
 		},
@@ -222,7 +222,7 @@ return {
 		},
 
 		['WEAPON_FLAREGUN'] = {
-			label = 'Flare Gun',
+			label = 'Leuchtpistole',
 			weight = 1000,
 			durability = 0.5,
 			ammoname = 'ammo-flare'
@@ -241,13 +241,13 @@ return {
 		},
 
 		['WEAPON_GRENADE'] = {
-			label = 'Grenade',
+			label = 'Granate',
 			weight = 400,
 			throwable = true,
 		},
 
 		['WEAPON_GRENADELAUNCHER'] = {
-			label = 'Grenade Launcher',
+			label = 'Granatwerfer',
 			weight = 6500,
 			durability = 0.05,
 			ammoname = 'ammo-grenade'
@@ -316,14 +316,14 @@ return {
 		},
 
 		['WEAPON_HEAVYSNIPER'] = {
-			label = 'Heavy Sniper',
+			label = 'Schweres Scharfschützengewehr',
 			weight = 12700,
 			durability = 0.5,
 			ammoname = 'ammo-heavysniper'
 		},
 
 		['WEAPON_HEAVYSNIPER_MK2'] = {
-			label = 'Heavy Sniper MK2',
+			label = 'Schweres Scharfschützengewehr MK2',
 			weight = 14000,
 			durability = 0.5,
 			ammoname = 'ammo-heavysniper'
@@ -411,7 +411,7 @@ return {
 		},
 
 		['WEAPON_MOLOTOV'] = {
-			label = 'Molotov',
+			label = 'Molotow',
 			weight = 1800,
 			throwable = true,
 		},
@@ -476,19 +476,19 @@ return {
 		},
 
 		['WEAPON_POOLCUE'] = {
-			label = 'Pool Cue',
+			label = 'Billardqueue',
 			weight = 146,
 			durability = 0.1,
 		},
 
 		['WEAPON_CANDYCANE'] = {
-			label = 'Candy Cane',
+			label = 'Zuckerstange',
 			weight = 85,
 			durability = 0.1,
 		},
 
 		['WEAPON_PROXMINE'] = {
-			label = 'Proximity Mine',
+			label = 'Annäherungsminen',
 			weight = 2500,
 			throwable = true,
 		},
@@ -577,20 +577,20 @@ return {
 		},
 
 		['WEAPON_SMOKEGRENADE'] = {
-			label = 'Smoke Grenade',
+			label = 'Rauchgranate',
 			weight = 600,
 			throwable = true,
 		},
 
 		['WEAPON_SNIPERRIFLE'] = {
-			label = 'Sniper Rifle',
+			label = 'Scharfschützengewehr',
 			weight = 5000,
 			durability = 0.5,
 			ammoname = 'ammo-sniper'
 		},
 
 		['WEAPON_SNOWBALL'] = {
-			label = 'Snow Ball',
+			label = 'Schneeball',
 			weight = 5,
 			throwable = true,
 		},
@@ -624,7 +624,7 @@ return {
 		},
 
 		['WEAPON_STICKYBOMB'] = {
-			label = 'Sticky Bomb',
+			label = 'Haftbombe',
 			weight = 1000,
 			throwable = true,
 		},
@@ -670,7 +670,7 @@ return {
 		},
 
 		['WEAPON_WRENCH'] = {
-			label = 'Wrench',
+			label = 'Schraubenschlüssel',
 			weight = 2500,
 			durability = 0.1,
 		},
@@ -690,7 +690,7 @@ return {
 		},
 
 		['WEAPON_TEARGAS'] = {
-			label = 'Tear Gas',
+			label = 'Tränengas',
 			weight = 600,
 			throwable = true,
 		},
