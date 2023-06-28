@@ -405,7 +405,7 @@ return {
 
 	["copper"] = {
 		label = "Kupfer",
-		weight = 1,
+		weight = 225,
 		stack = true,
 		close = true,
 	},
@@ -433,7 +433,7 @@ return {
 
 	["diamond"] = {
 		label = "Diamant",
-		weight = 1,
+		weight = 140,
 		stack = true,
 		close = true,
 	},
@@ -5774,7 +5774,7 @@ return {
 
 	["gold"] = {
 		label = "Gold",
-		weight = 1,
+		weight = 155,
 		stack = true,
 		close = true,
 	},
@@ -5859,13 +5859,6 @@ return {
 	["ied"] = {
 		label = "Autobombe",
 		weight = 0,
-		stack = true,
-		close = true,
-	},
-
-	["iron"] = {
-		label = "Eisen",
-		weight = 1,
 		stack = true,
 		close = true,
 	},
@@ -6101,11 +6094,11 @@ return {
 		close = true,
 	},
 
-	["pickaxe"] = {
-		label = "Spitzhacke",
-		weight = 1,
+	['pickaxe'] = {
+		label = 'Spitzhacke',
+		weight = 325,
 		stack = true,
-		close = true,
+		degrade = 30 -- This is the time in minutes until a pickaxe degrades and is removed from inventory
 	},
 
 	["poppyresin"] = {
@@ -6227,13 +6220,6 @@ return {
 
 	["sports_tirekit"] = {
 		label = "Sports Tire Kit",
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	["stone"] = {
-		label = "Felsbrocken",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -7769,7 +7755,7 @@ return {
 },
 ['steel'] = {
 	label = 'Stahl',
-	weight = 20,
+	weight = 190,
 	stack = true,
 	close = true,
 	description = nil,
@@ -7808,18 +7794,6 @@ return {
 	stack = true,
 	close = true,
 	description = nil,
-},
-
-['copper'] = {
-	label = 'Kupfer',
-	weight = 20,
-	stack = true,
-},
-
-['iron'] = {
-	label = 'Eisen',
-	weight = 20,
-	stack = true,
 },
 
 ['aluminum'] = {
@@ -8077,4 +8051,77 @@ return {
 	stack = true,
 	close = true,
 },
+
+['scrap_metal'] = {
+    label = 'Eisenschrott',
+    weight = 280,
+    stack = true,
+},
+
+['stone'] = {
+    label = 'Stein',
+    weight = 265,
+    stack = true,
+},
+
+['raw_copper'] = {
+    label = 'Kupfererz',
+    weight = 245,
+    stack = true,
+},
+
+['raw_iron'] = {
+    label = 'Eisenerz',
+    weight = 225,
+    stack = true,
+},
+
+['raw_steel'] = {
+    label = 'RStahlerz',
+    weight = 210,
+    stack = true,
+},
+
+['raw_silver'] = {
+    label = 'Silbererz',
+    weight = 190,
+    stack = true,
+},
+
+['raw_gold'] = {
+    label = 'Golderz',
+    weight = 190,
+    stack = true,
+},
+
+['raw_diamond'] = {
+    label = 'Rohdiamant',
+    weight = 165,
+    stack = true,
+},
+
+['raw_emerald'] = {
+    label = 'Rohsmaragd',
+    weight = 140,
+    stack = true,
+},
+
+['iron'] = {
+    label = 'Eisen',
+    weight = 200,
+    stack = true,
+},
+
+['silver'] = {
+    label = 'Silber',
+    weight = 175,
+    stack = true,
+},
+
+['emerald'] = {
+    label = 'Smaragd',
+    weight = 125,
+    stack = true,
+},
+
 }
