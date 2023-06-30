@@ -1,7 +1,7 @@
 Config = {}
 
 -- General configurations
-Config.EnableNightMining = false -- By default this is false which means players cannot mine between the nightly hours of 20:00 to 05:00.
+Config.EnableNightMining = true -- By default this is false which means players cannot mine between the nightly hours of 20:00 to 05:00.
 Config.MinMiningTime = 2000 -- How long at minimum mining a single material should take
 Config.MaxMiningTime = 4000 -- How long at maximum mining a single material should take
 Config.PickaxeItemName = 'pickaxe' -- The item name required to start mining
@@ -129,13 +129,13 @@ Config.BlipSettings = {
         blipScale = 0.75 -- Ranges from 0.01 to 1.0
     },
     smeltSettings = {
-        blipName = 'Smelting',
+        blipName = 'Schmelze',
         blipSprite = 648,
         blipColor = 17, 
         blipScale = 0.80
     },
     sellSettings = {
-        blipName = 'Sell Materials',
+        blipName = 'Rohstoffverkauf',
         blipSprite = 207,
         blipColor = 2, 
         blipScale = 0.80
@@ -146,14 +146,14 @@ Notify = {
     title = 'Mining', -- The title for all notifications
     position = 'top', -- The position for all notifications
     icon = 'fas fa-hill-rockslide', -- The icon for all notifications
-    mineAtNight = 'You cannot mine at night - please try again later',
-    noPickaxe = 'You need a pickaxe in order to begin mining',
-    noDurability = 'You\'re pickaxe has completely degraded',
-    cancelledMining = 'You stopped mining',
-    cancelledSmelting = 'You stopped smelting ',
-    cancelledSell = 'You stopped selling your materials',
-    missingItem = 'You do not have enough ',
-    missingItemSell = 'You do not have enough'
+    mineAtNight = 'Du kannst nachts nicht minen - bitte versuche es später noch einmal',
+    noPickaxe = 'Du brauchst eine Spitzhacke, um mit dem Bergbau zu beginnen',
+    noDurability = 'Deine Spitzhacke hat sich komplett abgenutzt',
+    cancelledMining = 'Du hast mit dem Abbau aufgehört',
+    cancelledSmelting = 'Du hast aufgehört zu schmelzen ',
+    cancelledSell = 'Du hast den Verkauf deiner Materialien eingestellt',
+    missingItem = 'Du hast nicht genug ',
+    missingItemSell = 'Du hast nicht genug'
 }
 
 TextUI = {
