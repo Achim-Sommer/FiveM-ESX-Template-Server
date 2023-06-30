@@ -65,7 +65,7 @@ lib.callback.register('lation_mining:sellItem', function(source, item, quantity,
             else
                 ox_inventory:RemoveItem(source, item, quantity)
                 xPlayer.addAccountMoney(Config.Selling.account, sellValue)
-                TriggerClientEvent('ox_lib:notify', source, { title = Notify.title, description = 'You have been paid $' ..sellValue, icon = Notify.icon, type = 'success', position = Notify.position })
+                TriggerClientEvent('ox_lib:notify', source, { title = Notify.title, description = 'Du wurdest bezahlt $' ..sellValue, icon = Notify.icon, type = 'success', position = Notify.position })
             end
         else 
             -- player's inventory is full/cannot carry
