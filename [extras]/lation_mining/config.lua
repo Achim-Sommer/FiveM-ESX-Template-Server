@@ -157,22 +157,22 @@ Notify = {
 }
 
 TextUI = {
-    label = 'E - Start mining',
+    label = 'E - Abbau beginnen',
     position = 'left-center',
     icon = 'fas fa-hill-rockslide'
 }
 
 ProgressCircle = {
     position = 'middle', -- The position for all progressCircle's
-    miningLabel = 'Mining..',
-    smeltingLabel = 'Smelting..',
-    sellingLabel = 'Selling..'
+    miningLabel = 'Abbau..',
+    smeltingLabel = 'Schmelzen..',
+    sellingLabel = 'Verkaufen..'
 }
 
 Target = {
-    smeltLabel = 'Start smelting',
+    smeltLabel = 'Schmlezen beginnen',
     smeltIcon = 'fas fa-fire',
-    sellLabel = 'Sell materials',
+    sellLabel = 'Rohstoffe Verkaufen',
     sellIcon = 'fas fa-hand-holding-dollar'
 }
 
