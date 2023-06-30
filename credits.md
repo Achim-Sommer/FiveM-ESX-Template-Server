@@ -74,4 +74,3 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://github.com/LuaDeldu/esx_advanced_holdup 
 - https://forum.cfx.re/t/release-pause-menu/4919651
 - https://forum.cfx.re/t/custom-animated-billboard-pillbox-medical-center/5129426
-- https://forum.cfx.re/t/release-pillbox-hospital-interior-mlo/609786 
