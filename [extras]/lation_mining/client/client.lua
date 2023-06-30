@@ -183,9 +183,9 @@ end
 -- Function that handles the smelting process
 function startSmelt()
     if Config.Selling.enabled then
-        local smeltInput = lib.inputDialog('Choose Material', {
-            {type = 'select', label = 'Raw Material', description = 'What do you want to smelt?', required = true, icon = 'recycle', options = smeltingInputOptions},
-            {type = 'number', label = 'Quantity', description = 'How many do you want to smelt?', icon = 'hashtag', required = true}
+        local smeltInput = lib.inputDialog('Material auswählen', {
+            {type = 'select', label = 'Rohmaterial', description = 'Was willst du schmlezen?', required = true, icon = 'recycle', options = smeltingInputOptions},
+            {type = 'number', label = 'Menge', description = 'Wieviel willst du schmelzen?', icon = 'hashtag', required = true}
         })
         if smeltInput == nil then 
             smeltStarted = false
@@ -253,9 +253,9 @@ end
 
 if Config.Selling.enabled then 
     function startSelling()
-        local sellInput = lib.inputDialog('Choose Material', {
-            {type = 'select', label = 'Material', description = 'What do you want to sell?', required = true, icon = 'recycle', options = sellingInputOptions},
-            {type = 'number', label = 'Quantity', description = 'How many do you want to sell?', icon = 'hashtag', required = true}
+        local sellInput = lib.inputDialog('Material auswählen', {
+            {type = 'select', label = 'Material', description = 'Was willst du verkaufen?', required = true, icon = 'recycle', options = sellingInputOptions},
+            {type = 'number', label = 'Menge', description = 'Wieviel willst du verkaufen?', icon = 'hashtag', required = true}
         })
         if sellInput == nil then 
             return -- Something went wrong?
