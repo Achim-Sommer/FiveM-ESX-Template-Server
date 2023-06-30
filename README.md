@@ -1,4 +1,4 @@
-# Template Server ESX Legacy by ACHIM!
+# Template Server ESX Legacy by ACHIM! - UNBEDINGT LESEN
 
 ![FiveM template Server ](https://github.com/Achim-Sommer/FiveM-ESX-Template-Server/assets/39227403/cc02e74a-6393-4694-a487-7c1ad10f734b)
 
