@@ -131,6 +131,7 @@ return {
 	['lockpick'] = {
 		label = 'Lockpick',
 		weight = 160,
+		stack = true,
 	},
 
 	['phone'] = {
@@ -151,6 +152,14 @@ return {
 				end
 			end
 		}
+	},
+
+	['headlights'] = {
+		label = 'RGB-Steuerung',
+		weight = 190,
+		stack = false,
+		consume = 0,
+		close = true,
 	},
 
 	['money'] = {

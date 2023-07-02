@@ -103,11 +103,13 @@ Config.shops = {
             { type = 'tool', name = 'WEAPON_WRENCH', description = 'Kann nützlich werden', price = 200 },
             { type = 'tool', name = 'WEAPON_PETROLCAN', description = 'Falls der Tank leer geht', price = 150 },
             { type = 'tool', name = 'pickaxe', description = 'Wie wäre es mit etwas mining?', price = 250 },
+            { type = 'tech', name = 'headlights', description = 'Wie wäre es mit etwas Farbe bei deinem Licht am Auto?', price = 550 },
             { type = 'angel', name = 'fishingrod', description = 'Wie wäre es mit Angeln?', price = 250 },
             { type = 'angel', name = 'fishbait', description = 'Ohne Köder wird es schwer einen Fisch zu fangen!', price = 50 },
         },
         filters = {
             tool = 'Tools',
+            tech = 'Technik',
             angel = 'Angelausrüstung'
         },
         locations = {
