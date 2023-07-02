@@ -21,6 +21,7 @@ Config.categories = {
             {description='Top List nach Spielzeit', command='/timelist', arguments=''},
             {description='Dokumente ausstelen/ansehen', command='/dokument', arguments=''},
             {description='Neue Tür konfigurieren (ADMIN)', command='/doorlock', arguments=''},
+            {description='Automatisch Laufen', command='/aw', arguments=''},
         },
     },
     {
