@@ -156,9 +156,8 @@ return {
 
 	['headlights'] = {
 		label = 'RGB-Steuerung',
-		weight = 190,
-		stack = false,
-		consume = 0,
+		weight = 50,
+		stack = true,
 		close = true,
 	},
 
