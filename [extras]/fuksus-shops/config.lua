@@ -33,6 +33,7 @@ Config.shops = {
             { type = 'drink', name = 'mustard', description = 'Stillt Hunger und Durst', price = 20 },
             { type = 'food', name = 'twix', description = 'Bock auf was Süßes?', price = 10 },
             { type = 'food', name = 'doritos', description = 'Bock auf was Süßes?', price = 10 },
+            { type = 'animale', name = 'petfood', description = 'Hat dein Tier Hunger?', price = 25 },
             { type = 'items', name = 'scratch_ticket', description = 'Versuch dein Glück', price = 250 },
             { type = 'items', name = 'medikit', description = 'Etwas Heilung?', price = 1000 },
             { type = 'items', name = 'phone', description = 'Wer kann ohne?', price = 3000 },
@@ -42,6 +43,7 @@ Config.shops = {
             food = 'Essen',
             drink = 'Trinken',
             alc = 'Alkohol',
+            animale = 'Tierbedarf',
             items = 'Items'
         },
         locations = {
@@ -106,10 +108,12 @@ Config.shops = {
             { type = 'tech', name = 'headlights', description = 'Wie wäre es mit etwas Farbe bei deinem Licht am Auto?', price = 550 },
             { type = 'angel', name = 'fishingrod', description = 'Wie wäre es mit Angeln?', price = 250 },
             { type = 'angel', name = 'fishbait', description = 'Ohne Köder wird es schwer einen Fisch zu fangen!', price = 50 },
+            { type = 'animale', name = 'petfood', description = 'Hat dein Tier Hunger?', price = 25 },
         },
         filters = {
             tool = 'Tools',
             tech = 'Technik',
+            animale = 'Tierbedarf',
             angel = 'Angelausrüstung'
         },
         locations = {

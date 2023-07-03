@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: UVNBaiSau_R;
+    src: url(../fonts/UVNBaiSau_R.ttf);
+}
+
+.container {
+	margin: 0 auto;
+    width: 900px; 
+	height: 600px;
+	margin-top: 5%;
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+}
+
+.animal_title {
+    background-image: repeating-linear-gradient(to right, rgb(0, 204, 255), rgb(235, 141, 34));
+    background-size: 200% 200%;
+    background-position: 100% 100%;  
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 30px;
+    animation: fade 5s ease infinite;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+    font-family: UVNBaiSau_R;
+}
+
+.animal_title {
+    -webkit-animation: Fade 10s ease infinite;
+    -moz-animation: Fade 10s ease infinite;
+    animation: Fade 10s ease infinite;
+}
+
+.animal_list {
+    background-color: rgba(0,0,0,0.7);
+	width: 100%;
+    height: 720px;
+	overflow-y: scroll;
+}
+
+.animal {
+	margin: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 250px;
+    height: 265px;
+    border-radius: 5px;
+    overflow: hidden;
+	color:#FFFFFF;
+}
+
+.animal:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#animal_avata {
+	margin-top: 10px;
+    width: 128;
+    height: 128px;
+    display: inline-block;
+	margin-bottom: 5px;
+}
+
+#animal_name {
+	font-size: 20px;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-family: UVNBaiSau_R;
+}
+
+#animal_price {
+	font-size: 20px;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-family: UVNBaiSau_R;
+}
+
+#animal_buy {
+	width: 48px;
+	height: 48px;
+	margin: 5px;
+}
+
+@-webkit-keyframes Fade {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@-moz-keyframes Fade {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes Fade { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.7);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ec8e22; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ec8e22; 
+}
+ 
+button {
+	font-family: 'UVNBaiSau_R';
+	background-color: rgba(255,255,255,0.3);
+	border: 1px solid #ec8e22;
+	color: #FFFFFF;
+}
+
+button {
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+button:hover {
+	background-color: #ec8e22; /* Green */
+	color: white;
+}
+
+
+.popup {
+  display: none;
+  position: absolute;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 450px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 20px 0 25px; }
+  .popup p {
+    margin-bottom: 10px; }
+  .popup .buttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .popup .buttons .button {
+      background-color: rgba(0, 0, 0, 0.75);
+      text-align: center;
+      vertical-align: middle;
+      width: 60px;
+      height: 40px;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 0 10px;
+      color: white;
+      line-height: 40px; }
+    .popup .buttons .yes {
+      background-color: rgba(0, 0, 0, 0.75)}
+	  
+#popupYes:hover {
+	background-color: #ec8e22; /* Green */
+	color: white;
+}
+
+#popupNo:hover {
+	background-color: #ec8e22; /* Green */
+	color: white;
+}

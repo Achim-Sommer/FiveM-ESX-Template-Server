@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container"  align="center">
+        <div class="animal_title">Tierhandlung</div>
+        <div class="animal_list">
+			
+			
+		</div>	
+    </div>
+	<div class="popup">
+		Willst du es wirklich kaufen ?
+		<div class="buttons">
+			<div id="popupYes" class="button yes">Ja</div>
+			<div id="popupNo" class="button no">Nein</div>
+		</div>
+    </div>
+    <script>
+        $(document).keyup(function (e) {
+            if (e.key === "Escape") {
+                $('.popup').fadeOut(100);
+                $(".animal_list").empty();
+				$(".container").fadeOut(100);
+				$.post('http://fivem_pets/NUIFocusOff');
+            }
+        });
+
+        $(document).mousedown(function (e) {
+            if (e.which == 3) {
+                $('.popup').fadeOut(100);
+                $(".animal_list").empty();
+                $(".container").fadeOut(100);
+                $.post('http://fivem_pets/NUIFocusOff');
+            }
+        });
+    </script>
+</body>
+</html>

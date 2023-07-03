@@ -8118,4 +8118,17 @@ return {
     stack = true,
 },
 
+['petfood'] = {
+    label = 'Tierfutter',
+    weight = 225,
+    stack = true,
+	client = {
+		status = { hunger = 30000},
+		anim = 'eating',
+		prop = 'burger',
+		usetime = 2500,
+		notification = 'Du hast deinem Tier das Futter weggegessen :('
+	}
+},
+
 }
