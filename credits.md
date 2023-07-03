@@ -75,3 +75,5 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://forum.cfx.re/t/release-pause-menu/4919651
 - https://forum.cfx.re/t/custom-animated-billboard-pillbox-medical-center/5129426
 - https://forum.cfx.re/t/free-esx-mining-smelting-selling/5128361/ 
+- https://forum.cfx.re/t/free-release-standalone-autowalk-script/5122691 
+- https://forum.cfx.re/t/esx-free-vehicle-headlights/5130884/ 
