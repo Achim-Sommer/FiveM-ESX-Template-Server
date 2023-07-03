@@ -65,6 +65,7 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 - Legacy Beta 4.0.0 - Release: 13.06.2023
 - Release 1.0.0 - Release: 17.06.2023
 - Release 1.1.0 - Release: 30.06.2023
+- Release 1.2.0 - Release: 03.07.2023
 
 # Installationsanleitung:
 ## Die Anleitung ist für einen neuen FiveM Server
