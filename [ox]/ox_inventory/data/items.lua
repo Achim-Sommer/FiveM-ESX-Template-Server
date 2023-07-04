@@ -64,7 +64,7 @@ return {
 	},
 
 	['black_money'] = {
-		label = 'Dirty Money',
+		label = 'Schwarzgeld',
 	},
 
 	['bread'] = {
