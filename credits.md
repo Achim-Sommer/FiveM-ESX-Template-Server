@@ -8,6 +8,7 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://shop.achimsommer.com/package/5240886
 - https://shop.achimsommer.com/package/5118396 
 - https://www.msk-scripts.de/package/5301831
+- https://github.com/MSK-Scripts/msk_core
 - https://github.com/esx-framework
 - https://github.com/esx-framework/esx_mechanicjob
 - https://github.com/esx-framework/esx_dmvschool
@@ -79,3 +80,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://forum.cfx.re/t/esx-free-vehicle-headlights/5130884/ 
 - https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458 
 - https://forum.cfx.re/t/free-esx-radio-for-pma-voice-rageui-radio-as-item-highly-configurable/5133187 
+- https://github.com/utkuali/datacrack 
