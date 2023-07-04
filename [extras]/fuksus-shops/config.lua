@@ -116,6 +116,7 @@ Config.shops = {
             { type = 'angel', name = 'fishingrod', description = 'Wie wäre es mit Angeln?', price = 250 },
             { type = 'angel', name = 'fishbait', description = 'Ohne Köder wird es schwer einen Fisch zu fangen!', price = 50 },
             { type = 'animale', name = 'petfood', description = 'Hat dein Tier Hunger?', price = 25 },
+            { type = 'animale', name = 'WEAPON_BALL', description = 'Lust zu Spielen?', price = 35 },
         },
         filters = {
             tool = 'Tools',
