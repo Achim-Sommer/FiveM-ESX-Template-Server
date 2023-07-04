@@ -19,6 +19,7 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 
 # Zusatzinhalte:
 
+- Support + Monatliche Unterstüzung des Projektes: https://shop.achimsommer.com/package/5777793 
 - Support: https://shop.achimsommer.com/package/5708271
 - Support & kleines Addon Pack: https://shop.achimsommer.com/package/5708276 
 - Support & großes Addon Pack: https://shop.achimsommer.com
@@ -115,5 +116,6 @@ Importiere die server.sql aus dem [SQL] Ordner per phpmyadmin in deine Datenbank
 
 7.
 Hol dir das Support Paket oder das Support Paket mit Addon wenn du möchtest, um das Projekt zu unterstüzen.
+- https://shop.achimsommer.com/package/5777793 
 - https://shop.achimsommer.com/package/5708271
 - https://shop.achimsommer.com/package/5708276 
