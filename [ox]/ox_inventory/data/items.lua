@@ -204,7 +204,7 @@ return {
 	},
 
 	['radio'] = {
-		label = 'Radio',
+		label = 'Funkgerät',
 		weight = 1000,
 		stack = false,
 		allowArmed = true
