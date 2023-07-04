@@ -78,3 +78,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://forum.cfx.re/t/free-release-standalone-autowalk-script/5122691 
 - https://forum.cfx.re/t/esx-free-vehicle-headlights/5130884/ 
 - https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458 
+- https://forum.cfx.re/t/free-esx-radio-for-pma-voice-rageui-radio-as-item-highly-configurable/5133187 
