@@ -1,0 +1,178 @@
+@import url('https://fonts.cdnfonts.com/css/korolev-heavy');
+
+* {
+    font-family: 'Korolev Medium', sans-serif;
+    user-select: none;
+}
+
+.container {
+    display: none;
+    content: '';
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background: rgba(0,0,0,0.8);
+}
+
+.container i {
+    position: absolute;
+    top: 1.0vw;
+    right: 1.3vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    color: #df2e0e;
+}
+
+.header {
+    position: absolute;
+    text-align: center;
+    background-color: transparent;
+    top: 6.0vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    color: #FFA329;
+}
+
+.options__one {
+    position: absolute;
+    display: block;
+    top: 12vw;
+    left: 6.0vw;
+    font-size: 1.6vw;
+    line-height: 1.5vw;
+    color: #fff;
+}
+
+.options__one-title {
+    font-size: 2.0vw;
+    background-color: #FFA329;
+    padding: .5vw .8vw;
+    font-family: 'Korolev Light', sans-serif;
+    width: 11.3vw;
+    text-align: center;
+}
+
+.options__one-description {
+    font-size: 1.1vw;
+}
+
+.options__one img {
+    position: absolute;
+    width: 37vw;
+    transform: rotate(-15deg);
+    top: 14.0vw;
+}
+
+.options__one button {
+    position: absolute;
+    width: 11.3vw;
+    height: 2.8vw;
+    top: 30.5vw;
+    border: none;
+    border-radius: 2.0vw;
+    font-size: 1.2vw;
+    font-weight: 800;
+    background-color: #FFA329;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.options__one button:hover {
+    background-color: #d38218;
+    box-shadow: 0 0 8px #ff9100;
+    color: #ccc;
+}
+
+.options__two {
+    position: absolute;
+    display: block;
+    top: 12vw;
+    right: 6.0vw;
+    font-size: 1.6vw;
+    line-height: 1.5vw;
+    color: #fff;
+}
+
+.options__two-title {
+    font-size: 2.0vw;
+    background-color: #FFA329;
+    padding: .5vw .8vw;
+    font-family: 'Korolev Light', sans-serif;
+    width: 13.6vw;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.options__two-subtitle {
+    text-align: right;
+}
+
+.options__two-description {
+    font-size: 1.1vw;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.options__two img {
+    position: absolute;
+    width: 40vw;
+    transform: rotate(12deg);
+    top: 14.5vw;
+    right: .7vw;
+}
+
+.options__two button {
+    position: absolute;
+    width: 11.3vw;
+    height: 2.8vw;
+    top: 30.5vw;
+    border: none;
+    border-radius: 2.0vw;
+    font-size: 1.2vw;
+    font-weight: 800;
+    background-color: #FFA329;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    right: 0;
+}
+
+.options__two button:hover {
+    background-color: #d38218;
+    box-shadow: 0 0 8px #ff9100;
+    color: #ccc;
+}
+
+.progressbar {
+    display: none;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 15vw;
+    width: 15vw;
+    height: .8vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 8px black;
+    border-radius: 1vw;
+}
+
+.line {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #FFA329;
+    border-radius: 1vw;
+    transition: .1s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
