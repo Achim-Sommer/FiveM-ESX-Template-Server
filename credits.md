@@ -81,3 +81,4 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://forum.cfx.re/t/free-esx-radio-for-pma-voice-rageui-radio-as-item-highly-configurable/5133187 
 - https://github.com/utkuali/datacrack 
 - https://forum.cfx.re/t/free-esx-pilot-job/4916778 
+- https://forum.cfx.re/t/release-nc-loadingscreen-v1-0/4882120 
