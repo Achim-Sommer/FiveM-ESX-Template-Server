@@ -103,18 +103,127 @@ return {
 
 		}
 	},
+	CriminalDealers = {
+		name = 'Dealer',
+		inventory = {
+			{ name = 'cigarette', price = 30 },
+			{ name = 'phone_burner', price = 100 },
+			{ name = 'lockpick', price = 11 },
+			{ name = 'WEAPON_SNSPISTOL', price = 350, metadata = { registered = false }},
+			{ name = 'ammo-45', price = 9 },
+			{ name = 'bodyarmor_1', price = 125 },
 
+		}, locations = {
+			vec3(-1216.225, -1473.32, 4.334),
+			
+		}, targets = {
+			{
+                ped = 'ig_clay',
+                scenario = 'WORLD_HUMAN_LEANING',
+                loc = vec3(-1214.391, -1474.564, 3.334),
+                heading = 126.35,
+            },
+			{
+                ped = 'ig_talmm',
+                scenario = 'WORLD_HUMAN_SMOKING',
+                loc = vec3(-1490.583, -658.408, 28.025),
+                heading = 221.602,
+            },
+		}
+	},
+	LDOrganics = {
+		name = 'LD Organics',
+		inventory = {
+			{ name = 'cigarette', price = 10 },
+			{ name = 'cigar', price = 100 },
+			{ name = 'weed_sativa', price = 250 },
+			{ name = 'weed_indica', price = 250 },
+			{ name = 'weed_hybrid', price = 300 },
+
+			{ name = 'water', price = 10 },
+			{ name = 'ejunk', price = 10 },
+			{ name = 'ecola', price = 10 },
+			
+
+		}, locations = {
+			vec3(-1217.882, -1495.124, 4.373),
+			
+		}, targets = {
+			{
+                ped = 'ig_lamardavis',
+                scenario = 'WORLD_HUMAN_SMOKING_POT_CLUBHOUSE',
+                loc = vec3(-1249.551, -1449.734, 3.373),
+                heading = 36.982,
+            },
+		}
+	},
+	CoolBeans = {
+		name = 'Cool Beans',
+		inventory = {
+			{ name = 'water', price = 5 },
+			{ name = 'coffee_black', price = 10 },
+			{ name = 'coffee_mocha', price = 10 },
+			{ name = 'coffee_cpcno', price = 15 },
+			{ name = 'coffee_amrcno', price = 16 },
+
+			{ name = 'smore', price = 13 },
+			{ name = 'donut_sby', price = 15 },
+			{ name = 'donut_chc', price = 15 },
+			{ name = 'icecream_vna', price = 10 },
+			{ name = 'icecream_chc', price = 10 },
+			
+
+		}, locations = {
+			vec3(-1217.882, -1495.124, 4.373),
+			
+		}, targets = {
+			{
+                ped = 'u_f_y_lauren',
+                scenario = 'WORLD_HUMAN_STAND_IMPATIENT_CLUBHOUSE',
+                loc = vec3(-1217.882, -1495.124, 3.373),
+                heading =  35.879,
+            },
+		}
+	},
 	VendingMachineDrinks = {
 		name = 'Vending Machine',
 		inventory = {
-			{ name = 'water', price = 10 },
-			{ name = 'cola', price = 20 },
-			{ name = 'beer', price = 25 },
-			{ name = 'coffee', price = 10 },
-			{ name = 'twix', price = 10 },
+			{ name = 'water', price = 4 },
+			{ name = 'ecola', price = 3 },
+			{ name = 'sprunk', price = 3 },
+			{ name = 'orangotang', price = 3 },
+			{ name = 'ejunk', price = 5 },
 		},
 		model = {
-			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`
+			'prop_vend_soda_02', 'prop_vend_water_01', 'prop_vend_soda_01', 
+			'ch_chint10_vending_smallroom_01', 'sf_prop_sf_vend_drink_01a'
+		}
+	},
+
+	VendingMachineSnacks = {
+		name = 'Vending Machine',
+		inventory = {
+			{ name = 'phatc_rib', price = 3 },
+			{ name = 'phatc_bch', price = 3 },
+			{ name = 'ps_qs', price = 2 },
+			{ name = 'apple', price = 2 },
+			{ name = 'banana', price = 2 },
+		},
+		model = {
+			'prop_vend_snak_01', 'prop_vend_snak_01_tu'
+		}
+	},
+
+	VendingMachineCoffee = {
+		name = 'Coffee Machine',
+		inventory = {
+			{ name = 'coffee_black', price = 4 },
+			{ name = 'coffee_mocha', price = 3 },
+			{ name = 'coffee_cpcno', price = 3 },
+			{ name = 'coffee_amrcno', price = 3 }
+		},
+		model = {
+			'prop_vend_coffe_01'
 		}
 	}
 }
