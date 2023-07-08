@@ -52,6 +52,10 @@ return {
 			{ name = 'ammo-9', price = 1, },
 			{ name = 'ammo-rifle', price = 5, },
 			{ name = 'ammo-sniper', price = 5, },
+			{ name = 'badge_lspd', price = 1, },
+			{ name = 'badge_fib', price = 1, },
+			{ name = 'badge_bcso', price = 1, },
+			{ name = 'badge_lssd', price = 1, },
 			{ name = 'WEAPON_FLASHLIGHT', price = 200 },
 			{ name = 'WEAPON_NIGHTSTICK', price = 100 },
 			{ name = 'WEAPON_TEARGAS', price = 100 },
@@ -101,6 +105,53 @@ return {
 			vec3(309.09, -913.75, 56.46)
 		}, targets = {
 
+		}
+	},
+	BahamaMamas = {
+		name = 'Bahama Mamas',
+		blip = {
+			id = 766, colour = 8, scale = 0.8
+		}, inventory = {
+			{ name = 'rancho_beer', price = 15 },
+			{ name = 'dusche_beer', price = 17 },
+			{ name = 'stronzo_beer', price = 16 },
+			{ name = 'patriot_beer', price = 15 },
+			
+
+		}, locations = {
+			vec3(-1399.455, -601.33, 29.319),
+			
+		}, targets = {
+			{
+                ped = 's_f_y_hooker_02',
+                scenario = 'WORLD_HUMAN_HANG_OUT_STREET_CLUBHOUSE',
+                loc = vec3(-1399.455, -601.33, 29.319),
+                heading = 250.933,
+            },
+		}
+	},
+
+	VanillaUnicorn = {
+		name = 'Vanilla Unicorn',
+		blip = {
+			id = 121, colour = 8, scale = 0.8
+		}, inventory = {
+			{ name = 'rancho_beer', price = 15 },
+			{ name = 'dusche_beer', price = 17 },
+			{ name = 'stronzo_beer', price = 16 },
+			{ name = 'patriot_beer', price = 15 },
+			
+
+		}, locations = {
+			vec3(129.821, -1284.834, 28.269),
+			
+		}, targets = {
+			{
+                ped = 's_f_y_bartender_01',
+                scenario = 'WORLD_HUMAN_HANG_OUT_STREET_CLUBHOUSE',
+                loc = vec3(129.821, -1284.834, 28.269),
+                heading = 125.022,
+            },
 		}
 	},
 	CriminalDealers = {
