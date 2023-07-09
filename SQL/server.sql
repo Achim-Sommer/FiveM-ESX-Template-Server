@@ -2173,7 +2173,7 @@ CREATE TABLE IF NOT EXISTS `ox_doorlock` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
-ALTER TABLE `users` ADD COLUMN `pet` VARCHAR(50) NOT NULL;
+ALTER TABLE `users` ADD COLUMN `pet` VARCHAR(50) NOT NULL DEFAULT '0';
 
 INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 	(1, 'mrpd locker rooms', '{"maxDistance":2,"heading":90,"coords":{"x":450.1041259765625,"y":-985.7384033203125,"z":30.83930206298828},"groups":{"police":0},"state":1,"model":1557126584,"hideUi":false}'),
