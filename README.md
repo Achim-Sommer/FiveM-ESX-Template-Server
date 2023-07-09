@@ -27,8 +27,8 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 # Testserver:
 
 - Hier eine IP zu einem Test Server
-- XXX.XXX.XXX.XXX - coming soon
-- Testserver läuft mit der Version Release 1.0.1
+- 95.156.227.133:30100
+- Testserver läuft mit der Version Release 1.4.0
   
 # Social-Media
 
@@ -68,6 +68,7 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 - Release 1.1.0 - Release: 30.06.2023
 - Release 1.2.0 - Release: 03.07.2023
 - Release 1.3.0 - Release: 07.07.2023
+- Release 1.4.0 - Release: 09.07.2023
 
 # Installationsanleitung:
 ## Die Anleitung ist für einen neuen FiveM Server
