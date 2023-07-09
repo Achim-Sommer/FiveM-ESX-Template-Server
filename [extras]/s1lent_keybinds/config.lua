@@ -36,10 +36,11 @@ Config.categories = {
 			{description='Menster hoch', key='Pfeiltaste nach oben'},
 			{description='Waffe wählen', key='Ü'},
 			
-			{description='MKennzeichensuche (Polizei)', key='X'},
+			{description='Kennzeichensuche (Polizei)', key='X'},
         },
         commands={
             {description='Anschnallen/Abschnallen', command='/seatbelt', arguments=''},
+            {description='Öffnet die Car Pay Oberfläche', command='/carplay', arguments=''},
         },
     },
     {

@@ -83,3 +83,5 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://forum.cfx.re/t/free-esx-pilot-job/4916778 
 - https://forum.cfx.re/t/release-nc-loadingscreen-v1-0/4882120 
 - https://github.com/MIAgimir/Ox_Inventory-ItemsTemplate/releases 
+- https://github.com/Xogy/xsound
+- https://forum.cfx.re/t/standalone-free-nass-carplay/5124976
