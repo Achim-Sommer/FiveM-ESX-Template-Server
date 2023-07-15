@@ -7,8 +7,8 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://shop.achimsommer.com/package/5153446
 - https://shop.achimsommer.com/package/5240886
 - https://shop.achimsommer.com/package/5118396 
-- https://www.msk-scripts.de/package/5301831
-- https://github.com/MSK-Scripts/msk_core
+- https://github.com/Musiker15
+- https://github.com/MSK-Scripts
 - https://github.com/esx-framework
 - https://github.com/esx-framework/esx_mechanicjob
 - https://github.com/esx-framework/esx_dmvschool
@@ -44,7 +44,6 @@ Einige Ressourcen wurden verändert, um besser mit dem Template Server zu arbeit
 - https://forum.achimsommer.com/thread/1159-roulette-tische-im-casino-mlo-entfernt-erkl%C3%A4rung-download-mr-brown-casino/?postID=4284#post4284 
 - https://github.com/jwritz/s1lent_keybinds/tree/v0.1.1
 - https://github.com/jonassvensson4/jsfour-idcard 
-- https://github.com/Djamuras/EngineToggle 
 - https://github.com/gapadana/esx_supermarket
 - https://forum.cfx.re/t/mlo-driving-school-interior/1466079
 - https://de.gta5-mods.com/maps/sp-fivem-extended-sandy-pd
