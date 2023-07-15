@@ -1,12 +1,24 @@
 window.addEventListener('message', (event) => {
-    if (event.data.map == true) {
-        $('.container').removeClass('mapOff').addClass('mapOn');
-    } else {
-        $('.container').removeClass('mapOn').addClass('mapOff');
+    if (event.data.action == 'notify') {
+        notification(event.data.title, event.data.message, event.data.type, event.data.time);
     }
-
-    notification(event.data.message, event.data.duration, event.data.type);
 })
+
+const icons = {
+    "general" : "fas fa-warehouse",
+    "info"    : "fas fa-info-circle",
+    "success" : "fas fa-check-circle",
+    "error"   : "fas fa-exclamation-circle",
+    "warning" : "fas fa-exclamation-triangle"
+}
+
+const colours = {
+    "general" : "#FFFFFF",
+    "info"    : "#75D6FF",
+    "success" : "#76EE62",
+    "error"   : "#FF4A4A",
+    "warning" : "#FFCB11"
+}
 
 const colors = {
     "~r~": "red",
@@ -30,7 +42,10 @@ const replaceColors = (str, obj) => {
     return strToReplace
 }
 
-notification = (message, duration, type) => {
+var sound = new Audio('notification.mp3');
+sound.volume = 0.25;
+
+notification = (title, message, type, time) => {
     for (color in colors) {
         if (message.includes(color)) {
             let obj = {};
@@ -43,14 +58,24 @@ notification = (message, duration, type) => {
     }
 
     const notification = $(`
-        <div class="notify" id="${type}">
-            <p>${message}</p>
+        <div class="notify-div wrapper" style="border-left: 0.5vh solid ${colours[type]}; ">
+            <div class="notify-icon-box" style="border: 0.2vh solid ${colours[type]};">
+                <i class="${icons[type]} fa-ms notify-icon" style="color: ${colours[type]}"></i>
+            </div>
+
+            <div class="notify-text-box">
+                <p style="color:${colours[type]}; font-size: 2vh; font-weight: 500; margin-bottom: 0vh; margin-top: 1vh;">${title}</p>
+                <p style="margin-top: 0; color: rgba(247, 247, 247, 0.75);">${message}</p>
+            </div>
         </div>
-    `).appendTo(`.container`);
+    `).appendTo(`.notify-wrapper`);
+
+    notification.fadeIn("slow");
+    sound.play();
 
     setTimeout(() => {
-        notification.fadeOut(700);
-    }, duration);
+        notification.fadeOut("slow");
+    }, time);
 
     return notification;
 }

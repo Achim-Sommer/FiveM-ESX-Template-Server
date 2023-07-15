@@ -189,6 +189,7 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES
+('panicbutton', 'Panicbutton', 1, 0, 1),
 ('alive_chicken', 'lebendes Huhn', 1, 0, 1),
 ('ammunition_smg_large', 'SMG Ammo Large', 10, 0, 1),
 ('ammunition_snp', 'Sniper Ammo', 10, 0, 1),

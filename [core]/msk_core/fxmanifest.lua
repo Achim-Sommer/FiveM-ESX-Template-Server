@@ -4,7 +4,7 @@ games { 'gta5' }
 author 'Musiker15 - MSK Scripts'
 name 'msk_core'
 description 'Core functions for MSK Scripts'
-version '1.7.4'
+version '1.7.5'
 
 lua54 'yes'
 
@@ -24,16 +24,11 @@ server_scripts {
     'server_*.lua'
 }
 
-files {
-	'import.lua'
-}
-
 ui_page 'html/index.html'
 
 files {
-	'html/index.html',
-	'html/style.css',
-	'html/script.js'
+	"html/**/*.*",
+    'import.lua'
 }
 
 dependencies {
