@@ -1,6 +1,6 @@
 window.addEventListener('message', (event) => {
     if (event.data.action == 'notify') {
-        notification(event.data.title, event.data.message, event.data.type, event.data.time);
+        notification(event.data.title, event.data.message, event.data.info, event.data.time);
     }
 })
 
@@ -45,7 +45,7 @@ const replaceColors = (str, obj) => {
 var sound = new Audio('notification.mp3');
 sound.volume = 0.25;
 
-notification = (title, message, type, time) => {
+notification = (title, message, info, time) => {
     for (color in colors) {
         if (message.includes(color)) {
             let obj = {};
@@ -58,13 +58,13 @@ notification = (title, message, type, time) => {
     }
 
     const notification = $(`
-        <div class="notify-div wrapper" style="border-left: 0.5vh solid ${colours[type]}; ">
-            <div class="notify-icon-box" style="border: 0.2vh solid ${colours[type]};">
-                <i class="${icons[type]} fa-ms notify-icon" style="color: ${colours[type]}"></i>
+        <div class="notify-div wrapper" style="border-left: 0.5vh solid ${colours[info]}; ">
+            <div class="notify-icon-box" style="border: 0.2vh solid ${colours[info]};">
+                <i class="${icons[info]} fa-ms notify-icon" style="color: ${colours[info]}"></i>
             </div>
 
             <div class="notify-text-box">
-                <p style="color:${colours[type]}; font-size: 2vh; font-weight: 500; margin-bottom: 0vh; margin-top: 1vh;">${title}</p>
+                <p style="color:${colours[info]}; font-size: 2vh; font-weight: 500; margin-bottom: 0vh; margin-top: 1vh;">${title}</p>
                 <p style="margin-top: 0; color: rgba(247, 247, 247, 0.75);">${message}</p>
             </div>
         </div>
