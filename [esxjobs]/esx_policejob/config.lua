@@ -225,7 +225,13 @@ Config.AuthorizedVehicles = {
 			{model = 'fbi2', price = 60000}
 		},
 
-		boss = {}
+		boss = {
+			{model = 'police3', price = 20000},
+			{model = 'policet', price = 18500},
+			{model = 'policeb', price = 30500},
+			{model = 'riot', price = 70000},
+			{model = 'fbi2', price = 60000}
+		}
 	},
 
 	helicopter = {
