@@ -268,7 +268,8 @@ function OpenPoliceActionsMenu()
 				{icon = "fas fa-idkyet", title = TranslateCap('put_in_vehicle'), value = 'put_in_vehicle'},
 				{icon = "fas fa-idkyet", title = TranslateCap('out_the_vehicle'), value = 'out_the_vehicle'},
 				{icon = "fas fa-idkyet", title = TranslateCap('fine'), value = 'fine'},
-				{icon = "fas fa-idkyet", title = TranslateCap('unpaid_bills'), value = 'unpaid_bills'}
+				{icon = "fas fa-idkyet", title = TranslateCap('unpaid_bills'), value = 'unpaid_bills'},
+				{icon = "fas fa-idkyet", title = TranslateCap('license_check'), value = 'license'}
 			}
 
 			if Config.EnableLicenses then
