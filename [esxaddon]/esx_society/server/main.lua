@@ -429,3 +429,12 @@ function WashMoneyCRON(d, h, m)
 end
 
 TriggerEvent('cron:runAt', 3, 0, WashMoneyCRON)
+
+AddEventHandler('esx_society:unregisterSociety', function(account)
+	for k, v in pairs(RegisteredSocieties) do
+		if v.account == account then
+			table.remove(RegisteredSocieties, k)
+			break
+		end
+	end
+end)
