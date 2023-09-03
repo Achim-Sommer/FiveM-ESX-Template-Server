@@ -71,3 +71,23 @@ AddEventHandler('esx:playerLoaded', function(playerId, xPlayer)
 
 	xPlayer.set('addonAccounts', addonAccounts)
 end)
+
+CreateAccount = function(name, label, insert)
+	SharedAccounts[name] = CreateAddonAccount(name, nil, 0)
+	if insert then
+		MySQL.query('INSERT INTO addon_account (name, label, shared) VALUES (?, ?, ?)', {name, label, 1})
+		MySQL.query('INSERT INTO addon_account_data (account_name, money) VALUES (?, ?)', {name, 0})
+	end
+	TriggerEvent('esx_addonaccount:createdAddonAccount', name, label)
+end
+exports('CreateAccount', CreateAccount)
+
+DeleteAccount = function(name, delete)
+	SharedAccounts[name] = nil
+	if delete then
+		MySQL.query('DELETE FROM addon_account WHERE name = ?', {name})
+		MySQL.query('DELETE FROM addon_account_data WHERE account_name = ?', {name})
+	end
+	TriggerEvent('esx_addonaccount:deletedAddonAccount', name)
+end
+exports('DeleteAccount', DeleteAccount)
