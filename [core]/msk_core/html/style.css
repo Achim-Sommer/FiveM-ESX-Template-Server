@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* 
+    MSK Notification 
+*/
+
+.notify-wrapper {
+    position: absolute;
+    left: 2vh; /* Change this to left or right */
+    top: 10vh; /* Change this for the height */
+    font-size: 1.8vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.notify-div{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 2vh;
+    width: 44vh;
+    min-height: 8vh;
+
+    background: linear-gradient(93.25deg, #4F4F4F 0%, #0C0C0C 100%);
+    border-left: 0.44vh solid #FFCB11;
+    box-shadow: 0vh 0.8vh 0.7 -0.2vh rgba(0, 0, 0, 0.35);
+    border-radius: 1.34vh;
+}
+
+.notify-icon-box{
+    box-sizing: border-box;
+    padding: 1.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    box-shadow: 0vh 0.4vh 0.4vh rgba(0, 0, 0, 0.47);
+    border-radius: 0.8vh;
+    transform: rotate(-45deg);
+}
+
+.notify-icon-box i{
+    transform: rotate(45deg);
+    font-size: 2.3vh;
+}
+
+.notify-text-box{
+    margin-left: 2.5vh;
+    align-self: baseline;
+}
+
+/* 
+    MSK Input 
+*/
+
+body {
+    overflow: hidden;
+    user-select: none;
+}
+
+textarea {
+    resize: none;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.8
+}
+
+* {
+    --Main: radial-gradient(180vh circle at 0 -60%,#086d04,#050505);
+    --Input: #1fb11f59;
+    --Input-Border: #24b11f79;
+  
+    user-select: none;
+    box-sizing: border-box;
+    font-family: poppins
+}
+
+#close {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    right: 1.04vh;
+    text-align: center;
+    line-height: 2vh;
+    border-radius: 0.4vh;
+    background: #1fb11f59;
+    transition: 400ms;
+}
+
+#close:hover {
+    background: #1fb11f;
+}
+
+.msk-input-container {
+    display: none;
+    position: absolute;
+    width: 40vh;
+    height: auto;
+    background: radial-gradient(110vh circle at 0 -60%,#075705,#050505);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.4vh;
+    color: white;
+    text-align: center;
+    padding-top: 0.8vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4vh;
+    padding-bottom: 1.4vh;
+    border: 0.2vh #1fb11f solid;
+}
+
+.msk-input {
+    width: 36vh;
+    background: #1fb11f2c;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    border: 0.1vh #1fb11f solid;
+    border-radius: 0.4vh;
+    color: white;
+    padding: 0.72vh;
+    padding-top: 0.4vh;
+    padding-bottom: 0.2vh;
+    transition: 400ms;
+}
+
+.msk-input:hover {
+    border-color: #00ff00
+}
+
+#big-input {
+    display: none;
+    margin-top: 1.2vh;
+    height: 10vh;
+}
+
+#small-input {
+    display: all;
+    margin-top: 1.4vh;
+    white-space: nowrap;
+
+}
+
+.msk-submit-button {
+    position: relative;
+    width: 16vh;
+    height: 3.2vh;
+    right: -10vh;
+    top: 0.4vh;
+    background: #1fb11f2c;
+    border: 0.1vh #1fb11f solid;
+    border-radius: 0.4vh;
+    font-weight: bold;
+    font-size: 1.4vh;
+    text-transform: uppercase; 
+    color: white;
+    transition: 400ms;
+}
+
+.msk-submit-button:hover {
+    background: #1fb11f;
+    letter-spacing: 0.2vh;
+}
+
+/* 
+    MSK ProgressBar 
+*/
+
+.progress-container {
+    --mainColor: #5eb131;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#progress {
+    top: 80%;
+    background: rgba(23, 23, 23, 0.35);
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border-radius: 0.4vh; /* 15vh */
+    align-items: center;
+    position: fixed;
+    height: 4vh;
+    width: 54vh;
+    transform: skew(-20deg, 0deg);
+}
+
+#progress-text {
+    width: fit-content;
+    font-family: 'Abel', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+#progress-value {
+    /* animation: load 5s normal forwards; */
+    border-radius: 0.4vh; /* 15vh */
+    height: 4vh;
+    width: 0%;
+}
+
+.progress-color {
+    box-shadow: 0 1vh 4vh -1vh var(--mainColor);
+    background: var(--mainColor);
+}
+
+@keyframes load {
+    0% { width: 5%; }
+    100% { width: 100%; }
+}
+
+.progress-hidden {
+    display: none;
+}

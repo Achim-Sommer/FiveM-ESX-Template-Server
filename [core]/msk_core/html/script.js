@@ -1,8 +1,38 @@
+var field = false 
+let currID = 0
+let timeout
+let activeBars = new Map(); // Using a Map to store active bars with their IDs as keys
+
 window.addEventListener('message', (event) => {
     if (event.data.action == 'notify') {
         notification(event.data.title, event.data.message, event.data.info, event.data.time);
+    } else if (event.data.action == 'openInput') {
+        var data = event.data;
+        var input = 'small-input'
+
+        if (data.field) {
+            input = 'big-input'
+            field = true
+            $("#big-input").show()
+            $("#small-input").hide()
+        } else {
+            field = false
+            $("#big-input").hide()
+            $("#small-input").show()
+        }
+
+        document.getElementById(input).placeholder = data.placeholder;
+        $(".msk-input-container").fadeIn()
+        $("#msk-input-title").text(data.header)
+    } else if (event.data.action == 'progressBarStart') {
+        event.data.id = currID
+        progressBarStart(event.data);
+    } else if (event.data.action == 'progressBarStop') {
+        progressBarStop();
     }
 })
+
+/* MSK Notification */
 
 const icons = {
     "general" : "fas fa-warehouse",
@@ -78,4 +108,86 @@ notification = (title, message, info, time) => {
     }, time);
 
     return notification;
+}
+
+/* MSK Input */
+
+closeInputUI = (send) => {
+    $(".msk-input-container").fadeOut()
+    if (!send) { $.post(`http://${GetParentResourceName()}/closeInput`, JSON.stringify({})) }
+}
+
+document.onkeyup = (data) => {
+    if (data.which == 27) {
+        closeInputUI()
+    }
+}
+
+$("#small-input").keydown((event) => {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+    }
+})
+
+input = () => {
+    var textfield = '#small-input'
+    if (field) {textfield = '#big-input'}
+
+    $.post(`http://${GetParentResourceName()}/submitInput`, JSON.stringify({input: $(textfield).val()}));
+    $(textfield).val('');
+    closeInputUI(true)
+}
+
+/* MSK ProgressBar */
+
+progressBarStart = (data) => {
+    let id = data.id
+    let time = data.time
+    let text = data.text
+    let color = data.color
+
+    if (!activeBars.has(id)) {
+        let progressBar = {
+            element: $('#progress'),
+            elementValue: $('#progress-value'),
+            elementText: $('#progress-text')
+        };
+        activeBars.set(id, progressBar);
+
+        progressBar.element.removeClass('progress-hidden');
+        progressBar.elementValue.css("animation",`load ${time / 1000}s normal forwards`);
+        progressBar.elementText.text(text);
+        document.querySelector('.progress-container').style.setProperty('--mainColor', color);
+        
+        timeout = setTimeout(() => {
+            progressBarStop(id);
+        }, time);
+    }
+}
+
+progressBarStop = (id) => {
+    clearTimeout(timeout);
+
+    if (id) {
+        let progressBar = activeBars.get(id);
+    
+        if (progressBar) {
+            progressBar.element.addClass('progress-hidden');
+            progressBar.elementValue.css("animation",'');
+            progressBar.element.css("animation",'');
+            activeBars.delete(id);
+        }
+    } else {
+        let id = currID
+        let progressBar = activeBars.get(id);
+    
+        if (progressBar) {
+            progressBar.element.addClass('progress-hidden');
+            progressBar.elementValue.css("animation",'');
+            progressBar.element.css("animation",'');
+            activeBars.delete(id);
+        }
+    }
+
+    currID = currID + 1
 }

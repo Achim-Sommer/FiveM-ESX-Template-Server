@@ -14,20 +14,22 @@ openInput = function(header, placeholder, field, cb)
     })
     isOpen = true
 end
+MSK.Input = openInput
 exports('openInput', openInput)
 
 closeInput = function()
     SetNuiFocus(false, false)
 	isOpen = false
 end
+MSK.CloseInput = closeInput
 exports('closeInput', closeInput)
 
-RegisterNUICallback('close', function(data)
+RegisterNUICallback('closeInput', function(data)
     callback()
     closeInput()
 end)
 
-RegisterNUICallback('submit', function(data)
+RegisterNUICallback('submitInput', function(data)
 	callback(data.input)
     closeInput()
 end)

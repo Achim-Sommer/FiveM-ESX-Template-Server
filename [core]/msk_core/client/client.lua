@@ -1,6 +1,6 @@
 MSK = {}
 
-local Timeouts, callbackRequest = {}, {}
+local callbackRequest, Callbacks = {}, {}
 
 if Config.Framework:match('esx') then
     ESX = exports["es_extended"]:getSharedObject()
@@ -8,45 +8,35 @@ elseif Config.Framework:match('qbcore') then
     QBCore = exports['qb-core']:GetCoreObject()
 end
 
-local Letters = {}
-for i = 48,  57 do table.insert(Letters, string.char(i)) end
-for i = 65,  90 do table.insert(Letters, string.char(i)) end
-for i = 97, 122 do table.insert(Letters, string.char(i)) end
+MSK.RegisterClientCallback = function(name, cb)
+    Callbacks[name] = cb
+end
+MSK.RegisterCallback = MSK.RegisterClientCallback
+exports('RegisterClientCallback', RegisterClientCallback)
 
-MSK.GetRandomLetter = function(length)
-    Wait(0)
-    if length > 0 then
-        return MSK.GetRandomLetter(length - 1) .. Letters[math.random(1, #Letters)]
-    else
-        return ''
+MSK.TriggerServerCallback = function(name, ...)
+    local requestId = GenerateRequestKey(callbackRequest)
+    local response
+
+    callbackRequest[requestId] = function(...)
+        response = {...}
     end
-end
 
-MSK.Round = function(num, decimal) 
-    return tonumber(string.format("%." .. (decimal or 0) .. "f", num))
-end
+    TriggerServerEvent('msk_core:triggerCallback', name, requestId, ...)
 
-MSK.Trim = function(str, bool)
-    if bool then return (str:gsub("^%s*(.-)%s*$", "%1")) end
-    return (str:gsub("%s+", ""))
-end
+    while not response do Wait(0) end
 
-MSK.Split = function(str, delimiter)
-    local result = {}
-    
-    for match in (s..delimiter):gmatch("(.-)"..delimiter) do 
-        table.insert(result, match) 
-    end 
-
-    return result 
+    return table.unpack(response)
 end
+MSK.TriggerCallback = MSK.TriggerServerCallback
+exports('TriggerServerCallback', TriggerServerCallback)
 
 MSK.Notification = function(title, message, info, time)
     if Config.Notification == 'native' then
         SetNotificationTextEntry('STRING')
         AddTextComponentString(message)
         DrawNotification(false, true)
-    else
+    elseif Config.Notification == 'nui' or Config.Notification == 'msk' then
         SendNUIMessage({
             action = 'notify',
             title = title,
@@ -54,14 +44,18 @@ MSK.Notification = function(title, message, info, time)
             info = info or 'general',
             time = time or 5000
         })
+    elseif Config.Notification == 'okok' then
+        exports['okokNotify']:Alert(title, message, time or 5000, info or 'info')
     end
 end
+exports('Notification', Notification)
 
 MSK.HelpNotification = function(text)
     SetTextComponentFormat('STRING')
     AddTextComponentString(text)
     DisplayHelpTextFromStringLabel(0, 0, 1, -1)
 end
+exports('HelpNotification', HelpNotification)
 
 MSK.AdvancedNotification = function(text, title, subtitle, icon, flash, icontype)
     if not flash then flash = true end
@@ -73,6 +67,7 @@ MSK.AdvancedNotification = function(text, title, subtitle, icon, flash, icontype
     SetNotificationMessage(icon, icon, flash, icontype, title, subtitle)
 	DrawNotification(false, true)
 end
+exports('AdvancedNotification', AdvancedNotification)
 
 MSK.Draw3DText = function(coords, text, size, font)
     local coords = type(coords) == "vector3" and coords or vec(coords.x, coords.y, coords.z)
@@ -97,41 +92,7 @@ MSK.Draw3DText = function(coords, text, size, font)
     EndTextCommandDisplayText(0.0, 0.0)
     ClearDrawOrigin()
 end
-
-MSK.TriggerCallback = function(name, ...)
-    local requestId = GenerateRequestKey(callbackRequest)
-    local response
-
-    callbackRequest[requestId] = function(...)
-        response = {...}
-    end
-
-    TriggerServerEvent('msk_core:triggerCallback', name, requestId, ...)
-
-    while not response do
-        Wait(0)
-    end
-
-    return table.unpack(response)
-end
-
-local Timeout = 0
-MSK.AddTimeout = function(ms, cb)
-    local requestId = Timeout + 1
-
-    SetTimeout(ms, function()
-        if Timeouts[requestId] then Timeouts[requestId] = nil return end
-        cb()
-    end)
-
-    Timeout = requestId
-    return requestId
-end
-
-MSK.DelTimeout = function(requestId)
-    if not requestId then return end
-    Timeouts[requestId] = true
-end
+exports('Draw3DText', Draw3DText)
 
 MSK.HasItem = function(item)
     if not Config.Framework:match('esx') or Config.Framework:match('qbcore') then 
@@ -142,40 +103,7 @@ MSK.HasItem = function(item)
     local hasItem = MSK.TriggerCallback('msk_core:hasItem', item)
     return hasItem
 end
-
-MSK.Table_Contains = function(table, value)
-    if type(value) == 'table' then
-        for k, v in pairs(table) do
-            for k2, v2 in pairs(value) do
-                if v == v2 then
-                    return true
-                end
-            end
-        end
-    else
-        for k, v in pairs(table) do
-            if v == value then
-                return true
-            end
-        end
-    end
-    return false
-end
-
-MSK.Comma = function(int, tag)
-    if not tag then tag = '.' end
-    local newInt = int
-
-    while true do  
-        newInt, k = string.gsub(newInt, "^(-?%d+)(%d%d%d)", '%1'..tag..'%2')
-
-        if (k == 0) then
-            break
-        end
-    end
-
-    return newInt
-end
+exports('HasItem', HasItem)
 
 MSK.GetVehicleInDirection = function()
     local playerPed = PlayerPedId()
@@ -186,27 +114,37 @@ MSK.GetVehicleInDirection = function()
 
     if hit == 1 and GetEntityType(entityHit) == 2 then
         local entityCoords = GetEntityCoords(entityHit)
-        return entityHit, entityCoords
+        local entityDistance = #(playerCoords - entityCoords)
+        return entityHit, entityCoords, entityDistance
     end
 
     return nil
 end
+exports('GetVehicleInDirection', GetVehicleInDirection)
 
-MSK.logging = function(script, code, ...)
-    if code == 'error' then
-        print(script, '[^1ERROR^0]', ...)
-    elseif code == 'debug' then
-		print(script, '[^3DEBUG^0]', ...)
-	end
-end
+MSK.IsVehicleEmpty = function(vehicle)
+    if not vehicle or (vehicle and not DoesEntityExist(vehicle)) then return end
+    local passengers = GetVehicleNumberOfPassengers(vehicle)
+    local driverSeatFree = IsVehicleSeatFree(vehicle, -1)
 
-logging = function(code, ...)
-    local script = "[^2"..GetCurrentResourceName().."^0]"
-    MSK.logging(script, code, ...)
+    return passengers == 0 and driverSeatFree
 end
+exports('IsVehicleEmpty', IsVehicleEmpty)
+
+MSK.GetPedMugshot = function(ped, transparent)
+    if not DoesEntityExist(ped) then return end
+    local mugshot = transparent and RegisterPedheadshotTransparent(ped) or RegisterPedheadshot(ped)
+
+    while not IsPedheadshotReady(mugshot) do
+        Wait(0)
+    end
+
+    return mugshot, GetPedheadshotTxdString(mugshot)
+end
+exports('GetPedMugshot', GetPedMugshot)
 
 GenerateRequestKey = function(tbl)
-    local id = string.upper(MSK.GetRandomLetter(3)) .. math.random(000, 999) .. string.upper(MSK.GetRandomLetter(2)) .. math.random(00, 99)
+    local id = string.upper(MSK.GetRandomString(3)) .. math.random(000, 999) .. string.upper(MSK.GetRandomString(2)) .. math.random(00, 99)
 
     if not tbl[id] then 
         return tostring(id)
@@ -220,6 +158,15 @@ AddEventHandler("msk_core:responseCallback", function(requestId, ...)
     if callbackRequest[requestId] then 
         callbackRequest[requestId](...)
         callbackRequest[requestId] = nil
+    end
+end)
+
+RegisterNetEvent('msk_core:triggerCallback')
+AddEventHandler('msk_core:triggerCallback', function(name, requestId, ...)
+    if Callbacks[name] then
+        Callbacks[name](GetPlayerServerId(PlayerId()), function(...)
+            TriggerServerEvent("msk_core:responseCallback", requestId, ...)
+        end, ...)
     end
 end)
 

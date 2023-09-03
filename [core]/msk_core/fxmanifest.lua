@@ -4,7 +4,7 @@ games { 'gta5' }
 author 'Musiker15 - MSK Scripts'
 name 'msk_core'
 description 'Core functions for MSK Scripts'
-version '1.7.6'
+version '1.9.3'
 
 lua54 'yes'
 
@@ -14,14 +14,16 @@ shared_scripts {
 }
 
 client_scripts {
-    'client.lua',
-    'client_*.lua'
+    'client/client.lua',
+    'client/client_*.lua',
+    'common/common.lua',
 }
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
-    'server.lua',
-    'server_*.lua'
+    'server/server.lua',
+    'server/server_*.lua',
+    'common/common.lua',
 }
 
 ui_page 'html/index.html'

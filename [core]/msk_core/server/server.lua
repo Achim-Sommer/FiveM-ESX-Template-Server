@@ -1,6 +1,6 @@
 MSK = {}
 
-local Timeouts, RegisteredCommands, Callbacks = {}, {}, {}
+local RegisteredCommands, Callbacks, callbackRequest = {}, {}, {}
 
 AddEventHandler('onResourceStart', function(resource)
 	if GetCurrentResourceName() ~= 'msk_core' then
@@ -16,38 +16,28 @@ elseif Config.Framework:match('qbcore') then
     QBCore = exports['qb-core']:GetCoreObject()
 end
 
-local Letters = {}
-for i = 48,  57 do table.insert(Letters, string.char(i)) end
-for i = 65,  90 do table.insert(Letters, string.char(i)) end
-for i = 97, 122 do table.insert(Letters, string.char(i)) end
+MSK.RegisterServerCallback = function(name, cb)
+    Callbacks[name] = cb
+end
+MSK.RegisterCallback = MSK.RegisterServerCallback
+exports('RegisterServerCallback', RegisterServerCallback)
 
-MSK.GetRandomLetter = function(length)
-    Wait(0)
-    if length > 0 then
-        return MSK.GetRandomLetter(length - 1) .. Letters[math.random(1, #Letters)]
-    else
-        return ''
+MSK.TriggerClientCallback = function(name, playerId, ...)
+    local requestId = GenerateRequestKey(callbackRequest)
+    local response
+
+    callbackRequest[requestId] = function(...)
+        response = {...}
     end
-end
 
-MSK.Round = function(num, decimal) 
-    return tonumber(string.format("%." .. (decimal or 0) .. "f", num))
-end
+    TriggerClientEvent('msk_core:triggerCallback', playerId, name, requestId, ...)
 
-MSK.Trim = function(str, bool)
-    if bool then return (str:gsub("^%s*(.-)%s*$", "%1")) end
-    return (str:gsub("%s+", ""))
-end
-
-MSK.Split = function(str, delimiter)
-    local result = {}
+    while not response do Wait(0) end
     
-    for match in (s..delimiter):gmatch("(.-)"..delimiter) do 
-        table.insert(result, match) 
-    end 
-
-    return result 
+    return table.unpack(response)
 end
+MSK.TriggerCallback = MSK.TriggerClientCallback
+exports('TriggerClientCallback', TriggerClientCallback)
 
 MSK.RegisterCommand = function(name, group, cb, console, framework, suggestion)    
     if type(name) == 'table' then
@@ -134,16 +124,19 @@ MSK.RegisterCommand = function(name, group, cb, console, framework, suggestion)
         ExecuteCommand(('add_ace group.%s command.%s allow'):format(group, name))
     end
 end
+exports('RegisterCommand', RegisterCommand)
 
 MSK.Notification = function(src, title, message, info, time)
     if not src or src == 0 then return end
     TriggerClientEvent('msk_core:notification', src, title, message, info, time)
 end
+exports('Notification', Notification)
 
 MSK.AdvancedNotification = function(src, text, title, subtitle, icon, flash, icontype)
     if not src or src == 0 then return end
     TriggerClientEvent('msk_core:advancedNotification', src, text, title, subtitle, icon, flash, icontype)
 end
+exports('AdvancedNotification', AdvancedNotification)
 
 MSK.AddWebhook = function(webhook, botColor, botName, botAvatar, title, description, fields, footer, time)
     local content = {}
@@ -187,55 +180,7 @@ MSK.AddWebhook = function(webhook, botColor, botName, botAvatar, title, descript
         ['Content-Type'] = 'application/json'
     })
 end
-
-MSK.RegisterCallback = function(name, cb)
-    Callbacks[name] = cb
-end
-
-MSK.Table_Contains = function(table, value)
-    if type(value) == 'table' then
-        for k, v in pairs(table) do
-            for k2, v2 in pairs(value) do
-                if v == v2 then
-                    return true
-                end
-            end
-        end
-    else
-        for k, v in pairs(table) do
-            if v == value then
-                return true
-            end
-        end
-    end
-    return false
-end
-
-MSK.logging = function(script, code, ...)
-    if code == 'error' then
-        print(script, '[^1ERROR^0]', ...)
-    elseif code == 'debug' then
-		print(script, '[^3DEBUG^0]', ...)
-	end
-end
-
-local Timeout = 0
-MSK.AddTimeout = function(ms, cb)
-    local requestId = Timeout + 1
-
-    SetTimeout(ms, function()
-        if Timeouts[requestId] then Timeouts[requestId] = nil return end
-        cb()
-    end)
-
-    Timeout = requestId
-    return requestId
-end
-
-MSK.DelTimeout = function(requestId)
-    if not requestId then return end
-    Timeouts[requestId] = true
-end
+exports('AddWebhook', AddWebhook)
 
 MSK.HasItem = function(xPlayer, item)
     if not xPlayer then logging('error', 'Player on Function MSK.HasItem does not exist!') return end
@@ -255,6 +200,7 @@ MSK.HasItem = function(xPlayer, item)
 
     return hasItem
 end
+exports('HasItem', HasItem)
 
 MSK.RegisterCallback('msk_core:hasItem', function(source, cb, item)
     local src = source
@@ -269,21 +215,6 @@ MSK.RegisterCallback('msk_core:hasItem', function(source, cb, item)
     cb(MSK.HasItem(xPlayer, item))
 end)
 
-MSK.Comma = function(int, tag)
-    if not tag then tag = '.' end
-    local newInt = int
-
-    while true do  
-        newInt, k = string.gsub(newInt, "^(-?%d+)(%d%d%d)", '%1'..tag..'%2')
-
-        if (k == 0) then
-            break
-        end
-    end
-
-    return newInt
-end
-
 RegisterNetEvent('msk_core:triggerCallback')
 AddEventHandler('msk_core:triggerCallback', function(name, requestId, ...)
     local src = source
@@ -293,6 +224,24 @@ AddEventHandler('msk_core:triggerCallback', function(name, requestId, ...)
         end, ...)
     end
 end)
+
+RegisterNetEvent("msk_core:responseCallback")
+AddEventHandler("msk_core:responseCallback", function(requestId, ...)
+    if callbackRequest[requestId] then 
+        callbackRequest[requestId](...)
+        callbackRequest[requestId] = nil
+    end
+end)
+
+GenerateRequestKey = function(tbl)
+    local id = string.upper(MSK.GetRandomString(3)) .. math.random(000, 999) .. string.upper(MSK.GetRandomString(2)) .. math.random(00, 99)
+
+    if not tbl[id] then 
+        return tostring(id)
+    else
+        GenerateRequestKey(tbl)
+    end
+end
 
 doesPlayerIdExist = function(playerId)
     for k, id in pairs(GetPlayers()) do
@@ -318,11 +267,6 @@ addChatSuggestions = function(name, suggestion)
     end
 
     return true
-end
-
-logging = function(code, ...)
-    local script = "[^2"..GetCurrentResourceName().."^0]"
-    MSK.logging(script, code, ...)
 end
 
 GithubUpdater = function()

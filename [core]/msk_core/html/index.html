@@ -3,14 +3,31 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>MSK Notification</title>
+        <title>MSK Scripts</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/57b9d31625.js" crossorigin="anonymous"></script>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body style="background-color: transparent;">
         <div class="d-grid notify-wrapper"></div>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src="script.js"></script>
+        
+        <div class="msk-input-container"><span id="msk-input-title">Das ist eine Überschrift</span>
+            <span id="close" onclick="closeInputUI()"><i class="fa-solid fa-xmark"></i></span>
+            <textarea class="msk-input" rows="5" cols="50" id="big-input" placeholder=""></textarea>
+            <textarea class="msk-input" rows="1" cols="50" id="small-input" placeholder=""></textarea>
+            <button class="msk-submit-button" onclick="input()">Confirm</button>
+        </div>
+        
+        <div class="progress-container">
+            <div id="progress" class="progress-hidden">
+                <div id="progress-value" class="progress-color"></div>
+                <div id="progress-text">Progressing...</div>
+            </div>
+        </div>
     </body>
 </html>
