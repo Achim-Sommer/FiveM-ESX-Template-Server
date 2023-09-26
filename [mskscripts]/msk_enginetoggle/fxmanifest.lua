@@ -9,6 +9,7 @@ version '3.7.5'
 lua54 'yes'
 
 shared_script {
+	'@msk_core/import.lua',
     'config.lua',
 	'translation.lua'
 }
