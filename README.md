@@ -27,7 +27,7 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 # Testserver:
 
 - Hier eine IP zu einem Test Server
-- 95.156.227.133:30100
+- Nicht mehr aktiv!
 - Testserver läuft mit der Version Release 1.4.0
 - Testserver von Zap-Hosting: https://zap-hosting.com/ServerFiveM
 
