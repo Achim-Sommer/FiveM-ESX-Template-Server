@@ -19,31 +19,24 @@ Schön das du dir dieses Projekt anguckst, mein Ziel ist es, für jeden den Perf
 
 # Zusatzinhalte:
 
-- Support + Monatliche Unterstüzung des Projektes: https://shop.achimsommer.com/package/5777793 
-- Support: https://shop.achimsommer.com/package/5708271
-- Support & kleines Addon Pack: https://shop.achimsommer.com/package/5708276 
-- Support & großes Addon Pack: https://shop.achimsommer.com
+- Support: https://achim.tebex.io/category/esx-legacy-template
+- Support & kleines Addon Pack: https://achim.tebex.io/package/5708276 
+- Support & großes Addon Pack: https://achim.tebex.io/package/5881204
 
-# Testserver:
-
-- Hier eine IP zu einem Test Server
-- Nicht mehr aktiv!
-- Testserver läuft mit der Version Release 1.4.0
-- Testserver von Zap-Hosting: https://zap-hosting.com/ServerFiveM
 
   
 # Social-Media
 
 - FiveM Forum: https://forum.achimsommer.com
 - Website: https://achimsommer.com
-- Discord: https://discord.gg/mZWNwyvmP2 (Kein Support / Support Only = https://shop.achimsommer.com/package/5708271 )
+- Discord: https://discord.gg/mZWNwyvmP2 (Kein Support / Support Only = https://achim.tebex.io/category/esx-legacy-template )
 
 
 # Projekt unterstüzen:
 
 - Mitgliedschaft: https://www.youtube.com/@achimsommer/join
 - PayPal: sommerachim@hotmail.de
-- Shop: https://shop.achimsommer.com
+- Shop: https://achim.tebex.io
 
 -----------------------------------------
 
@@ -122,6 +115,4 @@ Importiere die server.sql aus dem [SQL] Ordner per phpmyadmin in deine Datenbank
 
 7.
 Hol dir das Support Paket oder das Support Paket mit Addon wenn du möchtest, um das Projekt zu unterstüzen.
-- https://shop.achimsommer.com/package/5777793 
-- https://shop.achimsommer.com/package/5708271
-- https://shop.achimsommer.com/package/5708276 
+- https://achim.tebex.io/category/esx-legacy-template
